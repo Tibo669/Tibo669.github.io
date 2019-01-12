@@ -322,11 +322,19 @@ textarea {
     align-items: center;
 }
 
+#containerCountdown {
+  width: 80%;
+  height: 75px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
 #countdown{
     font: normal 13px/20px Arial, Helvetica, sans-serif; word-wrap:break-word;
     color: #eee;
-    width: 465px;
-    height: 150px;
+    width: 150px;
+    height: 75px;
     text-align: center;
     background: #222;
     background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
@@ -335,45 +343,45 @@ textarea {
     background-image:      -o-linear-gradient(top, #222, #333, #333, #222);
     border: 1px solid #111;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
     margin: auto;
-    padding: 24px 0;
+    padding: 12px 0;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
 #countdown:before{
     content:"";
-    width: 8px;
-    height: 65px;
+    width: 4px;
+    height: 35px;
     background: #444;
     background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
     background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
     background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
     background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
     border: 1px solid #111;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     display: block;
     position: absolute;
-    top: 48px; left: -10px;
+    top: 20px; left: -5px;
 }
 
 #countdown:after{
     content:"";
-    width: 8px;
-    height: 65px;
+    width: 4px;
+    height: 35px;
     background: #444;
     background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
     background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
     background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
     background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
     border: 1px solid #111;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     display: block;
     position: absolute;
-    top: 48px; right: -10px;
+    top: 20px; right: -5px;
 }
 
 #countdown #tiles{
@@ -382,9 +390,9 @@ textarea {
 }
 
 #countdown #tiles > span{
-    width: 92px;
-    max-width: 92px;
-    font: bold 48px 'Droid Sans', Arial, sans-serif;
+    width: 46px;
+    max-width: 46px;
+    font: bold 24px 'Droid Sans', Arial, sans-serif;
     text-align: center;
     color: #111;
     background-color: #ddd;
@@ -393,10 +401,10 @@ textarea {
     background-image:     -ms-linear-gradient(top, #bbb, #eee);
     background-image:      -o-linear-gradient(top, #bbb, #eee);
     border-top: 1px solid #fff;
-    border-radius: 3px;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
-    margin: 0 7px;
-    padding: 18px 0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+    margin: 0 3px;
+    padding: 9px 0;
     display: inline-block;
     position: relative;
 }
@@ -404,12 +412,12 @@ textarea {
 #countdown #tiles > span:before{
     content:"";
     width: 100%;
-    height: 13px;
+    height: 7px;
     background: #111;
     display: block;
-    padding: 0 3px;
+    padding: 0 2px;
     position: absolute;
-    top: 41%; left: -3px;
+    top: 41%; left: -2px;
     z-index: -1;
 }
 
@@ -440,4 +448,62 @@ textarea {
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
+}
+
+#containerInput {
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+/* Input field that looks like a button */
+.event-field {
+  top: 0;
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  color: #f4f2ca;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: .9em 1.8em;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  transition: all .1s linear;
+}
+.event-field:hover {
+  background-color: navajowhite;
+}
+
+/* after button is clicked */
+.event-field.active {
+  width: 200px;
+  outline: none;
+  color: #efaa9d;
+  text-align: left;
+}
+
+/* Event submit button */
+#event-button {
+  position: absolute;
+  top: 0;
+  left: 255px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-size: cover;
+  background-image: url(../img/OK.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+#event-button:hover {
+  opacity: .33;
 }
