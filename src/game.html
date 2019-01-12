@@ -23,11 +23,56 @@
 
 <!-- Add your site or application content here -->
 
-<div id="container">
-    <p class="text-center" id="intro">Commencer l'exploration</p>
-    <a class="btn playButton" href="game.html"></a>
+<div id="containerCountdown">
+    <p class="text-center" id="intro">Début</p>
+    <div id="countdown">
+        <div id='tiles'></div>
+    </div>
 </div>
 
+<script>
+
+    let minutes, seconds; // variables for time units
+    let targetDate;
+
+    const target_date_stored = sessionStorage.getItem('target_date');
+
+    if (target_date_stored !== null) {
+        targetDate = new Date(0);
+        targetDate.setUTCMilliseconds(parseInt(target_date_stored));
+        targetDate = targetDate.getTime();
+        console.log('targetDate existe déjà : ' + targetDate.toString());
+    }
+    else {
+        targetDate = new Date().getTime() + (1000*3600); // set the countdown date
+        console.log('targetDate créée : ' + targetDate.toString());
+        sessionStorage.setItem('target_date', targetDate.toString());
+    }
+
+    let countdown = document.getElementById("tiles"); // get tag element
+
+    getCountdown();
+
+    setInterval(function () { getCountdown(); }, 1000);
+
+    function getCountdown(){
+
+        // find the amount of "seconds" between now and target
+        let currentDate = new Date().getTime();
+        let seconds_left = (targetDate - currentDate) / 1000;
+
+        minutes = pad( parseInt( seconds_left / 60) );
+        seconds = pad( parseInt( seconds_left % 60 ) );
+
+        // format countdown string + set tag value
+        countdown.innerHTML = "<span>" + minutes + "</span><span>" + seconds + "</span>";
+    }
+
+    function pad(n) {
+        return (n < 10 ? '0' : '') + n;
+    }
+
+</script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
