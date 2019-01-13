@@ -18,10 +18,11 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-image : url("../img/background.jpg");
+    background-image : url("../img/Parchment.jpg");
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /*
@@ -288,12 +289,11 @@ textarea {
 }
 
 #intro {
-    color: white;
+    color: #452019;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 48px;
     line-height: 1.4;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .playButton {
