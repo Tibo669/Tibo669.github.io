@@ -507,3 +507,50 @@ textarea {
 #event-button:hover {
   opacity: .33;
 }
+
+#containerHelpButtons {
+  width: 80%;
+  height: 100px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+#containerMap {
+  position: absolute;
+  left: 50%;
+}
+
+#containerInfo {
+  position: absolute;
+  left: 10%;
+}
+
+.infoButton {
+  background-image : url("../img/information.png");
+  background-size: cover;
+
+  content: "";
+  width: 100px;
+  height: 100px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mapButton {
+  background-image : url("../img/map.png");
+  background-size: cover;
+
+  position: absolute;
+  left: 50%;
+
+  content: "";
+  width: 100px;
+  height: 100px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
