@@ -297,7 +297,7 @@ textarea {
 }
 
 .playButton {
-    background-image : url("../img/playButton.png");
+    background-image : url("../img/play_button.png");
     background-size: cover;
 
     content: "";
@@ -323,11 +323,11 @@ textarea {
 }
 
 #containerCountdown {
-  width: 80%;
+  width: 200px;
   height: 75px;
   position: absolute;
   top: 5%;
-  left: 10%;
+  left: 30%;
 }
 
 #countdown{
@@ -516,14 +516,16 @@ textarea {
   left: 10%;
 }
 
-#containerMap {
+#containerMapButton {
   position: absolute;
-  left: 50%;
+  text-align: center;
+  left: 60%;
 }
 
 #containerInfo {
   position: absolute;
-  left: 10%;
+  text-align: center;
+  left: 5%;
 }
 
 .infoButton {
@@ -540,11 +542,8 @@ textarea {
 }
 
 .mapButton {
-  background-image : url("../img/map.png");
+  background-image : url("../img/map_button.png");
   background-size: cover;
-
-  position: absolute;
-  left: 50%;
 
   content: "";
   width: 100px;
@@ -553,4 +552,54 @@ textarea {
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+#containerReturnButton {
+  position: absolute;
+  text-align: center;
+  left: 5%;
+  top: 5%;
+}
+
+.returnButton {
+  background-image : url("../img/return_button.png");
+  background-size: cover;
+
+  content: "";
+  width: 75px;
+  height: 75px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#containerMap {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  left: 5%;
+  top: 30%;
+}
+
+#map {
+  margin: 0 auto;
+  background-image : url("../img/map.png");
+  background-size: cover;
+
+  width: 300px;
+  height: 300px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#positionA {
+  position: absolute;
+  top: 95px;
+  left: 125px;
+
+  width: 20px;
+  height: 20px;
 }
