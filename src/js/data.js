@@ -5,7 +5,7 @@ const event_json = `{
     "dialogue": [
         "Bonjour, Je suis archéologue en chef et je m'occupe du site de fouille de  Roche-Cattin sur la commune de Bully.",
         "Nous sommes sur la piste d’une Villae Rusticae, une maison de campagne romaine mais le temps presse !"
-        ]
+      ]
   }
 }`;
 

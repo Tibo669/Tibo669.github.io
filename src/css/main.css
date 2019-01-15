@@ -459,12 +459,12 @@ textarea {
 }
 
 /* Input field that looks like a button */
-.event-field {
+.eventField {
   top: 0;
   width: 250px;
   height: 50px;
   display: inline-block;
-  color: #f4f2ca;
+  color: black;
   text-align: center;
   background-color: whitesmoke;
   padding: .9em 1.8em;
@@ -477,12 +477,12 @@ textarea {
   -moz-transition: all .1s linear;
   transition: all .1s linear;
 }
-.event-field:hover {
+.eventField:hover {
   background-color: navajowhite;
 }
 
 /* after button is clicked */
-.event-field.active {
+.eventField.active {
   width: 200px;
   outline: none;
   color: #efaa9d;

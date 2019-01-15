@@ -44,16 +44,3 @@ function pad(n) {
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
-
-
-document.getElementById('eventButton').addEventListener('click',function(){
-  const event_current_id = document.getElementById('event-field').value;
-  if ( event_current_id in event_map ) {
-    sessionStorage.setItem('current_personage', event_current_id);
-    location.href = event_map[event_current_id]["url"];
-  }
-  else{
-    document.getElementById('error').innerHTML='Le mot de pass est incorecte';
-  }
-},false);
-
