@@ -46,9 +46,11 @@ window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
 
 
-document.getElementById('event-button').addEventListener('click',function(){
-  if(document.getElementById('event-field').value=='test'){
-    location.href='testevent.html';
+document.getElementById('eventButton').addEventListener('click',function(){
+  const event_current_id = document.getElementById('event-field').value;
+  if ( event_current_id in event_map ) {
+    sessionStorage.setItem('current_personage', event_current_id);
+    location.href = event_map[event_current_id]["url"];
   }
   else{
     document.getElementById('error').innerHTML='Le mot de pass est incorecte';

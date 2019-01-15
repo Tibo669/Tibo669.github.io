@@ -490,7 +490,7 @@ textarea {
 }
 
 /* Event submit button */
-#event-button {
+#eventButton {
   position: absolute;
   top: 0;
   left: 255px;
@@ -504,7 +504,7 @@ textarea {
   background-color: transparent;
 }
 
-#event-button:hover {
+#eventButton:hover {
   opacity: .33;
 }
 
