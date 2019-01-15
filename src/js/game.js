@@ -45,10 +45,12 @@ document.getElementById("eventField").addEventListener("submit", function(){
 document.getElementById('eventField').onkeydown = function(event){
   if (event.key !== undefined) {
     if(event.key === "Enter"){
+      $(document.activeElement).filter(':input:focus').blur();
       document.getElementById("eventField").dispatchEvent(evt);
     }
   } else if (event.keyCode !== undefined) {
     if(event.keyCode === 13){
+      $(document.activeElement).filter(':input:focus').blur();
       document.getElementById("eventField").dispatchEvent(evt);
     }
   }
