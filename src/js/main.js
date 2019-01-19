@@ -1,7 +1,7 @@
 let minutes, seconds; // variables for time units
 let targetDate;
 
-const target_date_stored = sessionStorage.getItem('target_date');
+let target_date_stored = sessionStorage.getItem('target_date');
 
 if (target_date_stored !== null) {
   targetDate = new Date(0);
@@ -22,7 +22,10 @@ getCountdown();
 setInterval(function () { getCountdown(); }, 1000);
 
 function getCountdown(){
-
+  target_date_stored = sessionStorage.getItem('target_date');
+  targetDate = new Date(0);
+  targetDate.setUTCMilliseconds(parseInt(target_date_stored));
+  targetDate = targetDate.getTime();
   // find the amount of "seconds" between now and target
   let currentDate = new Date().getTime();
   let seconds_left = (targetDate - currentDate) / 1000;
