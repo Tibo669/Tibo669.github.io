@@ -24,9 +24,8 @@ const event_json = `{
         "N’hésitez pas à demander de l’aide au gens présents cependant restez sur vos gardes.",
         "Au fait, je pense que vous le savez déjà mais les romains avaient pour habitude de cacher leurs objets de valeurs près d’un lieu symbolique,",
         "comme un carrefour, un point d’eau ou une forêt. Je vous les ai recensé sur la carte."
-        
       ]
-  }
+  },
   "7": {
     "name": "Tennesse Johnson, chasseur de trésor",
     "url": "event_martin_accsjo.html",
