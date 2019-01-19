@@ -1,6 +1,6 @@
 const event_json = `{
   "5": {
-    "name": "Martin",
+    "name": "Professeur Martin, Archéologue",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Bonjour, Je suis archéologue en chef et je m'occupe du site de fouille de  Roche-Cattin sur la commune de Bully.",
@@ -8,7 +8,7 @@ const event_json = `{
       ]
   },
   "6": {
-    "name": "Thomas Goutte, assistant du professeur Martin",
+    "name": "Thomas Goutte, Assistant du Pr. Martin",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Bonjour, vous êtes les fameux chasseurs de trésors, le Professeur Martin m’avait prévenu de votre venue.",
@@ -27,7 +27,7 @@ const event_json = `{
       ]
   },
   "7": {
-    "name": "Tennesse Johnson, chasseur de trésor",
+    "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Ah donc voilà mes concurrents. Je vous imaginais plus grands, plus forts bref…",
@@ -36,7 +36,7 @@ const event_json = `{
       ]
   },
   "8": {
-    "name": "Madame Petitejeanne, vieille voisine",
+    "name": "Madame Petitejeanne, Vieille voisine",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Bonjour, vous êtes nouveaux dans le coin, je ne vous ai jamais vu aussi et pourtant je connais tout le monde.",
@@ -49,7 +49,7 @@ const event_json = `{
       ]
   },
   "9": {
-    "name": "Jean Duval, vigneron",
+    "name": "Jeannot Duval, Vigneron",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Ça sera une bonne année ! Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
@@ -61,7 +61,7 @@ const event_json = `{
       ]
   },
   "10": {
-    "name": "Marius Bedron, ramasseur de champignon",
+    "name": "Marius Bedron, Champignonneur",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Bonjour, comment allez-vous ? Moi ça va sauf que la cueillette n’est pas bonne.",
@@ -74,7 +74,7 @@ const event_json = `{
       ]
   },
   "11": {
-    "name": "Jacques Pedroit, maire",
+    "name": "Jacques Pedroit, Monsieur le Maire",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Bonjour, mes chers concitoyens et bienvenue dans la nouvelle attraction de Bully : Un parc thématique gallo-romain.",
@@ -85,7 +85,7 @@ const event_json = `{
       ]
   },
   "12": {
-    "name": "Hélène Vincier, historienne",
+    "name": "Hélène Vincier, Historienne",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "1848, la ruée vers l’or c’est exactement ce que vous faites, vous chercher un trésor. Nous les historiens nous sommes un peu comme vous ! ",

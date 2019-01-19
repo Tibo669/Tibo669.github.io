@@ -2,6 +2,7 @@ const personage = sessionStorage.getItem('current_personage');
 
 dialogue_list = event_map[personage]['dialogue'];
 
+document.getElementById("dialogueNameButton").innerHTML = event_map[personage]['name'];
 dialogue_idx = 1;
 document.getElementById("dialogueButton").innerHTML = dialogue_list[0];
 
