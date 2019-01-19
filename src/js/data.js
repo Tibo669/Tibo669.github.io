@@ -49,7 +49,7 @@ const event_json = `{
       ]
   },
   "9": {
-    "name": "Jeannot Duval, Vigneron",
+    "name": "Jean Duvalon, Vigneron",
     "url": "event_martin_accsjo.html",
     "dialogue": [
         "Ça sera une bonne année ! Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
