@@ -48,7 +48,7 @@ const event_json = `{
         "Je ne sais pas si ça peut vous aider mais au moins c’est dit. Allez sur ce bonne journée. Je dois aller nourrir la télé et regarder minouche ou l’inverse."
       ]
   },
-  9": {
+  "9": {
     "name": "Jean Duval, vigneron",
     "url": "event_martin_accsjo.html",
     "dialogue": [
@@ -99,7 +99,7 @@ const event_json = `{
     "dialogue": [
         "Bravo, vous avez trouvé la pelle ! Grâce à elle, vous pouvez déterrer le trésor. Entrez les coordonnées  de celui-ci."
       ]
-  },
+  }
 }`;
 
 let event_map = JSON.parse(event_json);
