@@ -94,6 +94,13 @@ const event_json = `{
         "Cependant seul un œil expert arrive à le déceler. D’ailleurs sauriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ?"
       ]
   },
+  "13": {
+    "name": "Pelle",
+    "url": "event_martin_accsjo.html",
+    "dialogue": [
+        "Bravo, vous avez trouvé la pelle ! Grâce à elle, vous pouvez déterrer le trésor. Entrez les coordonnées  de celui-ci."
+      ]
+  },
 }`;
 
 let event_map = JSON.parse(event_json);
