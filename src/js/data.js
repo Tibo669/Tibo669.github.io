@@ -39,7 +39,7 @@ const event_json = `{
     "name": "Madame Petitejeanne, Vieille voisine",
     "url": "events/event_petitejeanne_podksl.html",
     "dialogue": [
-        "Bonjour, vous êtes nouveaux dans le coin, je ne vous ai jamais vu aussi et pourtant je connais tout le monde.",
+        "Bonjour, vous êtes nouveaux dans le coin, je ne vous ai jamais vu ici et pourtant je connais tout le monde.",
         "Vous faites partie de ses nouveaux chasseurs de trésor ? <br>Ils ont débarqué depuis quelques jours et c’est à plus s’entendre.",
         "Et vas-y que je creuse, vas-y que je déclame des textes en latin et encore je vous la fais courte.",
         "Mais vous me semblez différent et bien sympathique les gones. Si ils étaient venu depuis le début, je leur aurais donné des informations, moi ! <br>Mais qui fait attention à la vieille du quartier ?",
