@@ -11,7 +11,7 @@ const event_json = `{
     "name": "Thomas Goutte, Assistant du Pr. Martin",
     "url": "events/event_goutte_qsdkaz.html",
     "dialogue": [
-        "Bonjour, vous êtes les fameux chasseurs de trésors ! <br>le Professeur Martin m’avait prévenu de votre visite.",
+        "Bonjour, vous êtes les fameux chasseurs de trésors ! <br>Le Professeur Martin m’avait prévenu de votre visite.",
         "Il s'excuse encore de ne pas être présent. Je vais me charger de vous expliquer la situation. ",
         "Nous avons trouvé l’emplacement d’une <i>Villae Rusticae</i> à l’endroit où nous sommes. <br>Mais avant, revoyons les bases.",
         "La Gaule a été conquise par les romains en -52 avant Jésus Christ par un certain Jules César, je pense que vous en avez déjà entendu parler.",
