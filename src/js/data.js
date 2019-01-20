@@ -9,7 +9,7 @@ const event_json = `{
   },
   "6": {
     "name": "Thomas Goutte, Assistant du Pr. Martin",
-    "url": "events/event_goutte_qsdkaz.html",
+    "url": "events/event_assistant_qsdkaz.html",
     "dialogue": [
         "<i>Vous arrivez près d’un jeune homme affairé, tenant dans sa main une pierre. <br>Il est entouré de dessins et de schémas. <br>Il vous entend arriver et se retourne.</i>",
         "Bonjour, vous êtes les fameux chasseurs de trésors ! <br>Le Professeur Martin m’avait prévenu de votre visite.",
@@ -29,7 +29,7 @@ const event_json = `{
   },
   "7": {
     "name": "Tennesse Johnson, Chasseur de trésor",
-    "url": "events/event_jonson_qsdjan.html",
+    "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
         "Ah ! Donc, voilà, mes concurrents. <br>Je vous imaginais plus grands, plus forts bref…",
         "C’est gentil d’être venu essayer mais moi, <b>Tennessee Johnson</b>, je tiens à vous dire un truc : <br>Je serai le premier à trouver ce maudit trésor et à moi le magot !",
@@ -38,7 +38,7 @@ const event_json = `{
   },
   "8": {
     "name": "Madame Petitejeanne, Vieille voisine",
-    "url": "events/event_petitejeanne_podksl.html",
+    "url": "events/event_vieille_podksl.html",
     "dialogue": [
         "Bonjour, vous êtes nouveaux dans le coin. Je ne vous ai jamais vu ici et pourtant, je connais tout le monde.",
         "Vous faites parti de ces nouveaux chasseurs de trésor ? <br>Ils ont débarqué depuis quelques jours et c’est à plus s’entendre.",
@@ -51,7 +51,7 @@ const event_json = `{
   },
   "9": {
     "name": "Jean Duvalon, Vigneron",
-    "url": "events/event_duvalon_ghsksl.html",
+    "url": "events/event_viticulteur_ghsksl.html",
     "dialogue": [
         "Ça sera une bonne année ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
         "Mais désolé, je manque à tous mes devoirs, j’ai oublié de me présenter. <br>Je m'appelle Jean Duvalon, viticulteur et vous qui êtes-vous ?",
@@ -63,7 +63,7 @@ const event_json = `{
   },
   "10": {
     "name": "Marius Bedron, Champignonneur",
-    "url": "events/event_bedron_lskfos.html",
+    "url": "events/event_champignonneur_lskfos.html",
     "dialogue": [
         "Bonjour, comment allez-vous ? <br>Moi ça va, sauf que la cueillette n’est pas bonne.",
         "Vous me direz que j’ai l’habitude, ce n’est pas un coin à champignon ! <br>Mais moi, ça m’importe peu, c’est surtout pour me balader.",
@@ -76,7 +76,7 @@ const event_json = `{
   },
   "11": {
     "name": "Jacques Pedroit, Monsieur le Maire",
-    "url": "events/event_pedroit_susqns.html",
+    "url": "events/event_maire_susqns.html",
     "dialogue": [
         "Bonjour, mes chers concitoyens et bienvenue dans la nouvelle attraction de Bully : <br>Un parc thématique gallo-romain.",
         "Il reste encore quelques détails à régler mais ça va être grandiose ! <br>J’ai déjà hâte de découper le ruban d'inauguration.",
@@ -87,7 +87,7 @@ const event_json = `{
   },
   "12": {
     "name": "Hélène Vincier, Historienne",
-    "url": "events/event_vincier_roeksn.html",
+    "url": "events/event_historienne_roeksn.html",
     "dialogue": [
         "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
         "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de faux qui trainent dans les environs.",
