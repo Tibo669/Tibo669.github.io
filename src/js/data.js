@@ -53,10 +53,7 @@ const event_json = `{
     "name": "Jean Duvalon, Vigneron",
     "url": "events/event_viticulteur_ghsksl.html",
     "dialogue": [
-        "Ça sera une bonne année ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
-        "Mais désolé, je manque à tous mes devoirs, j’ai oublié de me présenter. <br>Je m'appelle Jean Duvalon, viticulteur et vous qui êtes-vous ?",
-        "Non, ne me dites pas, vous chercher le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
-        "Si vous saviez toutes les breloques  que j’ai pu trouver dans mes vignes, des pièces, des bouts de tuiles et même des bijoux, c’est vous dire !",
+        
         "Si vous avez le temps une fois que vous avez fini votre enquête, passez au domaine, je pourrai vous les montrer.",
         "Mais en attendant, si vous voulez voir la pièce maîtresse de mes trouvailles, <br>il va falloir répondre à quelques questions afin de vérifier vos connaissances en viticulture..."
       ]

@@ -1,0 +1,939 @@
+C:\Users\Utilisateur>curl -u Tibo669:1b05d13b22bc016680b62eba73fd61b7087ea978 -X POST https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json"
+{
+  "status": "queued",
+  "url": "https://api.github.com/repositories/165371369/pages/builds/latest"
+}
+
+C:\Users\Utilisateur>curl -u Tibo669:1b05d13b22bc016680b62eba73fd61b7087ea978 -X GET https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds -H "Accept: application/vnd.github.mister-fantastic-preview+json"
+[
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/116223064",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "06e90f352dd66350e5167a85a1669988f14e8bcd",
+    "duration": 15049,
+    "created_at": "2019-01-18T17:56:01Z",
+    "updated_at": "2019-01-18T17:56:16Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/116220515",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "a02253551a66686b7e24a8ba58834f298c5518ba",
+    "duration": 15559,
+    "created_at": "2019-01-18T17:28:21Z",
+    "updated_at": "2019-01-18T17:28:37Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115845851",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "d5612ffb7c06df3ee206895f0beabb2da6fd8ae7",
+    "duration": 28610,
+    "created_at": "2019-01-15T18:59:22Z",
+    "updated_at": "2019-01-15T18:59:50Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115842288",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "6f1698a3deff863ae1ccceb505c7ec458c44c79a",
+    "duration": 18192,
+    "created_at": "2019-01-15T18:20:13Z",
+    "updated_at": "2019-01-15T18:20:31Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115829687",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "b3f0ba447d1b89247cdd85e4cc9278adc4128250",
+    "duration": 18146,
+    "created_at": "2019-01-15T16:19:38Z",
+    "updated_at": "2019-01-15T16:19:56Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115829034",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "59f8eef8dcd241e0dbb2830f06dc2ca38217d4c7",
+    "duration": 42670,
+    "created_at": "2019-01-15T16:14:08Z",
+    "updated_at": "2019-01-15T16:14:51Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115828498",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "4a947a186b95f4a6dbeb0629c267f5da6ed150c8",
+    "duration": 18580,
+    "created_at": "2019-01-15T16:09:31Z",
+    "updated_at": "2019-01-15T16:09:50Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115825327",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "ee58cea31737405b8d1303347691f9dc87cac8e6",
+    "duration": 21360,
+    "created_at": "2019-01-15T15:42:51Z",
+    "updated_at": "2019-01-15T15:43:13Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115821110",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "510936b23bb474f1639abdf9b0f5d80289d870a4",
+    "duration": 27704,
+    "created_at": "2019-01-15T15:04:46Z",
+    "updated_at": "2019-01-15T15:05:13Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115791910",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "a0f10685d0e3e452d67a7cd91962f6c1d466b3fa",
+    "duration": 13709,
+    "created_at": "2019-01-15T09:51:14Z",
+    "updated_at": "2019-01-15T09:51:28Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115721191",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "82df1d6968013792830bf1fac89646b70e59bcc1",
+    "duration": 16020,
+    "created_at": "2019-01-14T19:25:24Z",
+    "updated_at": "2019-01-14T19:25:40Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115720004",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "bdec832271e5094e3d47780f52fb8e7855110e3b",
+    "duration": 15095,
+    "created_at": "2019-01-14T19:11:34Z",
+    "updated_at": "2019-01-14T19:11:50Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115719288",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "95f45b0a7439e1a8434f2b3f44b6e059e1119b38",
+    "duration": 24522,
+    "created_at": "2019-01-14T19:03:15Z",
+    "updated_at": "2019-01-14T19:03:40Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115719153",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "f6f3fffb7446e90a45e50fe4848558588af38e38",
+    "duration": 13854,
+    "created_at": "2019-01-14T19:01:53Z",
+    "updated_at": "2019-01-14T19:02:07Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115718643",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "b2b92f57de0a9319c5a30da0a74aaaf2e6314fec",
+    "duration": 14560,
+    "created_at": "2019-01-14T18:56:38Z",
+    "updated_at": "2019-01-14T18:56:53Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115718592",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "8e61c1dfdf60f6d1c22ef075dd102e3fa02e8f86",
+    "duration": 15399,
+    "created_at": "2019-01-14T18:56:09Z",
+    "updated_at": "2019-01-14T18:56:24Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115712902",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "b0952007b1f5ebdf927879d8e9e272c5dfc7e062",
+    "duration": 13115,
+    "created_at": "2019-01-14T17:56:21Z",
+    "updated_at": "2019-01-14T17:56:34Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115711919",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "79f900beb239059a8f2606e9af1bbf797c3e93d2",
+    "duration": 15536,
+    "created_at": "2019-01-14T17:45:54Z",
+    "updated_at": "2019-01-14T17:46:09Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115711760",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "63cce94c6cedfbf414a443d727ffef6a1e42e90f",
+    "duration": 15718,
+    "created_at": "2019-01-14T17:44:12Z",
+    "updated_at": "2019-01-14T17:44:27Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115709779",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "5e7e101efc5794ae0b08530d0a87daacddf81dcf",
+    "duration": 20311,
+    "created_at": "2019-01-14T17:23:53Z",
+    "updated_at": "2019-01-14T17:24:13Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115590166",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "134bd998df2db583827fc5e6bc786aecd086347d",
+    "duration": 12187,
+    "created_at": "2019-01-13T17:57:33Z",
+    "updated_at": "2019-01-13T17:57:45Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115589698",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "f6e37a656dd74d9f8afd6d5ae9343c25f58181e1",
+    "duration": 12498,
+    "created_at": "2019-01-13T17:51:08Z",
+    "updated_at": "2019-01-13T17:51:21Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115589114",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "f195844de7ead99e1ff6d40a05401503d49a7512",
+    "duration": 13995,
+    "created_at": "2019-01-13T17:44:05Z",
+    "updated_at": "2019-01-13T17:44:19Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115583246",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "da5a8e80a551c0c7ca1f0452deb4a64330cf65ed",
+    "duration": 13023,
+    "created_at": "2019-01-13T16:34:30Z",
+    "updated_at": "2019-01-13T16:34:43Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115583110",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "1877b032413d3cedf43feb58ca5837a80f938524",
+    "duration": 13557,
+    "created_at": "2019-01-13T16:33:08Z",
+    "updated_at": "2019-01-13T16:33:22Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115582642",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "fd285dbc66de082988a82af1137516bc5f09177f",
+    "duration": 14141,
+    "created_at": "2019-01-13T16:27:34Z",
+    "updated_at": "2019-01-13T16:27:49Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115582487",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Batfirepilot",
+      "id": 46631151,
+      "node_id": "MDQ6VXNlcjQ2NjMxMTUx",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/46631151?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Batfirepilot",
+      "html_url": "https://github.com/Batfirepilot",
+      "followers_url": "https://api.github.com/users/Batfirepilot/followers",
+      "following_url": "https://api.github.com/users/Batfirepilot/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Batfirepilot/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Batfirepilot/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Batfirepilot/subscriptions",
+      "organizations_url": "https://api.github.com/users/Batfirepilot/orgs",
+      "repos_url": "https://api.github.com/users/Batfirepilot/repos",
+      "events_url": "https://api.github.com/users/Batfirepilot/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Batfirepilot/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "1a412d1dc2325303bcf97bef4f0c0ee071a88ba5",
+    "duration": 13725,
+    "created_at": "2019-01-13T16:26:06Z",
+    "updated_at": "2019-01-13T16:26:20Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115459682",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "342312c4b5d8258f1f51a54db47280dd66173b8e",
+    "duration": 12962,
+    "created_at": "2019-01-12T10:52:38Z",
+    "updated_at": "2019-01-12T10:52:51Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115456336",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "aaf8cb67e527eab5ed20550d9e3043f59df695fd",
+    "duration": 13542,
+    "created_at": "2019-01-12T09:57:16Z",
+    "updated_at": "2019-01-12T09:57:29Z"
+  },
+  {
+    "url": "https://api.github.com/repos/Tibo669/Tibo669.github.io/pages/builds/115456080",
+    "status": "built",
+    "error": {
+      "message": null
+    },
+    "pusher": {
+      "login": "Tibo669",
+      "id": 22603166,
+      "node_id": "MDQ6VXNlcjIyNjAzMTY2",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/22603166?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Tibo669",
+      "html_url": "https://github.com/Tibo669",
+      "followers_url": "https://api.github.com/users/Tibo669/followers",
+      "following_url": "https://api.github.com/users/Tibo669/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Tibo669/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Tibo669/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Tibo669/subscriptions",
+      "organizations_url": "https://api.github.com/users/Tibo669/orgs",
+      "repos_url": "https://api.github.com/users/Tibo669/repos",
+      "events_url": "https://api.github.com/users/Tibo669/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Tibo669/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commit": "69f3318a494a002bf13ade503741335e3ec12a9a",
+    "duration": 12750,
+    "created_at": "2019-01-12T09:53:05Z",
+    "updated_at": "2019-01-12T09:53:18Z"
+  }
+]
