@@ -36,7 +36,7 @@
 
 .dialogueButton {
 
-  background-image : url("../img/dialogue_button_resized.png");
+  background-image : url("../img/dialogue_button.png");
   background-size: cover;
 
   content: "";
@@ -48,4 +48,8 @@
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.eventAudio {
+  display: none;
 }
