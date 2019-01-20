@@ -69,5 +69,5 @@ function createMark(response, imageType) {
   goodResponseImage.style.width = "40px";
   goodResponseImage.style.zIndex="2";
   goodResponseImage.style.display = "block";
-  goodResponseImage.style.opacity = "0.5";
+  goodResponseImage.style.opacity = "0.7";
 }
