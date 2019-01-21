@@ -42,7 +42,7 @@ const event_json = `{
     "name": "Madame Petitejeanne, Vieille voisine",
     "url": "events/event_vieille_podksl.html",
     "dialogue": [
-        "<i>VVous trouvez la vieille voisine marchant dans son jardin, le dos voûté. <br>Elle regarde tout autour d’elle et d’un coup remarque votre présence. <br>Elle se dirige vers vous en saluant de la main.</i>",
+        "<i>Vous trouvez la vieille voisine marchant dans son jardin, le dos voûté. <br>Elle regarde tout autour d’elle et d’un coup remarque votre présence. <br>Elle se dirige vers vous en saluant de la main.</i>",
         "Bonjour, vous êtes nouveaux dans le coin. Je ne vous ai jamais vu ici et pourtant, je connais tout le monde.",
         "Vous faites parti de ces nouveaux chasseurs de trésor ? <br>Ils ont débarqué depuis quelques jours et c’est à plus s’entendre.",
         "Et vas-y que je creuse, vas-y que je déclame des textes en latin et encore, je vous la fais courte...",
@@ -56,6 +56,8 @@ const event_json = `{
   "9": {
     "name": "Jean Duvalon, Vigneron",
     "url": "events/event_viticulteur_ghsksl.html",
+    "well_done": "Bien joué ! <br>Ça fait plaisir de voir des personnes qui s'y connaissent en vin ! <br>Voici ma trouvaille, et pour vous récompenser, je vous ai aussi fourni la traduction.",
+    "too_bad": "Au moins, il vous reste plein de choses à apprendre sur le vin ! <br>Voici ma trouvaille, mais comme vous n'avez pas trouvé beaucoup de bonnes réponses, je ne vous ai fourni qu'une partie de la traduction.",
     "dialogue": [
         "<i>Un viticulteur regarde attentivement ses vignes et en particulier les feuilles. <br>Il semble perdu dans ses pensées jusqu’à ce qu’il s’exclame en se tournant vers vous. </i>",
         "Ça sera une bonne année ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
@@ -63,8 +65,10 @@ const event_json = `{
         "Non, ne me dites pas, vous chercher le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
         "Si vous saviez toutes les breloques  que j’ai pu trouver dans mes vignes, des pièces, des bouts de tuiles et même des bijoux, c’est vous dire !",
         "Si vous avez le temps une fois que vous avez fini votre enquête, passez au domaine, je pourrai vous les montrer.",
-        "Mais en attendant, si vous voulez voir la pièce maîtresse de mes trouvailles, <br>il va falloir répondre à quelques questions afin de vérifier vos connaissances en viticulture..."
-      ]
+        "Mais en attendant, si vous voulez voir la pièce maîtresse de mes trouvailles, <br>il va falloir répondre à quelques questions afin de vérifier vos connaissances en viticulture...",
+        "",
+        "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir avec sa main.</i>"
+      ] 
   },
   "10": {
     "name": "Marius Bedron, Champignonneur",

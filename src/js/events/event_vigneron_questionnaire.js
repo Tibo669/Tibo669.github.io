@@ -1,7 +1,14 @@
-let current_question;
-let current_question_number = 1;
-let maximum_question_number = 3;
-let missing_good_responses = maximum_question_number;
+let currentQuestion;
+let currentQuestionNumber = 1;
+const maximumQuestionNumber = 3;
+const availableQuestionNumber = 8;
+let good_responses = 0;
+let availableQuestions = [];
+let questionText = "Question suivante";
+let waitingForResponse = true;
+for (let i = 1; i <= availableQuestionNumber; i++) {
+  availableQuestions.push(i);
+}
 
 questionHeader = document.getElementById("questionHeader");
 response1 = document.getElementById("response1");
@@ -10,30 +17,68 @@ response3 = document.getElementById("response3");
 response4 = document.getElementById("response4");
 
 function questionLauncher() {
-  document.getElementById("containerQuestionEvent").style.display = "block";
-  document.getElementById("dialogue").style.display = "none";
-  current_question = event_question_data_map["1"];
+  waitingForResponse = true;
+  // Supprime tous les élements de la classe mark de la question précédente
+  let toRemove = document.getElementsByClassName('mark');
+  while (toRemove.length > 0) {
+    toRemove[0].parentNode.removeChild(toRemove[0]);
+  }
 
-  let question_text = "Question " + current_question_number.toString() + "/" + maximum_question_number.toString() + " :\n";
+  if ( currentQuestionNumber <= maximumQuestionNumber ) {
+    if ( currentQuestionNumber === maximumQuestionNumber ) {
+      questionText = "Fin du questionnaire"
+    }
+    document.getElementById("containerQuestionEvent").style.display = "block";
+    document.getElementById("dialogue").style.display = "none";
 
-  questionHeader.innerText = question_text + current_question["question"];
-  response1.innerText = current_question["responses"]["1"];
-  response2.innerText = current_question["responses"]["2"];
-  response3.innerText = current_question["responses"]["3"];
-  response4.innerText = current_question["responses"]["4"];
-  current_question_number += 1;
+    // Choix de la question aléatoire, puis on l'enleve des questions encore disponibles
+    let randomlyChosenQuestion = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = event_question_data_map[availableQuestions[randomlyChosenQuestion].toString()];
+    availableQuestions.splice(randomlyChosenQuestion, 1);
+
+    let question_text = "Question " + currentQuestionNumber.toString() + "/" + maximumQuestionNumber.toString() + " :\n";
+
+    questionHeader.innerText = question_text + currentQuestion["question"];
+    response1.innerText = currentQuestion["responses"]["1"];
+    response2.innerText = currentQuestion["responses"]["2"];
+    response3.innerText = currentQuestion["responses"]["3"];
+    response4.innerText = currentQuestion["responses"]["4"];
+    currentQuestionNumber += 1;
+  }
+  else {
+    document.getElementById("containerQuestionEvent").style.display = "none";
+    document.getElementById("dialogue").style.display = "block";
+
+    sessionStorage.setItem('vigneron_done', 'true');
+    sessionStorage.setItem('vigneron_result', good_responses.toString());
+    resultLauncher();
+  }
+}
+
+function resultLauncher() {
+  let dialogueButton = document.getElementById("dialogueButton");
+  let vigneron_result_stored = parseInt(sessionStorage.getItem('vigneron_result'));
+  console.log("Bonnes réponses : " + vigneron_result_stored);
+  if ( vigneron_result_stored >= 2 ) {
+    dialogueButton.innerHTML = event_map[personage]["well_done"];
+  }
+  else {
+    dialogueButton.innerHTML = event_map[personage]["too_bad"];
+  }
 }
 
 function resolveQuestion(responseId, response) {
-
-  if ( responseId !== current_question["good_response"] ) {
-    createMark(response, "red_cross");
+  if (waitingForResponse ) {
+    waitingForResponse = false;
+    if (responseId !== currentQuestion["good_response"]) {
+      createMark(response, "red_cross");
+    } else {
+      good_responses++;
+    }
+    let goodResponse = document.getElementById("response" + currentQuestion["good_response"]);
+    createMark(goodResponse, "green_check");
+    nextQuestionMark();
   }
-  else {
-    missing_good_responses -= 1;
-  }
-  let goodResponse = document.getElementById("response" + current_question["good_response"]);
-  createMark(goodResponse, "green_check");
 }
 
 response1.addEventListener('click',function(){
@@ -70,4 +115,23 @@ function createMark(response, imageType) {
   goodResponseImage.style.zIndex="2";
   goodResponseImage.style.display = "block";
   goodResponseImage.style.opacity = "0.7";
+}
+
+function nextQuestionMark() {
+  let boundingClientRect = questionHeader.getBoundingClientRect();
+  let nextQuestion = document.createElement("a");
+  document.body.appendChild(nextQuestion);
+  nextQuestion.className += " mark questionHeader";
+  nextQuestion.style.backgroundImage = "url(../../img/dialogue_next_question.png)";
+  nextQuestion.style.position = "absolute";
+  nextQuestion.style.top = boundingClientRect.top + "px";
+  nextQuestion.style.left = boundingClientRect.left + "px";
+  nextQuestion.style.paddingTop = "20px";
+  nextQuestion.style.zIndex="2";
+  nextQuestion.style.display = "block";
+  nextQuestion.innerText = questionText;
+
+  nextQuestion.addEventListener('click',function(){
+    questionLauncher();
+  });
 }

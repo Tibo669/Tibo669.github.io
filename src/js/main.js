@@ -7,11 +7,9 @@ if (target_date_stored !== null) {
   targetDate = new Date(0);
   targetDate.setUTCMilliseconds(parseInt(target_date_stored));
   targetDate = targetDate.getTime();
-  console.log('targetDate existe déjà : ' + targetDate.toString());
 }
 else {
   targetDate = new Date().getTime() + (1000*3600); // set the countdown date
-  console.log('targetDate créée : ' + targetDate.toString());
   sessionStorage.setItem('target_date', targetDate.toString());
 }
 

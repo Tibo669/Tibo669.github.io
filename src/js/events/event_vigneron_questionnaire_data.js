@@ -2,7 +2,7 @@ const event_question_data_json = `{
   "1": {
     "question": "Comment appelle-t-on un pied de vigne ?",
     "responses": {
-        "1": "Un ceps",
+        "1": "Un cep",
         "2": "Une câpre",
         "3": "Un arbuste",
         "4": "Un pédoncule"
@@ -18,6 +18,66 @@ const event_question_data_json = `{
         "4": "Un primeur"
       },
     "good_response": "2"
+  },
+  "3": {
+    "question": "Quel est le cépage majoritaire dans le Beaujolais ?",
+    "responses": {
+        "1": "Le chardonnay",
+        "2": "Le gamaray",
+        "3": "Le gamay",
+        "4": "Le pinot gris"
+      },
+    "good_response": "3"
+  },
+  "4": {
+    "question": "Comment appelle-t-on la branche d'un cep de vigne ?",
+    "responses": {
+        "1": "Un serment",
+        "2": "Un sarment",
+        "3": "Un sermon",
+        "4": "Un serpent"
+      },
+    "good_response": "2"
+  },
+  "5": {
+    "question": "Quelle est le type de taille sur les vignes du domaine ?",
+    "responses": {
+        "1": "La taille gobelet",
+        "2": "La taille guyot",
+        "3": "La taille guyet",
+        "4": "La taille gobelin"
+      },
+    "good_response": "1"
+  },
+  "6": {
+    "question": "A quoi correspond une grume de raisin ?",
+    "responses": {
+        "1": "A un pépin",
+        "2": "A la peau",
+        "3": "A la pulpe",
+        "4": "Au jus"
+      },
+    "good_response": "3"
+  },
+  "7": {
+    "question": "Quelle est la contenance d’un pot beaujolais ?",
+    "responses": {
+        "1": "75 cl",
+        "2": "37,5 cl",
+        "3": "46 cl",
+        "4": "82 cl"
+      },
+    "good_response": "3"
+  },
+  "8": {
+    "question": "Quelle est la capitale du Beaujolais ?",
+    "responses": {
+        "1": "Bully",
+        "2": "Quincié",
+        "3": "Beaujeu",
+        "4": "Villefranche"
+      },
+    "good_response": "4"
   }
 }`;
 
