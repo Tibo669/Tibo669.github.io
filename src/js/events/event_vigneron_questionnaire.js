@@ -57,13 +57,15 @@ function questionLauncher() {
 
 function resultLauncher() {
   let dialogueButton = document.getElementById("dialogueButton");
+  let personageImage = document.getElementById("personageImage");
   let vigneron_result_stored = parseInt(sessionStorage.getItem('vigneron_result'));
-  console.log("Bonnes réponses : " + vigneron_result_stored);
   if ( vigneron_result_stored >= 2 ) {
     dialogueButton.innerHTML = event_map[personage]["well_done"];
+    personageImage.src = "../../img/viticulteur_win.jpg";
   }
   else {
     dialogueButton.innerHTML = event_map[personage]["too_bad"];
+    personageImage.src = "../../img/viticulteur_lose.jpg";
   }
 }
 
