@@ -65,7 +65,8 @@ const event_json = `{
         "Non, ne me dites pas, vous chercher le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
         "Si vous saviez toutes les breloques  que j’ai pu trouver dans mes vignes, des pièces, des bouts de tuiles et même des bijoux, c’est vous dire !",
         "Si vous avez le temps une fois que vous avez fini votre enquête, passez au domaine, je pourrai vous les montrer.",
-        "Mais en attendant, si vous voulez voir la pièce maîtresse de mes trouvailles, <br>il va falloir répondre à quelques questions afin de vérifier vos connaissances en viticulture...",
+        "Mais en attendant, je vais vous montrer la pièce maîtresse de mes trouvailles.",
+        "Si vous voulez la traduction, il va falloir répondre à quelques questions à propos de la viticulture...",
         "",
         "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir avec sa main.</i>"
       ] 
