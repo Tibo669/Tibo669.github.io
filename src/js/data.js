@@ -67,7 +67,6 @@ const event_json = `{
         "Si vous avez le temps une fois que vous avez fini votre enquête, passez au domaine, je pourrai vous les montrer.",
         "Mais en attendant, je vais vous montrer la pièce maîtresse de mes trouvailles.",
         "Si vous voulez la traduction, il va falloir répondre à quelques questions à propos de la viticulture...",
-        "",
         "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir avec sa main.</i>"
       ] 
   },
