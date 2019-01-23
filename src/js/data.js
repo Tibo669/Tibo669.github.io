@@ -158,6 +158,13 @@ const event_json = `{
         "<i>Bravo, vous avez trouvé le trésor ! <br>Il est composé de pièces d’or mais aussi de la <b>dernière amphore</b> contenant encore du vin de l’époque romaine. <br>Une première historique !</i>",
         "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à rendre visite à ...</i>"
       ]
+  },
+  "60": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
   }
   
 }`;
