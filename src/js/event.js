@@ -28,14 +28,19 @@ document.getElementById('dialogueButton').addEventListener('click',function(){
   }
 
   // Spécial vigneron
-  if ( dialogue_idx === ( 8 ) && personage_name === "Jean Duvalon, Vigneron" ) {
-    let vigneron_done_stored = sessionStorage.getItem('vigneron_done');
-    document.getElementById("eventAudioDialogue").pause();
-    if (vigneron_done_stored === null) {
-      questionLauncher();
+  if ( personage_name === "Jean Duvalon, Vigneron" ) {
+    if ( dialogue_idx === 9 ) {
+      let vigneron_done_stored = sessionStorage.getItem('vigneron_done');
+      document.getElementById("eventAudioDialogue").pause();
+      if (vigneron_done_stored === null) {
+        questionLauncher();
+      } else {
+        resultLauncher(dialogueButton);
+      }
     }
-    else {
-      resultLauncher(dialogueButton);
+    else if ( dialogue_idx === 8 ) {
+      let personageImage = document.getElementById("personageImage");
+      personageImage.src = "../../img/marbre_latin.jpg";
     }
   }
 },false);

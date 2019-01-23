@@ -95,7 +95,7 @@ const event_json = `{
         "Même si on ne trouve rien, on fera des reproductions. <br>Ce n'est pas grave, les gens ne sont pas obligés de le savoir.",
         "Il faut bien que ce projet se fasse, et je suis le seul capable de le mener à bien. <br>D’ailleurs, cela me prend un temps fou, tout le monde me sollicite, je suis indispensable !",
         "Au fait, l’archéologue m’a donné ce document, je n’ai pas le temps de le traiter, je vous laisse vous en occupez, faites de votre mieux.",
-        "<i>Le maire vous tend un papier et il commence à penser à haute voix à un nom de parc : <br>« le parc Astérix, c’est déjà pris. Bully, dernier village résistant aux romains : trop long…etc »</i>"
+        "<i>Le maire vous tend un papier et commence à penser à haute voix : <br>« Le parc Astérix, c’est déjà pris. <br>Bully, dernier village résistant aux romains : c'est trop long… »</i>"
       ]
   },
   "12": {
@@ -106,7 +106,7 @@ const event_json = `{
         "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
         "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de faux qui trainent dans les environs.",
         "Cependant, seul un oeil expert arrive à le déceler. <br>D’ailleurs, seriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ?",
-        "<i>Vous arrivez près d’un jeune homme affairé, tenant dans sa main une pierre. <br>Il est entouré de dessins et de schémas. <br>Il vous entend arriver et se retourne.</i>"
+        "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
   "13": {
