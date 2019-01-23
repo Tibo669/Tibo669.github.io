@@ -40,6 +40,14 @@
   </div>
 </div>
 
+<! Il n'y a qu'une seule ligne de dialogue pour la pelle, on passe directement à l'étape de fin. >
+<script>
+  dialogueButton = document.getElementById("dialogueButton");
+  dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
+  document.getElementById("eventAudioDialogue").pause();
+  document.getElementById("eventAudioFin").play();
+</script>
+
 <audio id="eventAudioIntro" class="eventAudio" controls preload="none">
   <source src="" type="audio/wav">
 </audio>
