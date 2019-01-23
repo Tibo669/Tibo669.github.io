@@ -30,6 +30,7 @@ document.getElementById('dialogueButton').addEventListener('click',function(){
   // Spécial vigneron
   if ( dialogue_idx === ( 8 ) && personage_name === "Jean Duvalon, Vigneron" ) {
     let vigneron_done_stored = sessionStorage.getItem('vigneron_done');
+    document.getElementById("eventAudioDialogue").pause();
     if (vigneron_done_stored === null) {
       questionLauncher();
     }
