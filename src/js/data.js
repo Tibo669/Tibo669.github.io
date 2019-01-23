@@ -152,7 +152,7 @@ const event_json = `{
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
       ]
   },
-  "18": {
+  "20": {
     "name": "Le Trésor !",
     "url": "events/event_tresor_qsdkca.html",
     "dialogue": [
@@ -160,7 +160,28 @@ const event_json = `{
         "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à rendre visite à ...</i>"
       ]
   },
-  "60": {
+  "29": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "42": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "57": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "35": {
     "name": "Rien à voir ici",
     "url": "events/event_search_azesds.html",
     "dialogue": [
