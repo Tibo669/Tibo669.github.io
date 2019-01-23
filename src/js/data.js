@@ -113,7 +113,7 @@ const event_json = `{
     "name": "Une pelle en très bon état",
     "url": "events/event_pelle_msoqls.html",
     "dialogue": [
-        "Bravo, vous avez trouvé la pelle ! Grâce à elle, vous pouvez déterrer le trésor. Entrez les coordonnées  de celui-ci."
+        "Bravo, vous avez trouvé la pelle ! Grâce à elle, vous pouvez déterrer le trésor."
       ]
   },
   "14": {
@@ -149,6 +149,14 @@ const event_json = `{
     "url": "events/event_borne_piwxdn.html",
     "dialogue": [
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+      ]
+  },
+  "18": {
+    "name": "Le Trésor !",
+    "url": "events/event_tresor_qsdkca.html",
+    "dialogue": [
+        "<i>Bravo, vous avez trouvé le trésor ! <br>Il est composé de pièces d’or mais aussi de la <b>dernière amphore</b> contenant encore du vin de l’époque romaine. <br>Une première historique !</i>",
+        "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à rendre visite à ...</i>"
       ]
   }
   

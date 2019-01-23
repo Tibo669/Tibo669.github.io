@@ -17,7 +17,7 @@ let countdown = document.getElementById("tiles"); // get tag element
 
 getCountdown();
 
-setInterval(function () { getCountdown(); }, 1000);
+let intervalCountdown = setInterval(function () { getCountdown(); }, 1000);
 
 function getCountdown(){
   target_date_stored = sessionStorage.getItem('target_date');

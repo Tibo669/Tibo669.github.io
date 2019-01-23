@@ -20,9 +20,6 @@
 </head>
 <body>
 <div id="header">
-  <div id="containerReturnButton">
-    <a class="btn returnButton" href="../game.html"></a>
-  </div>
   <div id="containerCountdown">
     <div id="countdown">
       <div id='tiles'></div>
@@ -32,7 +29,7 @@
 
 <div id="containerEvent">
   <div id="personage">
-    <img src="../../img/noyer.png" alt="nez" id="personageImage">
+    <img src="../../img/tresor.jpg" alt="nez" id="personageImage">
   </div>
   <div id="dialogue">
     <a class="btn dialogueNameButton oneTextLine" id="dialogueNameButton"></a>
@@ -56,6 +53,10 @@
 <script src="../../js/data.js"></script>
 <script src="../../js/event.js"></script>
 <script src="../../js/main.js"></script>
+
+<script>
+  window.clearInterval(intervalCountdown);
+</script>
 
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
