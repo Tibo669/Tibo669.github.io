@@ -27,6 +27,14 @@ document.getElementById('dialogueButton').addEventListener('click',function(){
     document.getElementById("eventAudioDialogue").play();
   }
 
+  // Spécial mechant
+  if ( personage_name === "Tennesse Johnson, Chasseur de trésor" ) {
+    if ( dialogue_idx === 5 ) {
+      let personageImage = document.getElementById("personageImage");
+      personageImage.src = "../../img/message.png";
+    }
+  }
+
   // Spécial vigneron
   if ( personage_name === "Jean Duvalon, Vigneron" ) {
     if ( dialogue_idx === 9 ) {

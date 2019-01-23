@@ -31,11 +31,11 @@ const event_json = `{
     "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
-        "<i>Un homme avec un chapeau délavé vous regarde arriver. Il était en train de prendre des notes sur son carnet. <br> Il s'interrompt et ferme prestement son carnet lorsque vous arrivez à sa hauteur. <br>Il s'adresse à vous d’une voix forte.</i>",
+        "<i>Un homme avec un chapeau délavé vous regarde arriver. <br> Il interrompt sa prise de notes et ferme prestement son carnet lorsque vous arrivez à sa hauteur. <br>Il s'adresse à vous d’une voix forte.</i>",
         "Ah ! Donc, voilà, mes concurrents. <br>Je vous imaginais plus grands, plus forts bref…",
         "C’est gentil d’être venu essayer mais moi, <b>Tennessee Johnson</b>, je tiens à vous dire un truc : <br>Je serai le premier à trouver ce maudit trésor et à moi le magot !",
         "J’ai déjà des contacts pour le revendre. Allez ! Bonne journée ! <br>Mais si vous voulez, je peux vous signer un autographe !",
-        "<i>Il se retourne et s’éloigne. Vous voyez un morceau de papier tomber de sa poche. Vous le récupérez et un étrange message est marqué dessus : 45.847430, 4.575666 </i>"
+        "<i>Il se retourne et s’éloigne. Vous voyez un morceau de papier tomber de sa poche. Vous le récupérez et découvrez un étrange message.</i>"
       ]
   },
   "8": {
