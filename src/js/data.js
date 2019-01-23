@@ -115,7 +115,43 @@ const event_json = `{
     "dialogue": [
         "Bravo, vous avez trouvé la pelle ! Grâce à elle, vous pouvez déterrer le trésor. Entrez les coordonnées  de celui-ci."
       ]
+  },
+  "14": {
+    "name": "Lieu : Nez",
+    "url": "events/event_nez_mlsnch.html",
+    "dialogue": [
+        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+      ]
+  },
+  "15": {
+    "name": "Lieu : Mare",
+    "url": "events/event_mare_ysundh.html",
+    "dialogue": [
+        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+      ]
+  },
+  "15": {
+    "name": "Lieu : Colonne",
+    "url": "events/event_colonne_osdpsd.html",
+    "dialogue": [
+        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+      ]
+  },
+  "16": {
+    "name": "Lieu : Noyer",
+    "url": "events/event_noyer_qsdjxj.html",
+    "dialogue": [
+        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+      ]
+  },
+  "17": {
+    "name": "Lieu : Borne",
+    "url": "events/event_borne_piwxdn.html",
+    "dialogue": [
+        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+      ]
   }
+  
 }`;
 
 let event_map = JSON.parse(event_json);
