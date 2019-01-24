@@ -160,32 +160,71 @@ const event_json = `{
         "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à rendre visite à ...</i>"
       ]
   },
-  "29": {
+  
+  
+  "27": {
     "name": "Rien à voir ici",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "34": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "21": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "49": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  "12": {
+    "name": "Rien à voir ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+      ]
+  },
+  
+  
+  "29": {
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_mauvais_lieu_sdftui.html",
+    "dialogue": [
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
       ]
   },
   "42": {
-    "name": "Rien à voir ici",
-    "url": "events/event_search_azesds.html",
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
       ]
   },
   "57": {
-    "name": "Rien à voir ici",
-    "url": "events/event_search_azesds.html",
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
       ]
   },
   "35": {
-    "name": "Rien à voir ici",
-    "url": "events/event_search_azesds.html",
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
       ]
   }
   

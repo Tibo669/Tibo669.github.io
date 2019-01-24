@@ -84,3 +84,12 @@ function pad(n) {
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
+
+function loseOneMinute() {
+  let target_date_stored = sessionStorage.getItem('target_date');
+  let targetDate = new Date(0);
+  targetDate.setUTCMilliseconds(parseInt(target_date_stored));
+  targetDate -= 1000 * 60;
+  sessionStorage.setItem('target_date', targetDate.toString());
+  getCountdown();
+}
