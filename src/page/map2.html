@@ -46,11 +46,17 @@
        *************************/
 
         // First create a point geometry
-      var point2 = {
+      var point = {
           type: "point", // autocasts as new Point()
-          longitude: 4.577407,
+          longitude: 4.577417,
           latitude: 45.848032
         };
+
+      var point2 = {
+        type: "point", // autocasts as new Point()
+        longitude: 4.577677,
+        latitude: 45.848032
+      };
 
       // First create a point geometry
       var point1 = {
@@ -70,8 +76,23 @@
         }
       };
 
+      // Create a symbol for drawing the point
+      var markerSymbol2 = {
+        type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+        color: [226, 119, 40],
+        outline: { // autocasts as new SimpleLineSymbol()
+          color: [255, 255, 255],
+          width: 2
+        }
+      };
+
       // Create a graphic and add the geometry and symbol to it
       var pointGraphic = new Graphic({
+        geometry: point,
+        symbol: markerSymbol
+      });
+
+      var pointGraphic2 = new Graphic({
         geometry: point2,
         symbol: markerSymbol
       });
@@ -84,7 +105,7 @@
       var polyline = {
           type: "polyline", // autocasts as new Polyline()
           paths: [
-            [4.579105, 45.847859],
+            [4.579205, 45.847859],
             [5.579105, 45.857859]
           ]
         };
@@ -133,7 +154,7 @@
 
 
       // Add the graphics to the view's graphics layer
-      view.graphics.addMany([pointGraphic, polylineGraphic]);
+      view.graphics.addMany([pointGraphic, pointGraphic2, polylineGraphic]);
 
       var locateBtn = new Locate({
         view: view
