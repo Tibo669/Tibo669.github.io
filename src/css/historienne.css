@@ -1,0 +1,60 @@
+#containerGame {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 70%;
+  left: 5%;
+  top: 20%;
+}
+
+#containerInsideGame {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 60%;
+  left: 5%;
+  top: 45%;
+}
+
+.gameNameButton {
+  margin-top: 5%;
+
+  background-image : url("../img/dialogue_button_name.png");
+  background-size: cover;
+
+  content: "";
+  width: 200px;
+  height: 67px;
+  outline-width: 250px;
+  font-weight: bold;
+  font-style: italic;
+
+  text-align: center;
+
+  padding-top: 8px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.dropzone {
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drag-drop {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
