@@ -50,7 +50,7 @@ const event_json = `{
         "Sauf que moi, le quartier, je le connais comme ma poche. Oui et la maison que vous voyez derrière moi, c’est là que j’y suis née.",
         "Tout change si vite maintenant, les seules choses qui n’ont pas changées depuis toujours sont <b>la mare</b>, <b>le noyer</b> et les antiquités tels que <b>le nez</b> et <b>le chapiteau</b>.",
         "Je ne sais pas si ça peut vous aider, mais au moins, c’est dit. <br>Allez sur ce, bonne journée. Je dois aller nourrir la télé et regarder minouche, ou l’inverse.",
-        "<i>La voisine se retourne et se dirige vers sa maison. Arrivé sur le pas de la porte, elle se retourne une dernière fois et il vous semble qu’elle vous fait un clin d’oeil. <br> Le temps de réagir, elle a déjà passé le pas de la porte et la fait claquer à faire trembler les murs.</i>"
+        "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps de réagir, elle a déjà passé le pas de la porte et la fait claquer à en faire trembler les murs.</i>"
       ]
   },
   "9": {
@@ -131,21 +131,21 @@ const event_json = `{
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
       ]
   },
-  "15": {
+  "16": {
     "name": "Lieu : Colonne",
     "url": "events/event_colonne_osdpsd.html",
     "dialogue": [
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
       ]
   },
-  "16": {
+  "17": {
     "name": "Lieu : Noyer",
     "url": "events/event_noyer_qsdjxj.html",
     "dialogue": [
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
       ]
   },
-  "17": {
+  "18": {
     "name": "Lieu : Borne",
     "url": "events/event_borne_piwxdn.html",
     "dialogue": [
