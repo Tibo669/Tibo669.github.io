@@ -115,7 +115,7 @@
   ([#1559](https://github.com/h5bp/html5-boilerplate/issues/1559)).
 * Add `lang=""` to `<html>`
   ([#1542](https://github.com/h5bp/html5-boilerplate/issues/1542)).
-* Use `<!doctype html>` instead of `<!DOCTYPE html>`
+* Use `<!doctype html>` instead of `<!doctype html>`
   ([#1522](https://github.com/h5bp/html5-boilerplate/issues/1522)).
 * Add `/browserconfig.xml` file and tile images
   ([#1481](https://github.com/h5bp/html5-boilerplate/issues/1481)).
