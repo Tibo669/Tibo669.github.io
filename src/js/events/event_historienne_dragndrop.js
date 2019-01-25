@@ -73,7 +73,6 @@ interact('.drag-drop')
       endOnly: true,
       elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
     },
-
     autoScroll: true,
     // dragMoveListener from the dragging demo above
     onmove: dragMoveListener

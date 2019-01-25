@@ -64,6 +64,8 @@
 .drag-drop {
   -webkit-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
+  -ms-touch-action: none;
+  touch-action: none;
 }
 
 #continueDialogue {
