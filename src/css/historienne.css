@@ -4,7 +4,7 @@
   width: 90%;
   height: 70%;
   left: 5%;
-  top: 20%;
+  top:20%;
 }
 
 #containerInsideGame {
@@ -13,7 +13,7 @@
   width: 90%;
   height: 60%;
   left: 5%;
-  top: 45%;
+  top: 55%;
 }
 
 .gameNameButton {
@@ -39,19 +39,23 @@
 }
 
 .dropzone {
-  background-color: #ccc;
-  border: dashed 4px transparent;
+  background-color: transparent;
+  border: solid 4px grey;
   border-radius: 4px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding-top: 4px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   width: 120px;
   height: 120px;
+
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
 }
 
-.drop-active {
-  border-color: #aaa;
+.dropzone-active {
+  border-color: darkgreen;
 }
 
 .drag-drop {
