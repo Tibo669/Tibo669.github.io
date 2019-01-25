@@ -3,7 +3,6 @@ const containerGame = document.getElementById('containerGame');
 let currentColonne;
 let currentQuestionNumber = 1;
 const maximumQuestionNumber = 4;
-let good_responses = 0;
 const deplacezColonneText = "Déplacez la colonne vers la bonne époque";
 
 function gameLauncher() {
@@ -17,27 +16,45 @@ function gameLauncher() {
     createColonne(currentColonne)
   }
   else {
-    let toRemove = document.getElementsByClassName('mark');
-    while (toRemove.length > 0) {
-      toRemove[0].parentNode.removeChild(toRemove[0]);
-    }
+    // On sauvegarde le fait qu'on a déjà trouvé la solution
+    sessionStorage.setItem('historienne_done', 'true');
+    removeColonnes();
     // On reconstruit le jeu avec la solution.
     solutionColonne(game_data_map);
   }
-  //solutionColonne(game_data_map);
 }
 
 function solutionColonne(game_data_map) {
+  document.getElementById("containerGame").style.display = "block";
+  document.getElementById("containerEvent").style.display = "none";
   Object.keys(game_data_map).forEach(function(key) {
     const currentColonne = game_data_map[key];
     const objectColonne = createColonne(currentColonne, true);
     const objectDropzone = document.getElementById('dropzone-' + currentColonne["id"]);
+    objectDropzone.classList.add('dropzone-active');
     const objectDropzoneBCRect = objectDropzone.getBoundingClientRect();
     objectColonne.style.top = (objectDropzoneBCRect.top + 40).toString() + "px";
     objectColonne.style.left = (objectDropzoneBCRect.left + 20).toString() + "px";
   });
   document.getElementById('gameNameButton').style.display = 'none';
   document.getElementById("containerEvent").style.display = "block";
+  document.getElementById("dialogueButton").style.display = 'none';
+  continueDialogueButton();
+}
+
+function returnDialogue() {
+  const continueDialogue = document.getElementById('continueDialogue');
+  continueDialogue.parentNode.removeChild(continueDialogue);
+  document.getElementById('containerGame').style.display = 'none';
+  document.getElementById("dialogueButton").style.display = '';
+  removeColonnes();
+}
+
+function removeColonnes() {
+  let toRemove = document.getElementsByClassName('mark');
+  while (toRemove.length > 0) {
+    toRemove[0].parentNode.removeChild(toRemove[0]);
+  }
 }
 
 function createColonne(currentColonne, solution=false) {
@@ -53,7 +70,7 @@ function createColonne(currentColonne, solution=false) {
     newColonne.style.zIndex="2";
   }
   else {
-    newColonne.setAttribute("class", "btn");
+    newColonne.setAttribute("class", "btn mark");
     newColonne.style.zIndex="-1";
   }
   newColonne.style.backgroundSize = "cover";
@@ -61,10 +78,28 @@ function createColonne(currentColonne, solution=false) {
   newColonne.style.backgroundPosition = "center center";
   newColonne.style.backgroundRepeat = "no-repeat";
   newColonne.style.position = "absolute";
-  newColonne.style.height = "80px";
-  newColonne.style.width = "80px";
+  newColonne.style.height = "60px";
+  newColonne.style.width = "60px";
   newColonne.style.display = "block";
   return newColonne;
 }
 
-gameLauncher();
+function continueDialogueButton() {
+  let boundingClientRect = document.getElementById("dialogueNameButton").getBoundingClientRect();
+  let continueDialogue = document.createElement("a");
+  document.body.appendChild(continueDialogue);
+  continueDialogue.className += "btn";
+  continueDialogue.setAttribute("id", "continueDialogue");
+  continueDialogue.style.backgroundImage = "url(../../img/dialogue_next_question.png)";
+  continueDialogue.style.position = "absolute";
+  continueDialogue.style.top = boundingClientRect.top + "px";
+  continueDialogue.style.left = boundingClientRect.left + "px";
+  continueDialogue.style.paddingTop = "5px";
+  continueDialogue.style.zIndex="2";
+  continueDialogue.style.display = "block";
+  continueDialogue.innerText = "Suite du dialogue";
+
+  continueDialogue.addEventListener('click',function(){
+    returnDialogue();
+  });
+}

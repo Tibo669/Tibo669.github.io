@@ -1,10 +1,13 @@
 const event_json = `{
   "5": {
-    "name": "Professeur Martin, Archéologue",
-    "url": "events/event_martin_accsjo.html",
+    "name": "Hélène Vincier, Historienne",
+    "url": "events/event_historienne_roeksn.html",
     "dialogue": [
-        "Bonjour, Je suis archéologue en chef et je m'occupe du site de fouille de  Roche-Cattin sur la commune de Bully.",
-        "Nous sommes sur la piste d’une Villae Rusticae, une maison de campagne romaine mais le temps presse !"
+        "<i>Elle semble dans la lune et récite des dates historiques à haute voix. <br>Elle se tourne brusquement vers vous en s’exclamant :</i>",
+        "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
+        "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de faux qui trainent dans les environs.",
+        "Cependant, seul un oeil expert arrive à le déceler. <br>D’ailleurs, seriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ?",
+        "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
   "6": {
@@ -97,17 +100,6 @@ const event_json = `{
         "Il faut bien que ce projet se fasse, et je suis le seul capable de le mener à bien. <br>D’ailleurs, cela me prend un temps fou, tout le monde me sollicite, je suis indispensable !",
         "Au fait, l’archéologue m’a donné ce document, je n’ai pas le temps de le traiter, je vous laisse vous en occupez, faites de votre mieux.",
         "<i>Le maire vous tend un papier et commence à penser à haute voix : <br>« Le parc Astérix, c’est déjà pris. <br>Bully, dernier village résistant aux romains : c'est trop long… »</i>"
-      ]
-  },
-  "12": {
-    "name": "Hélène Vincier, Historienne",
-    "url": "events/event_historienne_roeksn.html",
-    "dialogue": [
-        "<i>Elle semble dans la lune et récite des dates historiques à haute voix. <br>Elle se tourne brusquement vers vous en s’exclamant :</i>",
-        "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
-        "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de faux qui trainent dans les environs.",
-        "Cependant, seul un oeil expert arrive à le déceler. <br>D’ailleurs, seriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ?",
-        "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
   "13": {
