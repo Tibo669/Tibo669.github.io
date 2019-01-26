@@ -33,12 +33,9 @@ function solutionColonne(game_data_map) {
     const objectDropzone = document.getElementById('dropzone-' + currentColonne["id"]);
     objectDropzone.classList.add('dropzone-active');
     const objectDropzoneBCRect = objectDropzone.getBoundingClientRect();
-    objectColonne.style.top = (objectDropzoneBCRect.top + 40).toString() + "px";
-    objectColonne.style.left = (objectDropzoneBCRect.left + 20).toString() + "px";
+    objectColonne.style.top = (objectDropzoneBCRect.top + 30).toString() + "px";
+    objectColonne.style.left = (objectDropzoneBCRect.left + 0).toString() + "px";
   });
-  document.getElementById('gameNameButton').style.display = 'none';
-  document.getElementById("containerEvent").style.display = "block";
-  document.getElementById("dialogueButton").style.display = 'none';
   continueDialogueButton();
 }
 
@@ -46,7 +43,7 @@ function returnDialogue() {
   const continueDialogue = document.getElementById('continueDialogue');
   continueDialogue.parentNode.removeChild(continueDialogue);
   document.getElementById('containerGame').style.display = 'none';
-  document.getElementById("dialogueButton").style.display = '';
+  document.getElementById("containerEvent").style.display = "";
   removeColonnes();
 }
 
@@ -78,14 +75,14 @@ function createColonne(currentColonne, solution=false) {
   newColonne.style.backgroundPosition = "center center";
   newColonne.style.backgroundRepeat = "no-repeat";
   newColonne.style.position = "absolute";
-  newColonne.style.height = "60px";
-  newColonne.style.width = "60px";
+  newColonne.style.height = "120px";
+  newColonne.style.width = "120px";
   newColonne.style.display = "block";
   return newColonne;
 }
 
 function continueDialogueButton() {
-  let boundingClientRect = document.getElementById("dialogueNameButton").getBoundingClientRect();
+  let boundingClientRect = document.getElementById("gameNameButton").getBoundingClientRect();
   let continueDialogue = document.createElement("a");
   document.body.appendChild(continueDialogue);
   continueDialogue.className += "btn";
