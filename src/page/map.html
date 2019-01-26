@@ -18,6 +18,20 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/event.css">
   <link rel="stylesheet" href="../css/check_mark.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.10/"></script>
+
+  <style>
+    #viewDiv {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      top: 20%;
+      left: 5%;
+      height: 75%;
+      width: 90%;
+    }
+  </style>
 </head>
 <body>
 <div id="header">
@@ -30,9 +44,164 @@
     </div>
   </div>
 </div>
-<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Carte" src="https://www.arcgis.com/apps/View/index.html?appid=39682f2b1ace48408eaf5fc1a3a4c612"></iframe></div>
+<div id="viewDiv"></div>
+<script>
+  require([
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/Graphic",
+    "esri/widgets/Locate",
+    "esri/widgets/Search"
+  ], function(
+    Map, MapView, Graphic, Locate, Search
+  ) {
+
+    var map = new Map({
+      basemap: "satellite"
+    });
+
+    var view = new MapView({
+      center: [4.577407, 45.848032],
+      container: "viewDiv",
+      map: map,
+      zoom: 17
+    });
+
+    /*************************
+     * Create a point graphic
+     *************************/
+
+      // First create a point geometry
+    var point = {
+        type: "point", // autocasts as new Point()
+        longitude: 4.577417,
+        latitude: 45.848032
+      };
+
+    var point2 = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.577677,
+      latitude: 45.848032
+    };
+
+    // First create a point geometry
+    var point1 = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.575928,
+      latitude: 45.846141,
+    };
 
 
+    // Create a symbol for drawing the point
+    var markerSymbol = {
+      type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+      color: [226, 119, 40],
+      outline: { // autocasts as new SimpleLineSymbol()
+        color: [255, 255, 255],
+        width: 2
+      }
+    };
+
+    // Create a symbol for drawing the point
+    var markerSymbol2 = {
+      type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+      color: [226, 119, 40],
+      outline: { // autocasts as new SimpleLineSymbol()
+        color: [255, 255, 255],
+        width: 2
+      }
+    };
+
+    // Create a graphic and add the geometry and symbol to it
+    var pointGraphic = new Graphic({
+      geometry: point1,
+      symbol: markerSymbol
+    });
+
+    var pointGraphic2 = new Graphic({
+      geometry: point2,
+      symbol: markerSymbol
+    });
+
+    /****************************
+     * Create a polyline graphic
+     ****************************/
+
+      // First create a line geometry (this is the Keystone pipeline)
+    var polyline = {
+        type: "polyline", // autocasts as new Polyline()
+        paths: [
+          [4.579205, 45.847859],
+          [5.579105, 45.857859]
+        ]
+      };
+
+    // Create a symbol for drawing the line
+    var lineSymbol = {
+      type: "simple-line", // autocasts as SimpleLineSymbol()
+      color: [226, 119, 40],
+      width: 4
+    };
+
+    // Create an object for storing attributes related to the line
+    var lineAtt = {
+      Name: "Keystone Pipeline",
+      Owner: "TransCanada",
+      Length: "3,456 km"
+    };
+
+    /*******************************************
+     * Create a new graphic and add the geometry,
+     * symbol, and attributes to it. You may also
+     * add a simple PopupTemplate to the graphic.
+     * This allows users to view the graphic's
+     * attributes when it is clicked.
+     ******************************************/
+    var polylineGraphic = new Graphic({
+      geometry: polyline,
+      symbol: lineSymbol,
+      attributes: lineAtt,
+      popupTemplate: { // autocasts as new PopupTemplate()
+        title: "{Name}",
+        content: [{
+          type: "fields",
+          fieldInfos: [{
+            fieldName: "Name"
+          }, {
+            fieldName: "Owner"
+          }, {
+            fieldName: "Length"
+          }]
+        }]
+      }
+    });
+
+
+
+
+    // Add the graphics to the view's graphics layer
+    view.graphics.addMany([pointGraphic, pointGraphic2, polylineGraphic]);
+
+    var locateBtn = new Locate({
+      view: view
+    });
+
+    // Add the locate widget to the top left corner of the view
+    view.ui.add(locateBtn, {
+      position: "top-left"
+    });
+
+    var searchWidget = new Search({
+      view: view
+    });
+
+    // Add the search widget to the top right corner of the view
+    view.ui.add(searchWidget, {
+      position: "top-right"
+    });
+
+  });
+</script>
 <script src="../js/main.js"></script>
 
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
