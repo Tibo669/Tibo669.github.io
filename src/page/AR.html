@@ -23,12 +23,7 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
 <!-- Add your site or application content here -->
-<div id="containerCountdown">
-  <div id="countdown">
-    <div id="tiles"></div>
-  </div>
-</div>
-<div id="containerInput">
+<div>
   <a-scene embedded embedded artoolkit='sourceType: camera;'>
     <a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0.5 0" segments-height="53">
       <a-animation attribute="scale"
@@ -44,9 +39,6 @@
   </a-scene>
 </div>
 
-<script src="../js/data.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/game.js"></script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
