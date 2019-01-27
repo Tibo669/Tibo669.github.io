@@ -17,42 +17,21 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
-  <script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 </head>
-<body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
-<!-- Add your site or application content here -->
-
-
-  <a-scene embedded embedded artoolkit='sourceType: camera;'>
-    <a-sphere src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" radius="0.5" position="0 0.5 0" segments-height="53">
-      <a-animation attribute="scale"
-                   dur="1000"
-                   from= "1 1 1"
-                   to="2 2 2"
-                   direction='alternate-reverse'
-                   easing= "ease-in-out-circ"
-                   repeat="indefinite">
-      </a-animation>
-    </a-sphere>
-    <a-marker-camera preset="hiro"></a-marker-camera>
-  </a-scene>
-
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<body style='margin : 0px; overflow: hidden;'>
 <script>
-  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+
 </script>
-
-<script src="https://www.google-analytics.com/analytics.js" async="" defer="defer"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-
+<!-- Modèle 3D : https://clara.io/view/00f89ca4-aed6-488e-b70a-b6f900fdab6b# -->
+<a-scene embedded arjs>
+  <a-assets>
+    <a-asset-item id="house-obj" src="../3d/old-house.obj"></a-asset-item>
+    <a-asset-item id="house-mtl" src="../3d/old-house.mtl"></a-asset-item>
+  </a-assets>
+  <a-marker preset="hiro">
+    <a-entity obj-model="obj: #house-obj; mtl: #house-mtl" position='0 0.5 0' scale="0.3 0.3 0.3"></a-entity>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
 </body>
 </html>
