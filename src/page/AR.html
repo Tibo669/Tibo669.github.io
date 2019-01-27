@@ -15,16 +15,16 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"> </script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
 <script>
 
 </script>
-<p>Version 1.0.0</p>
+<p>Version 1.0.1</p>
 <!-- Modèle 3D : https://clara.io/view/00f89ca4-aed6-488e-b70a-b6f900fdab6b# -->
-<a-scene embedded arjs>
+<a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
   <a-assets>
     <a-asset-item id="house-obj" src="../3d/old-house_rotate.obj"></a-asset-item>
     <a-asset-item id="house-mtl" src="../3d/old-house_rotate.mtl"></a-asset-item>
