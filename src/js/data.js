@@ -5,8 +5,8 @@ const event_json = `{
     "dialogue": [
         "<i>Elle semble dans la lune et récite des dates historiques à haute voix. <br>Elle se tourne brusquement vers vous en s’exclamant :</i>",
         "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
-        "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de faux qui trainent dans les environs.",
-        "Cependant, seul un oeil expert arrive à le déceler. <br>D’ailleurs, seriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ?",
+        "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de <b>faux</b> qui trainent <b>dans les environs</b>.",
+        "D’ailleurs, seriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ? <br> Je suis sûre que vous trouverez une <b>information importante</b>, qui vous aidera pour la suite de votre aventure !",
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
@@ -120,28 +120,28 @@ const event_json = `{
     "name": "Lieu : Mare",
     "url": "events/event_mare_ysundh.html",
     "dialogue": [
-        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+        "<i>Une petite étendue d'eau stagnante et peu profonde. <br>Vous pouvez entendre les coassements des crapauds aux alentours.</i>"
       ]
   },
   "16": {
     "name": "Lieu : Colonne",
     "url": "events/event_colonne_osdpsd.html",
     "dialogue": [
-        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+        "<i>Devant vous se dresse une impressionante colonne couronnée par <b>un chapiteau sculpté de manière étrange</b>.</i>"
       ]
   },
   "17": {
     "name": "Lieu : Noyer",
     "url": "events/event_noyer_qsdjxj.html",
     "dialogue": [
-        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+        "<i>Sans être un expert en arboriculture, vous devinez facilement que l'arbre qui se trouve devant vous est <b>un noyer millénaire</b>.</i>"
       ]
   },
   "18": {
     "name": "Lieu : Borne",
     "url": "events/event_borne_piwxdn.html",
     "dialogue": [
-        "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
+        "<i>Une ancienne borne routière, qui jalonnait certainement à une époque, les voies vers les autres villages.</i>"
       ]
   },
   "20": {
