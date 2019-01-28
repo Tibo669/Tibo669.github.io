@@ -1,4 +1,20 @@
 const event_json = `{
+  "intro_qsdokx": {
+    "name": "Professeur Martin, Archéologue",
+    "url": "events/event_historienne_roeksn.html",
+    "dialogue": [
+        "Bonjour, <br>Je suis le Professeur Martin, archéologue en chef.<br>Mais commençons d'abord par les bases et l'utilisation de cet outil, <br><b>veuillez cliquer sur ce dialogue pour afficher la suite...</b>",
+        "Tant que vous verrez cette petite flèche en dessous du dialogue, <br>cela signifie qu'il reste du texte à afficher.",
+        "Bien, vous avez pris le coup de main ! En plus de notre échange, vous trouverez d'autres informations très utiles sur cette page. <br>Comme par exemple le nom et la photo de votre interlocuteur.",
+        "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
+        "Nous sommes sur la piste d’une <b><i>“Villae Rusticae”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
+        "En effet, un texte ancien vient d’être découvert et nous indique la présence d’un <b>trésor enterré tout proche.</b> <br>Suite à cette nouvelle, de nombreux curieux se pressent sur les lieux et ils ne sont pas tous biens intentionnés.",
+        "Étant en conférence à Lyon en ce moment, je ne puis être sur place et m’en occuper moi-même. <br>C’est pour cela que j’ai fait appel à vous, <br>les meilleurs chasseurs de trésors !",
+        "Je compte sur vos talents d'enquêteurs et d'aventuriers pour le trouver avant qu’il ne se fasse voler. <br>Pour vous aider dans votre recherche, je vous laisse une carte des environs.",
+        "Vous devriez commencer par <b>rendre visite à mon génial assistant</b>, <br>qui à créé ce merveilleux outil afin de vous aider à avancer dans votre enquête.",
+        "Ah ! Une dernière chose, vous allez entrer sur un site de fouille archéologique alors <b>prenez soin de la nature</b>, <b>veillez à ne rien dégrader</b> et à <b>tout laisser à sa place</b>. <br>Je vous souhaite bon courage."
+      ]
+  },
   "5": {
     "name": "Hélène Vincier, Historienne",
     "url": "events/event_historienne_roeksn.html",
