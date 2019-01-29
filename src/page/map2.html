@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>Intro to graphics - 4.10</title>
+  <title>Multi-line labels - 4.10</title>
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
   <script src="https://js.arcgis.com/4.10/"></script>
@@ -19,249 +20,68 @@
     }
   </style>
 
+  <script type="text/plain" id="label-expression">
+  var labels = 'totu';
+  return Concatenate(labels, TextFormatting.NewLine);
+</script>
+
   <script>
     require([
-      "esri/Map",
+      "esri/WebMap",
       "esri/views/MapView",
-      "esri/Graphic",
-      "esri/widgets/Locate",
-      "esri/widgets/Search"
-    ], function(
-      Map, MapView, Graphic, Locate, Search
+      "esri/layers/FeatureLayer"
+    ], function (
+      WebMap, MapView, FeatureLayer
     ) {
 
-      var map = new Map({
-        basemap: "satellite"
-      });
+      const minScale = 250000000;
+      const serviceUrl = "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/weather_stations_010417/FeatureServer/0";
 
-      var view = new MapView({
-        center: [4.577407, 45.848032],
+      const view = new MapView({
         container: "viewDiv",
-        map: map,
-        zoom: 16
-      });
-
-      /*************************
-       * Create a point graphic
-       *************************/
-
-        // First create a point geometry
-      var assistant = {
-          type: "point", // autocasts as new Point()
-          longitude: 4.577399,
-          latitude: 45.848019
-        };
-
-      var mechant = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.575530,
-        latitude: 45.848449
-      };
-
-      var vieille = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.578154,
-        latitude: 45.847810,
-      };
-
-      var viticulteur = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.575928,
-        latitude: 45.846141,
-      };
-
-      var champignonneur = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.578019,
-        latitude: 45.846395,
-      };
-
-      var maire = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.577982,
-        latitude: 45.847065,
-      };
-
-      var historienne = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.575649,
-        latitude: 45.848608,
-      };
-
-      var mare = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.579105,
-        latitude: 45.847859,
-      };
-
-      var nez = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.579024,
-        latitude: 45.846720,
-      };
-
-      var noyer = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.574051,
-        latitude: 45.847492,
-      };
-
-      var borne = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.577123,
-        latitude: 45.847622,
-      };
-
-      var chapiteau = {
-        type: "point", // autocasts as new Point()
-        longitude: 4.577210,
-        latitude: 45.846488,
-      };
-
-
-
-      // Create a symbol for drawing the point
-      var markerSymbol = {
-        type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-        color: [226, 119, 40],
-        outline: { // autocasts as new SimpleLineSymbol()
-          color: [255, 255, 255],
-          width: 2
-        }
-      };
-
-      // Create a symbol for drawing the point
-      var markerSymbol2 = {
-        type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-        color: [253, 45, 115],
-        outline: { // autocasts as new SimpleLineSymbol()
-          color: [255, 255, 255],
-          width: 2
-        }
-      };
-
-
-      // Create a graphic and add the geometry and symbol to it
-      var pointGraphic = new Graphic({
-        geometry: assistant,
-        symbol: markerSymbol
-      });
-
-      var pointGraphic2 = new Graphic({
-        geometry: mechant,
-        symbol: markerSymbol
-      });
-
-      var pointGraphic3 = new Graphic({
-        geometry: vieille,
-        symbol: markerSymbol
-      });
-
-      var pointGraphic4 = new Graphic({
-        geometry: viticulteur,
-        symbol: markerSymbol
-      });
-
-      var pointGraphic5 = new Graphic({
-        geometry: champignonneur,
-        symbol: markerSymbol
-      });
-
-      var pointGraphic6 = new Graphic({
-        geometry: maire,
-        symbol: markerSymbol
-      });
-
-      var pointGraphic7 = new Graphic({
-        geometry: historienne,
-        symbol: markerSymbol
-      });
-
-      var lieu1 = new Graphic({
-        geometry: mare,
-        symbol: markerSymbol2
-      });
-
-      var lieu2 = new Graphic({
-        geometry: nez,
-        symbol: markerSymbol2
-      });
-
-      var lieu3 = new Graphic({
-        geometry: noyer,
-        symbol: markerSymbol2
-      });
-
-      var lieu4 = new Graphic({
-        geometry: borne,
-        symbol: markerSymbol2
-      });
-
-      var lieu5 = new Graphic({
-        geometry: chapiteau,
-        symbol: markerSymbol2
-      });
-
-      /****************************
-       * Create a polyline graphic
-       ****************************/
-
-      var polyline = {
-        type: "polyline", // autocasts as new Polyline()
-        paths: [
-          [4.579205, 45.847859],
-          [5.579105, 45.857859]
-        ]
-      };
-
-      // Create a symbol for drawing the line
-      var lineSymbol = {
-        type: "simple-line", // autocasts as SimpleLineSymbol()
-        color: [226, 119, 40],
-        width: 4
-      };
-
-
-
-      /*******************************************
-       * Create a new graphic and add the geometry,
-       * symbol, and attributes to it. You may also
-       * add a simple PopupTemplate to the graphic.
-       * This allows users to view the graphic's
-       * attributes when it is clicked.
-       ******************************************/
-      var polylineGraphic = new Graphic({
-        geometry: polyline,
-        symbol: lineSymbol
-
-      });
-
-
-
-
-      // Add the graphics to the view's graphics layer
-      view.graphics.addMany([pointGraphic, pointGraphic2, pointGraphic3, pointGraphic4, pointGraphic5, pointGraphic6, pointGraphic7, lieu1, lieu2, lieu3, lieu4, lieu5]);
-
-      var locateBtn = new Locate({
-        view: view
-      });
-
-      // Add the locate widget to the top left corner of the view
-      view.ui.add(locateBtn, {
-        position: "top-left"
-      });
-
-      var searchWidget = new Search({
-        view: view
-      });
-
-      // Add the search widget to the top right corner of the view
-      view.ui.add(searchWidget, {
-        position: "top-right"
+        map: new WebMap({
+          portalItem: {
+            id: "372b7caa8fe340b0a6300df93ef18a7e"
+          },
+          layers: [
+            new FeatureLayer({
+              url: serviceUrl,
+              renderer: {
+                type: "simple",
+                symbol: {
+                  type: "simple-marker",
+                  color: [ 75, 75, 75, 0.7 ],
+                  size: 4,
+                  outline: null
+                }
+              },
+              labelingInfo: [{
+                labelExpressionInfo: {
+                  expression: document.getElementById("label-expression").text
+                },
+                labelPlacement: "center-right",
+                minScale: minScale,
+                symbol: {
+                  type: "text",  // autocasts as new TextSymbol()
+                  font: {
+                    size: 9,
+                    family: "Noto Sans"
+                  },
+                  horizontalAlignment: "left",
+                  color: "#2b2b2b"
+                }
+              }]
+            })
+          ]
+        }),
+        center: [ -117.842, 33.799 ],
+        zoom: 10
       });
 
     });
+
   </script>
+
 </head>
 
 <body>
@@ -269,4 +89,3 @@
 </body>
 
 </html>
-

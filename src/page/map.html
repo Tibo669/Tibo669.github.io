@@ -64,7 +64,7 @@
       center: [4.577407, 45.848032],
       container: "viewDiv",
       map: map,
-      zoom: 17
+      zoom: 16
     });
 
     /*************************
@@ -72,24 +72,78 @@
      *************************/
 
       // First create a point geometry
-    var point = {
+    var assistant = {
         type: "point", // autocasts as new Point()
-        longitude: 4.577417,
-        latitude: 45.848032
+        longitude: 4.577399,
+        latitude: 45.848019
       };
 
-    var point2 = {
+    var mechant = {
       type: "point", // autocasts as new Point()
-      longitude: 4.577677,
-      latitude: 45.848032
+      longitude: 4.575530,
+      latitude: 45.848449
     };
 
-    // First create a point geometry
-    var point1 = {
+    var vieille = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.578154,
+      latitude: 45.847810,
+    };
+
+    var viticulteur = {
       type: "point", // autocasts as new Point()
       longitude: 4.575928,
       latitude: 45.846141,
     };
+
+    var champignonneur = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.578019,
+      latitude: 45.846395,
+    };
+
+    var maire = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.577982,
+      latitude: 45.847065,
+    };
+
+    var historienne = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.575649,
+      latitude: 45.848608,
+    };
+
+    var mare = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.579105,
+      latitude: 45.847859,
+    };
+
+    var nez = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.579024,
+      latitude: 45.846720,
+    };
+
+    var noyer = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.574051,
+      latitude: 45.847492,
+    };
+
+    var borne = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.577123,
+      latitude: 45.847622,
+    };
+
+    var chapiteau = {
+      type: "point", // autocasts as new Point()
+      longitude: 4.577210,
+      latitude: 45.846488,
+    };
+
 
 
     // Create a symbol for drawing the point
@@ -105,36 +159,86 @@
     // Create a symbol for drawing the point
     var markerSymbol2 = {
       type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
-      color: [226, 119, 40],
+      color: [253, 45, 115],
       outline: { // autocasts as new SimpleLineSymbol()
         color: [255, 255, 255],
         width: 2
       }
     };
 
+
     // Create a graphic and add the geometry and symbol to it
     var pointGraphic = new Graphic({
-      geometry: point1,
+      geometry: assistant,
       symbol: markerSymbol
     });
 
     var pointGraphic2 = new Graphic({
-      geometry: point2,
+      geometry: mechant,
       symbol: markerSymbol
+    });
+
+    var pointGraphic3 = new Graphic({
+      geometry: vieille,
+      symbol: markerSymbol
+    });
+
+    var pointGraphic4 = new Graphic({
+      geometry: viticulteur,
+      symbol: markerSymbol
+    });
+
+    var pointGraphic5 = new Graphic({
+      geometry: champignonneur,
+      symbol: markerSymbol
+    });
+
+    var pointGraphic6 = new Graphic({
+      geometry: maire,
+      symbol: markerSymbol
+    });
+
+    var pointGraphic7 = new Graphic({
+      geometry: historienne,
+      symbol: markerSymbol
+    });
+
+    var lieu1 = new Graphic({
+      geometry: mare,
+      symbol: markerSymbol2
+    });
+
+    var lieu2 = new Graphic({
+      geometry: nez,
+      symbol: markerSymbol2
+    });
+
+    var lieu3 = new Graphic({
+      geometry: noyer,
+      symbol: markerSymbol2
+    });
+
+    var lieu4 = new Graphic({
+      geometry: borne,
+      symbol: markerSymbol2
+    });
+
+    var lieu5 = new Graphic({
+      geometry: chapiteau,
+      symbol: markerSymbol2
     });
 
     /****************************
      * Create a polyline graphic
      ****************************/
 
-      // First create a line geometry (this is the Keystone pipeline)
     var polyline = {
-        type: "polyline", // autocasts as new Polyline()
-        paths: [
-          [4.579205, 45.847859],
-          [5.579105, 45.857859]
-        ]
-      };
+      type: "polyline", // autocasts as new Polyline()
+      paths: [
+        [4.579205, 45.847859],
+        [5.579105, 45.857859]
+      ]
+    };
 
     // Create a symbol for drawing the line
     var lineSymbol = {
@@ -143,12 +247,7 @@
       width: 4
     };
 
-    // Create an object for storing attributes related to the line
-    var lineAtt = {
-      Name: "Keystone Pipeline",
-      Owner: "TransCanada",
-      Length: "3,456 km"
-    };
+
 
     /*******************************************
      * Create a new graphic and add the geometry,
@@ -159,28 +258,15 @@
      ******************************************/
     var polylineGraphic = new Graphic({
       geometry: polyline,
-      symbol: lineSymbol,
-      attributes: lineAtt,
-      popupTemplate: { // autocasts as new PopupTemplate()
-        title: "{Name}",
-        content: [{
-          type: "fields",
-          fieldInfos: [{
-            fieldName: "Name"
-          }, {
-            fieldName: "Owner"
-          }, {
-            fieldName: "Length"
-          }]
-        }]
-      }
+      symbol: lineSymbol
+
     });
 
 
 
 
     // Add the graphics to the view's graphics layer
-    view.graphics.addMany([pointGraphic, pointGraphic2, polylineGraphic]);
+    view.graphics.addMany([pointGraphic, pointGraphic2, pointGraphic3, pointGraphic4, pointGraphic5, pointGraphic6, pointGraphic7, lieu1, lieu2, lieu3, lieu4, lieu5]);
 
     var locateBtn = new Locate({
       view: view
