@@ -7,6 +7,13 @@ require([
   "esri/tasks/Locator",
   "esri/widgets/Search/LocatorSearchSource",
 ], function(Map, MapView, Graphic, Locate, Search, LocatorSearchSource) {
+  let tagsToDisplay = ["assistant"];
+
+  let assistant_visited_stored = sessionStorage.getItem('assistant_visited');
+  if ( assistant_visited_stored === 'true') {
+    tagsToDisplay.push("others")
+  }
+
   const map = new Map({
     basemap: "satellite"
   });
@@ -19,6 +26,7 @@ require([
 
   let colorPersonnage = "#e27728";
   let colorLieu = "#fd2d73";
+  let colorVisited = "#339900";
 
   // Create a symbol for drawing the point
   let personnageMarker = {
@@ -34,6 +42,15 @@ require([
   let lieuMarker = {
     type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
     color: colorLieu,
+    outline: { // autocasts as new SimpleLineSymbol()
+      color: [255, 255, 255],
+      width: 2
+    }
+  };
+
+  let visitedMarker = {
+    type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+    color: colorVisited,
     outline: { // autocasts as new SimpleLineSymbol()
       color: [255, 255, 255],
       width: 2
@@ -58,33 +75,44 @@ require([
 
   for (let location_key in map_map) {
     let location = map_map[location_key];
-    let point = {
-      type: "point", // autocasts as new Point()
-      longitude: location['longitude'],
-      latitude: location['latitude']
-    };
-    let graphic;
-    if ( location['type'] === "lieu") {
-      graphic = new Graphic({
+    // On vérifie si on doit bien afficher ce point ou pas
+    if ( tagsToDisplay.indexOf(location["tag"]) > -1 ) {
+      let point = {
+        type: "point", // autocasts as new Point()
+        longitude: location['longitude'],
+        latitude: location['latitude']
+      };
+      let graphic;
+      if ( sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true" ) {
+        graphic = new Graphic({
+          geometry: point,
+          symbol: visitedMarker
+        });
+        textSymbol.color = colorVisited;
+      }
+      else {
+        if (location['type'] === "lieu") {
+          graphic = new Graphic({
+            geometry: point,
+            symbol: lieuMarker
+          });
+          textSymbol.color = colorLieu;
+        } else {
+          graphic = new Graphic({
+            geometry: point,
+            symbol: personnageMarker
+          });
+          textSymbol.color = colorPersonnage;
+        }
+      }
+      textSymbol.text = location['name'];
+      let graphicText = new Graphic({
         geometry: point,
-        symbol: lieuMarker
+        symbol: textSymbol
       });
-      textSymbol.color = colorLieu;
+      listLocation.push(graphic);
+      listLocation.push(graphicText);
     }
-    else {
-      graphic = new Graphic({
-        geometry: point,
-        symbol: personnageMarker
-      });
-      textSymbol.color = colorPersonnage;
-    }
-    textSymbol.text = location['name'];
-    let graphicText = new Graphic({
-      geometry: point,
-      symbol: textSymbol
-    });
-    listLocation.push(graphic);
-    listLocation.push(graphicText);
   }
   // Add the graphics to the view's graphics layer
   view.graphics.addMany(listLocation);
@@ -117,7 +145,6 @@ require([
     includeDefaultSources: false,
     popupEnabled: false
   });
-  // 45.846141, 4.575928
   // Add the search widget to the top right corner of the view
   view.ui.add(searchWidget, {
     position: "top-right"
