@@ -343,7 +343,7 @@ textarea {
     background-image:      -o-linear-gradient(top, #222, #333, #333, #222);
     border: 1px solid #111;
     border-radius: 5px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
     margin: auto;
     padding: 12px 0;
     position: absolute;
@@ -402,7 +402,7 @@ textarea {
     background-image:      -o-linear-gradient(top, #bbb, #eee);
     border-top: 1px solid #fff;
     border-radius: 2px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
     margin: 0 3px;
     padding: 9px 0;
     display: inline-block;
@@ -444,7 +444,7 @@ textarea {
     width: 102px;
     font: bold 15px 'Droid Sans', Arial, sans-serif;
     color: #f47321;
-    text-shadow: 1px 1px 0px #000;
+    text-shadow: 1px 1px 0 #000;
     text-align: center;
     text-transform: uppercase;
     display: inline-block;
@@ -602,4 +602,12 @@ textarea {
 
   width: 20px;
   height: 20px;
+}
+
+#viewDiv {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  height: 75%;
+  width: 90%;
 }
