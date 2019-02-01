@@ -4,7 +4,9 @@ require([
   "esri/Graphic",
   "esri/widgets/Locate",
   "esri/widgets/Search",
-], function(Map, MapView, Graphic, Locate, Search) {
+  "esri/tasks/Locator",
+  "esri/widgets/Search/LocatorSearchSource",
+], function(Map, MapView, Graphic, Locate, Search, LocatorSearchSource) {
   const map = new Map({
     basemap: "satellite"
   });
@@ -97,9 +99,25 @@ require([
   });
 
   let searchWidget = new Search({
-    view: view
+    view: view,
+    sources: [{
+      locator: new LocatorSearchSource({ url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer" }),
+      singleLineFieldName: "SingleLine",
+      name: "Custom Geocoding Service",
+      localSearchOptions: {
+        minScale: 300000,
+        distance: 50000
+      },
+      placeholder: "Search Geocoder",
+      maxResults: 1,
+      maxSuggestions: 0,
+      suggestionsEnabled: false,
+      minSuggestCharacters: 0
+    }],
+    includeDefaultSources: false,
+    popupEnabled: false
   });
-
+  // 45.846141, 4.575928
   // Add the search widget to the top right corner of the view
   view.ui.add(searchWidget, {
     position: "top-right"
