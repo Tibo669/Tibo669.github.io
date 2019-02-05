@@ -623,7 +623,7 @@ textarea {
 
 #indices {
   margin: 0 auto;
-  background-image : url("../img/dialogue_button_name.png");
+  background-image : url("../img/indices.png");
   background-size: cover;
 
   width: 300px;
@@ -635,7 +635,7 @@ textarea {
 }
 
 .indice {
-  background-image : url("../img/dialogue_button_name.png");
+  background-image : url("../img/indice_button.png");
   background-size: cover;
   position: absolute;
 
