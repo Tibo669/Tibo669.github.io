@@ -77,7 +77,7 @@ const map_json = `[
     "longitude": 4.577123
   },
   {
-    "name": "Chapiteau",
+    "name": "Colonne",
     "tag": "others",
     "type": "lieu",
     "latitude": 45.846488, 

@@ -18,6 +18,7 @@ const event_json = `{
       ]
   },
   "5": {
+    "nickname": "Historienne",
     "name": "Hélène Vincier, Historienne",
     "url": "events/event_historienne_roeksn.html",
     "dialogue": [
@@ -29,6 +30,7 @@ const event_json = `{
       ]
   },
   "6": {
+    "nickname": "Assistant",
     "name": "Thomas Goutte, Assistant du Pr. Martin",
     "url": "events/event_assistant_qsdkaz.html",
     "dialogue": [
@@ -49,6 +51,7 @@ const event_json = `{
       ]
   },
   "7": {
+    "nickname": "Chasseur",
     "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
@@ -60,6 +63,7 @@ const event_json = `{
       ]
   },
   "8": {
+    "nickname": "Voisine",
     "name": "Madame Petitejeanne, Vieille voisine",
     "url": "events/event_vieille_podksl.html",
     "dialogue": [
@@ -75,6 +79,7 @@ const event_json = `{
       ]
   },
   "9": {
+    "nickname": "Vigneron",
     "name": "Jean Duvalon, Vigneron",
     "url": "events/event_viticulteur_ghsksl.html",
     "well_done": "Bien joué ! <br>Ça fait plaisir de voir des personnes qui s'y connaissent en vin ! <br>Voici ma trouvaille, et pour vous récompenser, je vous ai aussi fourni la traduction.",
@@ -93,6 +98,7 @@ const event_json = `{
       ] 
   },
   "10": {
+    "nickname": "Champignoneur",
     "name": "Marius Bedron, Champignonneur",
     "url": "events/event_champignonneur_lskfos.html",
     "dialogue": [
@@ -108,6 +114,7 @@ const event_json = `{
       ]
   },
   "11": {
+    "nickname": "Maire",
     "name": "Jacques Pedroit, Monsieur le Maire",
     "url": "events/event_maire_susqns.html",
     "dialogue": [
@@ -121,6 +128,7 @@ const event_json = `{
       ]
   },
   "13": {
+    "nickname": "Pelle",
     "name": "Une pelle en très bon état",
     "url": "events/event_pelle_msoqls.html",
     "dialogue": [
@@ -128,6 +136,7 @@ const event_json = `{
       ]
   },
   "14": {
+    "nickname": "Nez",
     "name": "Lieu : Nez",
     "url": "events/event_nez_mlsnch.html",
     "dialogue": [
@@ -135,6 +144,7 @@ const event_json = `{
       ]
   },
   "15": {
+    "nickname": "Mare",
     "name": "Lieu : Mare",
     "url": "events/event_mare_ysundh.html",
     "dialogue": [
@@ -142,6 +152,7 @@ const event_json = `{
       ]
   },
   "16": {
+    "nickname": "Colonne",
     "name": "Lieu : Colonne",
     "url": "events/event_colonne_osdpsd.html",
     "dialogue": [
@@ -149,6 +160,7 @@ const event_json = `{
       ]
   },
   "17": {
+    "nickname": "Noyer",
     "name": "Lieu : Noyer",
     "url": "events/event_noyer_qsdjxj.html",
     "dialogue": [
@@ -156,6 +168,7 @@ const event_json = `{
       ]
   },
   "18": {
+    "nickname": "Borne",
     "name": "Lieu : Borne",
     "url": "events/event_borne_piwxdn.html",
     "dialogue": [
