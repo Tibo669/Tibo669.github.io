@@ -4,6 +4,7 @@ let currentColonne;
 let currentQuestionNumber = 1;
 const maximumQuestionNumber = 4;
 const deplacezColonneText = "Déplacez la colonne vers la bonne époque";
+const historienneName = "Hélène Vincier, Historienne";
 
 function gameLauncher() {
   gameNameButton.innerText = deplacezColonneText;
@@ -24,7 +25,7 @@ function gameLauncher() {
   }
 }
 
-function solutionColonne(game_data_map) {
+function solutionColonne(game_data_map, from_indices=false) {
   document.getElementById("containerGame").style.display = "block";
   document.getElementById("containerEvent").style.display = "none";
   Object.keys(game_data_map).forEach(function(key) {
@@ -36,7 +37,12 @@ function solutionColonne(game_data_map) {
     objectColonne.style.top = (objectDropzoneBCRect.top + 30).toString() + "px";
     objectColonne.style.left = (objectDropzoneBCRect.left + 0).toString() + "px";
   });
-  continueDialogueButton();
+  if ( !from_indices ) {
+    continueDialogueButton();
+  }
+  else {
+    gameNameButton.innerText = historienneName;
+  }
 }
 
 function returnDialogue() {

@@ -30,6 +30,7 @@ function createIndice(currentEvent, currentEventKey, positionLeft, positionTop) 
   newIndice.innerText = currentEvent['nickname'];
 
   newIndice.addEventListener('click',function(){
+    sessionStorage.setItem('from_indices', 'true');
     sessionStorage.setItem('current_personage', currentEventKey);
     location.href = currentEvent["url"];
   });
