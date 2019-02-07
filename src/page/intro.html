@@ -33,12 +33,15 @@
   <source src="" type="audio/wav">
 </audio>
 
+<script>
+  sessionStorage.setItem('current_personage', "intro_qsdokx");
+</script>
+
 <script src="../js/data.js"></script>
 <script src="../js/intro.js"></script>
 <script src="../js/elastic.js"></script>
 
 <script>
-  sessionStorage.setItem('current_personage', "intro_qsdokx");
   postElastic('introduction');
 </script>
 
