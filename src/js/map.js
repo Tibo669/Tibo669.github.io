@@ -7,7 +7,7 @@ require([
   "esri/tasks/Locator",
   "esri/widgets/Search/LocatorSearchSource",
 ], function(Map, MapView, Graphic, Locate, Search, LocatorSearchSource) {
-  let tagsToDisplay = ["assistant"];
+  let tagsToDisplay = ["assistant", "depart"];
 
   let assistant_visited_stored = sessionStorage.getItem('assistant_visited');
   if ( assistant_visited_stored === 'true') {
@@ -24,6 +24,7 @@ require([
     zoom: 16
   });
 
+  let colordepart = "#28e2d8";
   let colorPersonnage = "#e27728";
   let colorLieu = "#fd2d73";
   let colorVisited = "#339900";
@@ -37,7 +38,14 @@ require([
       width: 2
     }
   };
-
+  let lieudepart = {
+    type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+    color: colordepart,
+    outline: { // autocasts as new SimpleLineSymbol()
+      color: [255, 255, 255],
+      width: 2
+    }
+  };
   // Create a symbol for drawing the point
   let lieuMarker = {
     type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
