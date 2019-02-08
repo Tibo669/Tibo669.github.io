@@ -1,6 +1,6 @@
 const map_json = `[
   {
-    "name": "Pointdedepart",
+    "name": "Point de départ",
     "tag": "depart",
     "type": "depart",
     "latitude": 45.849458,
