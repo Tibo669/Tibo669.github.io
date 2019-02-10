@@ -1,6 +1,6 @@
 const map_json = `[
   {
-    "name": "Point de départ",
+    "name": "Départ",
     "tag": "depart",
     "type": "depart",
     "latitude": 45.849458,
@@ -14,7 +14,7 @@ const map_json = `[
     "longitude": 4.577399
   },
   {
-    "name": "Chasseur",
+    "name": "Pilleur",
     "tag": "others",
     "type": "personnage",
     "latitude": 45.847871,
@@ -35,14 +35,7 @@ const map_json = `[
     "longitude": 4.575666
   },
   {
-    "name": "Champignoneur",
-    "tag": "others",
-    "type": "personnage",
-    "latitude": 45.846395,
-    "longitude": 4.578019
-  },
-  {
-    "name": "Maire",
+    "name": "Garde-chasse",
     "tag": "others",
     "type": "personnage",
     "latitude": 45.847065, 
