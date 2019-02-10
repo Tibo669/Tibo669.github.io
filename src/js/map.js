@@ -91,26 +91,34 @@ require([
         latitude: location['latitude']
       };
       let graphic;
-      if ( sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true" ) {
+      if ( location["tag"] === "depart") {
         graphic = new Graphic({
           geometry: point,
-          symbol: visitedMarker
+          symbol: lieudepart
         });
-        textSymbol.color = colorVisited;
+        textSymbol.color = colordepart;
       }
       else {
-        if (location['type'] === "lieu") {
+        if (sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true") {
           graphic = new Graphic({
             geometry: point,
-            symbol: lieuMarker
+            symbol: visitedMarker
           });
-          textSymbol.color = colorLieu;
+          textSymbol.color = colorVisited;
         } else {
-          graphic = new Graphic({
-            geometry: point,
-            symbol: personnageMarker
-          });
-          textSymbol.color = colorPersonnage;
+          if (location['type'] === "lieu") {
+            graphic = new Graphic({
+              geometry: point,
+              symbol: lieuMarker
+            });
+            textSymbol.color = colorLieu;
+          } else {
+            graphic = new Graphic({
+              geometry: point,
+              symbol: personnageMarker
+            });
+            textSymbol.color = colorPersonnage;
+          }
         }
       }
       textSymbol.text = location['name'];
