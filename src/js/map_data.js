@@ -56,7 +56,7 @@ const map_json = `[
     "longitude": 4.579105
   },
   {
-    "name": "Nez",
+    "name": "Menhir",
     "tag": "others",
     "type": "lieu",
     "latitude": 45.846720, 
