@@ -26,7 +26,7 @@ const event_json = `{
         "<i>Elle semble dans la lune et récite des dates historiques à haute voix. <br>Elle se tourne brusquement vers vous en s’exclamant :</i>",
         "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
         "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de <b>faux</b> qui trainent <b>dans les environs</b>.",
-        "D’ailleurs, seriez-vous capable de relier ces chapiteaux de colonnes avec leur période historique correspondante ? <br> Je suis sûre que vous trouverez une <b>information importante</b>, qui vous aidera pour la suite de votre aventure !",
+        "D’ailleurs, seriez-vous capable de relier ces colonnes de colonnes avec leur période historique correspondante ? <br> Je suis sûre que vous trouverez une <b>information importante</b>, qui vous aidera pour la suite de votre aventure !",
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
@@ -77,7 +77,7 @@ const event_json = `{
         "Et vas-y que je creuse, vas-y que je déclame des textes en latin et encore, je vous la fais courte...",
         "Mais vous me semblez différents et bien sympathiques les gones. Si ils étaient venus depuis le début, je leur aurai donné des informations, moi ! <br>Mais qui fait attention à la vieille du quartier ?",
         "Sauf que moi, le quartier, je le connais comme ma poche. Oui et la maison que vous voyez derrière moi, c’est là que j’y suis née.",
-        "Tout change si vite maintenant, les seules choses qui n’ont pas changées depuis toujours sont <b>la mare</b>, <b>le noyer</b> et les antiquités tels que <b>le nez</b> et <b>le chapiteau</b>.",
+        "Tout change si vite maintenant, les seules choses qui n’ont pas changées depuis toujours sont <b>la mare</b>, <b>le noyer</b> et les antiquités tels que <b>le menhir</b> et <b>le colonne</b>.",
         "Je ne sais pas si ça peut vous aider, mais au moins, c’est dit. <br>Allez sur ce, bonne journée. Je dois aller nourrir la télé et regarder minouche, ou l’inverse.",
         "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps de réagir, elle a déjà passé le pas de la porte et la fait claquer à en faire trembler les murs.</i>"
       ]
@@ -145,9 +145,9 @@ const event_json = `{
   },
   "14": {
     "important_dialogue": 0,
-    "nickname": "Nez",
-    "name": "Lieu : Nez",
-    "url": "events/event_nez_mlsnch.html",
+    "nickname": "Menhir",
+    "name": "Lieu : Menhir",
+    "url": "events/event_menhir_mlsnch.html",
     "dialogue": [
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
       ]
