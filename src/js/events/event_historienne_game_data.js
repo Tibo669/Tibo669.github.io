@@ -10,10 +10,6 @@ const game_data_json = `{
   "3": {
     "image": "../../img/colonne_medievale.jpg",
     "id": "medievale"
-  },
-  "4": {
-    "image": "../../img/colonne_grecque.jpg",
-    "id": "grecque"
   }
 }`;
 

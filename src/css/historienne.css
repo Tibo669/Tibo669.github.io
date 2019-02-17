@@ -14,7 +14,7 @@
   width: 90%;
   height: 40%;
   left: 5%;
-  top: 40%;
+  top: 35%;
 }
 
 .gameNameButton {
@@ -38,27 +38,63 @@
   background-repeat: no-repeat;
 }
 
+#timeline {
+  background-image : url("../img/timeline.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  content: "";
+  width: 125px;
+  height: 301px;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .dropzone {
   background-color: transparent;
   border: solid 4px grey;
   border-radius: 4px;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-left: 2px;
   padding-right: 2px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  width: 120px;
-  height: 150px;
+  width: 100px;
+  height: 120px;
 
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: bold;
   font-style: italic;
   text-align: center;
 }
 
+#dropzone-romaine {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#dropzone-medievale {
+  position: absolute;
+  top: 80px;
+  left: 215px;
+}
+
+#dropzone-renaissance {
+  position: absolute;
+  top: 180px;
+  left: 0px;
+}
+
 .dropzone-active {
   border-color: darkgreen;
+}
+
+.dropzone-wrong {
+  border-color: darkred;
 }
 
 .drag-drop {

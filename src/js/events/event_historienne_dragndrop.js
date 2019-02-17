@@ -16,14 +16,22 @@ function dragMoveListener (event) {
 
 interact('#dropzone-romaine').dropzone({
   // only accept elements matching this CSS selector
-  accept: '#colonne-romaine',
+  accept: '.drag-drop',
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
   ondrop: function (event) {
-    event.relatedTarget.classList.remove('drag-drop');
-    event.relatedTarget.style.zIndex="-1";
-    event.target.classList.add('dropzone-active');
-    gameLauncher();
+    if (event.relatedTarget.id === "colonne-romaine") {
+      event.relatedTarget.classList.remove('drag-drop');
+      event.relatedTarget.style.zIndex = "-1";
+      event.target.classList.add('dropzone-active');
+      gameLauncher();
+    }
+    else {
+      event.target.classList.add('dropzone-wrong');
+    }
+  },
+  ondragleave: function (event) {
+    event.target.classList.remove('dropzone-wrong');
   }
 });
 
@@ -42,27 +50,43 @@ interact('#dropzone-grecque').dropzone({
 
 interact('#dropzone-medievale').dropzone({
   // only accept elements matching this CSS selector
-  accept: '#colonne-medievale',
+  accept: '.drag-drop',
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
   ondrop: function (event) {
-    event.relatedTarget.classList.remove('drag-drop');
-    event.relatedTarget.style.zIndex="-1";
-    event.target.classList.add('dropzone-active');
-    gameLauncher();
+    if (event.relatedTarget.id === "colonne-medievale") {
+      event.relatedTarget.classList.remove('drag-drop');
+      event.relatedTarget.style.zIndex = "-1";
+      event.target.classList.add('dropzone-active');
+      gameLauncher();
+    }
+    else {
+      event.target.classList.add('dropzone-wrong');
+    }
+  },
+  ondragleave: function (event) {
+    event.target.classList.remove('dropzone-wrong');
   }
 });
 
 interact('#dropzone-renaissance').dropzone({
   // only accept elements matching this CSS selector
-  accept: '#colonne-renaissance',
+  accept: '.drag-drop',
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
   ondrop: function (event) {
-    event.relatedTarget.classList.remove('drag-drop');
-    event.relatedTarget.style.zIndex="-1";
-    event.target.classList.add('dropzone-active');
-    gameLauncher();
+    if (event.relatedTarget.id === "colonne-renaissance") {
+      event.relatedTarget.classList.remove('drag-drop');
+      event.relatedTarget.style.zIndex = "-1";
+      event.target.classList.add('dropzone-active');
+      gameLauncher();
+    }
+    else {
+      event.target.classList.add('dropzone-wrong');
+    }
+  },
+  ondragleave: function (event) {
+    event.target.classList.remove('dropzone-wrong');
   }
 });
 

@@ -2,7 +2,7 @@ const gameNameButton = document.getElementById('gameNameButton');
 const containerGame = document.getElementById('containerGame');
 let currentColonne;
 let currentQuestionNumber = 1;
-const maximumQuestionNumber = 4;
+const maximumQuestionNumber = 3;
 const deplacezColonneText = "Déplacez la colonne vers la bonne époque";
 const historienneName = "Hélène Vincier, Historienne";
 
@@ -34,7 +34,7 @@ function solutionColonne(game_data_map, from_indices=false) {
     const objectDropzone = document.getElementById('dropzone-' + currentColonne["id"]);
     objectDropzone.classList.add('dropzone-active');
     const objectDropzoneBCRect = objectDropzone.getBoundingClientRect();
-    objectColonne.style.top = (objectDropzoneBCRect.top + 30).toString() + "px";
+    objectColonne.style.top = (objectDropzoneBCRect.top + 20).toString() + "px";
     objectColonne.style.left = (objectDropzoneBCRect.left + 0).toString() + "px";
   });
   if ( !from_indices ) {
@@ -69,7 +69,7 @@ function createColonne(currentColonne, solution=false) {
   if (!solution) {
     newColonne.setAttribute("class", "btn drag-drop mark");
     newColonne.style.top = (boundingClientRect.top + 110).toString() + "px";
-    newColonne.style.left = (boundingClientRect.left + 120).toString() + "px";
+    newColonne.style.left = (boundingClientRect.left + 220).toString() + "px";
     newColonne.style.zIndex="2";
   }
   else {
@@ -81,8 +81,8 @@ function createColonne(currentColonne, solution=false) {
   newColonne.style.backgroundPosition = "center center";
   newColonne.style.backgroundRepeat = "no-repeat";
   newColonne.style.position = "absolute";
-  newColonne.style.height = "120px";
-  newColonne.style.width = "120px";
+  newColonne.style.height = "100px";
+  newColonne.style.width = "100px";
   newColonne.style.display = "block";
   return newColonne;
 }
