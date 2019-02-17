@@ -69,7 +69,7 @@ function createColonne(currentColonne, solution=false) {
   if (!solution) {
     newColonne.setAttribute("class", "btn drag-drop mark");
     newColonne.style.top = (boundingClientRect.top + 110).toString() + "px";
-    newColonne.style.left = (boundingClientRect.left + 220).toString() + "px";
+    newColonne.style.left = (boundingClientRect.left + 20).toString() + "px";
     newColonne.style.zIndex="2";
   }
   else {
