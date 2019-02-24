@@ -121,26 +121,24 @@ const event_json = `{
   },
   "11": {
     "important_dialogue": 4,
-    "nickname": "Maire",
-    "name": "Jacques Pedroit, Monsieur le Maire",
-    "url": "events/event_maire_susqns.html",
+    "nickname": "Cantonnier",
+    "name": "Marius Bedron, Cantonnier",
+    "url": "events/event_cantonnier_lxoshn.html",
     "dialogue": [
-        "<i>Un homme regarde des immenses plans tout en approuvant de la tête. <br>Il porte son écharpe tricolore de maire ainsi  qu’un casque de chantier. <br>Il vous accueille à bras ouvert et tout sourire.</i>",
-        "Bonjour, mes chers concitoyens et bienvenue dans la nouvelle attraction de Bully : <br>Un parc thématique gallo-romain.",
-        "Il reste encore quelques détails à régler mais ça va être grandiose ! <br>J’ai déjà hâte de découper le ruban d'inauguration.",
-        "Même si on ne trouve rien, on fera des reproductions. <br>Ce n'est pas grave, les gens ne sont pas obligés de le savoir.",
-        "Il faut bien que ce projet se fasse, et je suis le seul capable de le mener à bien. <br>D’ailleurs, cela me prend un temps fou, tout le monde me sollicite, je suis indispensable !",
-        "Au fait, l’archéologue m’a donné ce document, je n’ai pas le temps de le traiter, je vous laisse vous en occupez, faites de votre mieux.",
-        "<i>Le maire vous tend un papier et commence à penser à haute voix : <br>« Le parc Astérix, c’est déjà pris. <br>Bully, dernier village résistant aux romains : c'est trop long… »</i>"
+        "<i>Un homme imposant avec une salopette jaune fluo et une casquette verte vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
+        "Oh vous m’avez fait drôlement peur vous autres ! J’ai cru que c’était le chef. <br>Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
+        "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de la commune. <br>Pour vous aider, je vous donnerai un de mes outils qui pourrait vous être utile.",
+        "Mais en échange, je vous demande de m’aider un peu à ranger les fleurs du village. <br>Sinon je vais me faire encore enguirlander, et ça le chef il sait bien le faire.",
+        "Avec tout ça, je suis complètement perdu, vous pouvez m’aider à <b>compter</b> toutes ces <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span> <span style='color: red;'>S</span></b> ? <br>D’ailleurs cela devrait vous donner une indication sur le lieu où me rejoindre."
       ]
   },
-  "13": {
+  "221312": {
     "important_dialogue": 0,
     "nickname": "Pelle",
     "name": "Une pelle en très bon état",
     "url": "events/event_pelle_msoqls.html",
     "dialogue": [
-        "Bravo, vous avez trouvé la pelle ! Grâce à elle, vous pouvez déterrer le trésor."
+        "<i>L’homme vous remercie chaleureusement en vous faisant une accolade et vous donne une pelle ! Grâce à elle, vous pouvez déterrer le trésor.</i>"
       ]
   },
   "14": {

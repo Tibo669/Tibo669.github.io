@@ -35,7 +35,7 @@ const map_json = `[
     "longitude": 4.575666
   },
   {
-    "name": "Garde-chasse",
+    "name": "Cantonnier",
     "tag": "others",
     "type": "personnage",
     "latitude": 45.847065, 
