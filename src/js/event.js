@@ -51,6 +51,14 @@ function next_dialogue() {
     }
   }
 
+  // Spécial cantonnier
+  if (personage_name === "Marius Bedron, Cantonnier") {
+    if (dialogue_idx === 4) {
+      let personageImage = document.getElementById("personageImage");
+      personageImage.src = "../../img/bac_a_fleur.png";
+    }
+  }
+
   // Spécial vigneron
   if (personage_name === "Jean Duvalon, Vigneron") {
     if (dialogue_idx === 8) {
