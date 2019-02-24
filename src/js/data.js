@@ -3,7 +3,9 @@ const event_json = `{
     "name": "Professeur Martin, Archéologue",
     "url": "events/event_historienne_roeksn.html",
     "dialogue": [
-        "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br>Mais commençons d'abord par les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
+        "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br> Avant de vous expliquer votre mission, je vous laisse vous présenter",
+        "Nom d'équipe : ..., Nombre de chasseurs de trésor : ..., Dont combien d'enfants de -12 ans : ...",
+        "Maintenant que les présentations ont été faites, voyons les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
         "Tant que vous verrez cette petite flèche en dessous du dialogue, <br>cela signifie qu'il reste du texte à afficher.",
         "Bien, vous avez pris le coup de main ! En plus de notre échange, vous trouverez d'autres informations très utiles sur cette page. <br>Comme par exemple le nom et la photo de votre interlocuteur.",
         "Nous allons faire un tour rapide.  <br>Voici l'élément le plus important, il vous permettra de <b>rechercher les numéros des événements</b> que vous découvrirez tout au long de l'aventure.",
