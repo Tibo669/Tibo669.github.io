@@ -11,7 +11,7 @@ const event_json = `{
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
         "Nous sommes sur la piste d’une <b><i>“Villae Rusticae”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
         "En effet, un texte ancien vient d’être découvert et nous indique la présence d’un <b>trésor enterré tout proche.</b> <br>Suite à cette nouvelle, de nombreux curieux se pressent sur les lieux et ils ne sont pas tous biens intentionnés.",
-        "Étant en conférence à Lyon en ce moment, je ne puis être sur place et m’en occuper moi-même. <br>C’est pour cela que j’ai fait appel à vous, <br>les meilleurs des chasseurs de trésors !",
+        "Étant en conférence à Lyon en ce moment, je ne puis être sur place et m’en occuper moi-même. <br>C’est pour cela que j’ai fait appel à vous, les meilleurs des chasseurs de trésors !",
         "Si vous le voulez bien, je vous laisse vous présenter rapidement. <br>Il vous suffira d'appuyer sur la <b>flèche ci-dessus</b>, quand vous aurez terminé.",
         "Je compte sur vos talents d'enquêteurs et d'aventuriers pour le trouver avant qu’il ne se fasse voler. <br>Pour vous aider dans votre recherche, je vous laisse une <b>carte des environs.</b>",
         "Vous devriez commencer par <b>rendre visite à mon génial assistant</b>, <br>qui à créé ce merveilleux outil afin de vous aider à avancer dans votre enquête.",
@@ -27,7 +27,7 @@ const event_json = `{
         "<i>Elle semble dans la lune et récite des dates historiques à haute voix. <br>Elle se tourne brusquement vers vous en s’exclamant :</i>",
         "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
         "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de <b>faux</b> qui trainent <b>dans les environs</b>.",
-        "D’ailleurs, seriez-vous capable de relier ces colonnes de colonnes avec leur période historique correspondante ? <br> Je suis sûre que vous trouverez une <b>information importante</b>, qui vous aidera pour la suite de votre aventure !",
+        "D’ailleurs, seriez-vous capable de relier ces colonnes avec leur période historique correspondante ? <br> Je suis sûre que vous y trouverez une <b>information</b>, qui vous aidera pour la suite de votre aventure !",
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
