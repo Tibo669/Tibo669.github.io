@@ -48,3 +48,18 @@ function postElasticTeam(teamName, teamNumber)
     }
   ));
 }
+
+function postElasticWrongEvent(event_current_id)
+{
+  const xmlHttpRequest = new XMLHttpRequest();
+  xmlHttpRequest.open("POST", elasticURL, true);
+  xmlHttpRequest.setRequestHeader('Content-Type', 'application/json');
+  xmlHttpRequest.send(JSON.stringify(
+    {
+      "@timestamp": new Date().toISOString(),
+      "etape": 'game',
+      "uuid": userUUID,
+      "wrong_event": event_current_id
+    }
+  ));
+}

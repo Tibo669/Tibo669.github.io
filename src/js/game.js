@@ -38,6 +38,7 @@ document.getElementById('eventButton').addEventListener('click',function(){
     } else {
       wrongEvent.style.display = "block";
       loseOneMinute();
+      postElasticWrongEvent(event_current_id);
     }
   }
 },false);
