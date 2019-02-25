@@ -14,6 +14,10 @@ document.getElementById("eventAudioIntro").play();
 
 
 document.getElementById('dialogueButton').addEventListener('click',function(){
+  introduction();
+},false);
+
+function introduction() {
   // Avancée dans le dialogue
   if ( dialogue_idx < dialogue_list.length ) {
     dialogueButton.innerHTML = dialogue_list[dialogue_idx];
@@ -38,12 +42,32 @@ document.getElementById('dialogueButton').addEventListener('click',function(){
     personageImage.style.marginTop = "0";
   }
   if ( dialogue_idx  === 9 ) {
+    const containerForm = document.getElementById("containerForm");
+    const containerEvent = document.getElementById("containerEvent");
+    const dialogueNameButtonForm = document.getElementById("dialogueNameButtonForm");
+    const dialogueButtonForm = document.getElementById("dialogueButtonForm");
+    const formTeamNameInput = document.getElementById("formTeamNameInput");
+    const formTeamNumberInput = document.getElementById("formTeamNumberInput");
+    containerForm.style.display = 'block';
+    containerEvent.style.display = 'none';
+    dialogueNameButtonForm.innerHTML = 'Suite du dialogue';
+    dialogueButtonForm.innerHTML = dialogue_list[dialogue_idx];
+    dialogueNameButtonForm.addEventListener('click',function(){
+      const teamName = formTeamNameInput.value;
+      const teamNumber = formTeamNumberInput.value;
+      postElasticTeam(teamName, teamNumber);
+      containerForm.style.display = 'none';
+      containerEvent.style.display = '';
+      introduction();
+    });
+  }
+  if ( dialogue_idx  === 10 ) {
     personageImage.src = '../img/map_button.png';
     personageImage.style.width =  "100px";
     personageImage.style.height =  "100px";
     personageImage.style.marginTop = "60px";
   }
-  if ( dialogue_idx  === 10 ) {
+  if ( dialogue_idx  === 11 ) {
     personageImage.src = '../img/archeologue.png';
     personageImage.style.width =  "240px";
     personageImage.style.height =  "160px";
@@ -60,7 +84,7 @@ document.getElementById('dialogueButton').addEventListener('click',function(){
     startGame();
   }
   dialogue_idx ++;
-},false);
+}
 
 function startGame() {
   let boundingClientRect = dialogueNameButton.getBoundingClientRect();

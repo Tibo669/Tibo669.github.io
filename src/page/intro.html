@@ -29,6 +29,26 @@
   </div>
 </div>
 
+<div id="containerForm">
+  <div id="dialogueForm">
+    <div id="formTeamName">
+      <label for="formTeamNameInput" class="labelFrom">Nom de l'équipe :</label>
+      <input value="" name="event" class="eventField" id="formTeamNameInput"
+             placeholder="Nom de l'équipe" type="text" maxlength="20">
+    </div>
+    <div id="formTeamNumber">
+      <label for="formTeamNumberInput" class="labelFrom">Nombre de coéquipiers :</label>
+      <input value="" name="event" class="eventField" id="formTeamNumberInput"
+             placeholder="Nombre de coéquipiers"
+             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+             type = "number"
+             maxlength = "2">
+    </div>
+    <a class="btn dialogueNameButtonForm" id="dialogueNameButtonForm"></a>
+    <a class="btn dialogueButtonForm" id="dialogueButtonForm"></a>
+  </div>
+</div>
+
 <audio id="eventAudioIntro" class="eventAudio" controls preload="none">
   <source src="" type="audio/wav">
 </audio>

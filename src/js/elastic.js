@@ -32,3 +32,19 @@ function postElastic(etape)
     }
   ));
 }
+
+function postElasticTeam(teamName, teamNumber)
+{
+  const xmlHttpRequest = new XMLHttpRequest();
+  xmlHttpRequest.open("POST", elasticURL, true);
+  xmlHttpRequest.setRequestHeader('Content-Type', 'application/json');
+  xmlHttpRequest.send(JSON.stringify(
+    {
+      "@timestamp": new Date().toISOString(),
+      "etape": 'introduction',
+      "uuid": userUUID,
+      "team_name": teamName,
+      "team_number": teamNumber
+    }
+  ));
+}

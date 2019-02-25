@@ -29,7 +29,10 @@
 <div id="containerInput">
   <div id="eventInput">
     <input value="" name="event" class="eventField" id="eventField"
-           placeholder="Numéro de l'évenement" type="number">
+           placeholder="Numéro de l'évenement"
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type = "number"
+           maxlength = "6">
     <input value="" name="event" id="eventButton" class="eventButton" type="submit"> </div>
 </div>
 
