@@ -55,7 +55,7 @@ const event_json = `{
   },
   "7": {
     "important_dialogue": 4,
-    "nickname": "Chasseur",
+    "nickname": "Pilleur",
     "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
