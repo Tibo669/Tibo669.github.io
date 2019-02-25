@@ -113,6 +113,7 @@ function copyToClipboard(text) {
   textArea.select();
   try {
     document.execCommand('copy');
+    document.getElementById('copyClipboardContainer').style.display = "block";
   }
   catch (err) {
     console.log('Oops, unable to copy');

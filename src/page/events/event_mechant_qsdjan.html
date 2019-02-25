@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/event.css">
+  <link rel="stylesheet" href="../../css/copy_clipboard.css">
 </head>
 <body>
 <div id="header">
@@ -40,6 +41,12 @@
   </div>
 </div>
 
+<div id="copyClipboardContainer" class="copyClipboardContainer">
+  <div class="copyClipboard">
+    <p>Vous avez copié le message dans votre presse-papiers</p>
+  </div>
+</div>
+
 <audio id="eventAudioIntro" class="eventAudio" controls preload="none">
   <source src="../../audio/mechant/intro-mechant.wav" type="audio/wav">
 </audio>
@@ -60,6 +67,16 @@
 <script>
   sessionStorage.setItem('pilleur_visited', 'true');
   postElastic('pilleur');
+</script>
+
+<script>
+  let copyClipboardContainer = document.getElementById('copyClipboardContainer');
+  // When the user clicks anywhere outside of the wrongEvent, close it
+  window.onclick = function(event) {
+    if (event.target === copyClipboardContainer) {
+      copyClipboardContainer.style.display = "none";
+    }
+  };
 </script>
 
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
