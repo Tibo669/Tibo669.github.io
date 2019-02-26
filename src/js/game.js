@@ -41,6 +41,9 @@ document.getElementById('eventButton').addEventListener('click',function(){
       postElasticWrongEvent(event_current_id);
     }
   }
+  else {
+    document.getElementById('eventField').value = '';
+  }
 },false);
 
 document.getElementById("eventField").addEventListener("submit", function(){
@@ -53,6 +56,9 @@ document.getElementById("eventField").addEventListener("submit", function(){
       wrongEvent.style.display = "block";
       loseOneMinute();
     }
+  }
+  else {
+    document.getElementById('eventField').value = '';
   }
 });
 
