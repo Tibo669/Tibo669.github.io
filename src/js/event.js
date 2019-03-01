@@ -49,7 +49,7 @@ function next_dialogue() {
       let personageImage = document.getElementById("personageImage");
       personageImage.src = "../../img/message.png";
       personageImage.addEventListener('click',function(){
-        copyToClipboard("45.847430,4.575666");
+        copyToClipboard("45.846141,4.575928");
       });
     }
   }
