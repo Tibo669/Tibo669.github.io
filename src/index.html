@@ -38,10 +38,14 @@
 <script src="https://cdn.rawgit.com/jschr/textillate/master/jquery.textillate.js"></script>
 
 <script>
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
   $("#commencer").textillate({
-    in: { effect: 'rollIn', delayScale: 1, callback: function () {} },
+    in: { effect: ''},
     out: { effect: 'rollOut', delay: 50, delayScale: 2, sync: true,
-      callback: function () {
+      callback: async function () {
+        await sleep(500);
         document.location.href = "page/intro.html";
       }
     },
