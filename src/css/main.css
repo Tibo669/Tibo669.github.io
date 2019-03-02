@@ -288,12 +288,21 @@ textarea {
     }
 }
 
-#intro {
+.text-intro {
     color: #452019;
-    font-weight: 300;
-    font-size: 48px;
     line-height: 1.4;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#intro {
+  font-weight: 300;
+  font-size: 48px;
+}
+
+#commencer {
+  padding-top: 5%;
+  font-weight: 300;
+  font-size: 32px;
 }
 
 .playButton {
@@ -311,9 +320,9 @@ textarea {
 
 #container {
     width: 80%;
-    height: 50%;
+    height: 70%;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 10%;
 
     display: flex;              /* establish flex container */
