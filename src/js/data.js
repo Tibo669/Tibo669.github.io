@@ -6,7 +6,7 @@ const event_json = `{
         "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br> Avant de vous expliquer votre mission, voyons les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
         "Tant que vous verrez cette petite flèche en dessous du dialogue, <br>cela signifie qu'il reste du texte à afficher.",
         "Bien, vous avez pris le coup de main ! En plus de notre échange, vous trouverez d'autres informations très utiles sur cette page. <br>Comme par exemple le nom et la photo de votre interlocuteur.",
-        "Nous allons faire un tour rapide.  <br>Voici l'élément le plus important, il vous permettra de <b>rechercher les numéros des événements</b> que vous découvrirez tout au long de l'aventure.",
+        "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra de <b>rechercher les numéros des événements</b> que vous découvrirez tout au long de l'aventure.",
         "Une fois un événement terminé, vous pouvez le répéter à tout moment en cliquant sur <b>Revoir les indices</b>. <br>N'hésitez pas à vous en servir !",
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
         "Nous sommes sur la piste d’une <b><i>“Villae Rusticae”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
@@ -19,15 +19,16 @@ const event_json = `{
       ]
   },
   "5": {
-    "important_dialogue": 4,
+    "important_dialogue": 5,
     "nickname": "Historienne",
     "name": "Hélène Vincier, Historienne",
     "url": "events/event_historienne_roeksn.html",
     "dialogue": [
         "<i>Elle semble dans la lune et récite des dates historiques à haute voix. <br>Elle se tourne brusquement vers vous en s’exclamant :</i>",
-        "1848, la ruée vers l’or, c’est exactement ce que vous faites, vous cherchez un trésor. <br>Nous, les historiens, nous sommes un peu comme vous ! ",
-        "On cherche, on cherche et puis on fini par trouver un élément historique. <br>Je vous conseille cependant de vous méfier des apparences, il y a beaucoup de <b>faux</b> qui trainent <b>dans les environs</b>.",
-        "D’ailleurs, seriez-vous capable de relier ces colonnes avec leur période historique correspondante ? <br> Je suis sûre que vous y trouverez une <b>information</b>, qui vous aidera pour la suite de votre aventure !",
+        "Vous les chasseurs de trésor, vous êtes un peu comme nous les historiens ! <br>Vous c’est l’aventure et nous c’est le savoir. Ensemble, nous sommes à la recherche de l’objet qui va bousculer la connaissance humaine.",
+        "Nous avons un destin croisé depuis la nuit des temps comme dans la quête du graal, du trésor des templiers et plus récemment les crânes de cristal.",
+        "Je vous conseille cependant de vous méfier des apparences, <b>les colonnes ont été utilisées durant plusieurs périodes historiques</b>. <br>Seul un oeil expert arrive à les <b>classer dans l’ordre chronologique</b>.",
+        "D’ailleurs seriez-vous capable de relier ces colonnes avec leur période historique correspondante ? <br>Je suis sur que vous y trouverez <b>une information qui vous aidera</b> pour la suite de votre aventure !",
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
@@ -37,20 +38,19 @@ const event_json = `{
     "name": "Thomas Goutte, Assistant du Pr. Martin",
     "url": "events/event_assistant_qsdkaz.html",
     "dialogue": [
-        "<i>Vous arrivez près d’un jeune homme affairé, tenant dans sa main une pierre. <br>Il est entouré de dessins et de schémas. <br>Il vous entend arriver et se retourne.</i>",
+        "<i>Vous arrivez près d’un jeune homme affairé, tenant une pierre dans sa main. <br>Il est entouré de dessins et de schémas. <br>Il vous entend arriver et se retourne.</i>",
         "Bonjour, vous êtes les fameux chasseurs de trésors ! <br>Le Professeur Martin m’avait prévenu de votre visite.",
-        "Il s'excuse encore de ne pas être présent. Je vais me charger de vous expliquer la situation. ",
-        "Nous avons trouvé l’emplacement d’une <i>Villae Rusticae</i> à l’endroit où nous sommes. <br>Mais avant, revoyons les bases.",
-        "La Gaule a été conquise par les romains en -52 avant Jésus Christ par un certain Jules César, je pense que vous en avez déjà entendu parler.",
-        "Une fois implantés dans les pays vaincus, les romains apportaient des éléments de leur civilisation, tels que les routes pavées, les amphithéâtres, leur monnaie et même leur religion.",
-        "Le village de Bully existait déjà au temps des romains et plusieurs éléments nous le prouvent.",
-        "Comme par exemple la présence de pavés appartenant à la route reliant <i>'Lugdunum'</i> Lyon à <i>'Rodumna'</i> Roanne,",
-        "des tombes, des pièces de monnaie, des tuiles et encore plus incroyable : des thermes qui sont situés tout près d’ici.",
-        "Mais lors de cette découverte, nous avons trouvé un texte parlant <b>d’un trésor enterré</b> autour de la <i>Villae Rusticae</i>.",
-        "Et c’est là que vous intervenez, vous devez le trouver au plus vite, afin qu’il finisse dans un musée pour être étudié au nom de l’histoire et de l’archéologie.",
-        "N’hésitez pas à demander de l’aide au gens présents. <br>Cependant, restez sur vos gardes !",
-        "Au fait, je pense que vous le saviez déjà, mais les romains adoraient cacher leurs objets de valeurs près d’un lieu symbolique, comme un carrefour ou un point d’eau. <br>Je vous les ai recensés sur la carte.",
-        "<i>Le jeune homme vous regarde une dernière fois et se replonge dans l’étude des documents devant lui.</i>"
+        "Il s'excuse encore de son absence. Je vais me charger de vous expliquer la situation. ",
+        "Nous avons trouvé <b>sur ces lieux</b>, l’emplacement d’une <i>Villa Rustica</i> à l’endroit où nous sommes. <br>Mais tout d’abord, revoyons les bases.",
+        "En -52 avant Jésus Christ, la Gaule a été conquise par les Romains, dirigés par un certain Jules César. <br>Je pense que vous en avez déjà entendu parler.",
+        "Les Romains, s’implantaient dans les pays vaincus et y apportaient des éléments de leur civilisation, tels que les routes pavées, les amphithéâtres, leur monnaie et même leur religion.",
+        "Le village de Bully existait déjà au temps des romains et plusieurs éléments tendent à nous le prouver.",
+        "Comme par exemple la présence de pavées appartenant à la route reliant Lugdunum-Lyon à Rodumna-Roanne. <br>Mais aussi des tombes, des pièces de monnaie, des tuiles et encore plus incroyable des thermes situés tout près d’ici.",
+        "La <i>Villa Rustica</i> de Bully était, semble-t-il, une exploitation viticole importante. <br>Lors des premières fouilles, nous avons découvert un texte décrivant un <b>trésor enterré aux alentours</b>.",
+        " Et c’est là que vous intervenez : <b>vous devez le trouver au plus vite !</b> <br>Il doit être placé dans un musée afin d’être étudié au nom de l’histoire et de l’archéologie. ",
+        "Lors de vos recherches, n’hésitez pas à demander de l’aide aux personnes présentes. <br>Mais attention, certaines peuvent essayer de saboter votre mission !",
+        "Au fait, les Romains avaient pour habitude de cacher leurs objets de valeurs près d’un lieu symbolique, comme un carrefour, un point d’eau ou une forêt. <br><b>J’ai recensé les lieux importants sur la carte.</b>",
+        "<i>Le jeune homme vous adresse un regard plein de confiance et se replonge dans l’étude de ses documents.</i>"
       ]
   },
   "7": {
@@ -94,8 +94,8 @@ const event_json = `{
         "<i>Un viticulteur regarde attentivement ses vignes et en particulier les feuilles. <br>Il semble perdu dans ses pensées jusqu’à ce qu’il s’exclame en se tournant vers vous. </i>",
         "Ça sera une bonne année ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
         "Mais désolé, je manque à tous mes devoirs, j’ai oublié de me présenter. <br>Je m'appelle Jean Duvalon, viticulteur et vous qui êtes-vous ?",
-        "Non, ne me dites pas, vous chercher le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
-        "Si vous saviez toutes les breloques  que j’ai pu trouver dans mes vignes, des pièces, des bouts de tuiles et même des bijoux, c’est vous dire !",
+        "Non, ne me dites pas, vous cherchez le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
+        "Si vous saviez toutes les breloques que j’ai pu trouver dans mes vignes, des pièces, des bouts de tuiles et même des bijoux, c’est vous dire !",
         "Si vous avez le temps une fois que vous avez fini votre enquête, passez au domaine, je pourrai vous les montrer.",
         "Mais en attendant, je vais vous montrer la pièce maîtresse de mes trouvailles.",
         "Si vous voulez la traduction, il va falloir répondre à quelques questions à propos de la viticulture...",

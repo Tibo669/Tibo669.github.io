@@ -80,7 +80,7 @@ function next_dialogue() {
 
   // Spécial historienne
   if (personage_name === "Hélène Vincier, Historienne") {
-    if (dialogue_idx === 4) {
+    if (dialogue_idx === 5) {
       let historienne_done_stored = sessionStorage.getItem('historienne_done');
       document.getElementById("eventAudioDialogue").pause();
       if (historienne_done_stored === null) {
