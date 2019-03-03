@@ -33,7 +33,7 @@ const event_json = `{
       ]
   },
   "6": {
-    "important_dialogue": 13,
+    "important_dialogue": 11,
     "nickname": "Assistant",
     "name": "Thomas Goutte, Assistant du Pr. Martin",
     "url": "events/event_assistant_qsdkaz.html",
@@ -54,16 +54,17 @@ const event_json = `{
       ]
   },
   "7": {
-    "important_dialogue": 4,
+    "important_dialogue": 5,
     "nickname": "Pilleur",
     "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
-        "<i>Un homme avec un chapeau délavé vous regarde arriver. <br> Il interrompt sa prise de notes et ferme prestement son carnet lorsque vous arrivez à sa hauteur. <br>Il s'adresse à vous d’une voix forte.</i>",
-        "Ah ! Donc, voilà, mes concurrents. <br>Je vous imaginais plus grands, plus forts bref…",
-        "C’est gentil d’être venu essayer mais moi, <b>Tennessee Johnson</b>, je tiens à vous dire un truc : <br>Je serai le premier à trouver ce maudit trésor et à moi le magot !",
-        "J’ai déjà des contacts pour le revendre. Allez ! Bonne journée ! <br>Mais si vous voulez, je peux vous signer un autographe !",
-        "<i>Il se retourne et s’éloigne. Vous voyez un morceau de papier tomber de sa poche. Vous le récupérez et découvrez un étrange message.</i>"
+        "<i>Un homme avec un chapeau délavé est en train de griffonner des notes sur son carnet. <br>Il s'interrompt et ferme prestement son carnet lorsque vous arrivez à sa hauteur. <br>Il s'adresse à vous d’une voix forte.</i>",
+        "Ah ! Donc voilà mes fameux concurrents. <br>Je vous imaginais plus grands, plus expérimentés bref passons...",
+        "C’est gentil de votre part d’être venus essayer, mais seulement moi, Tennessee Johnson, possède les capacités pour trouver ce maudit trésor.",
+        "Et lorsque j’aurai mis la main dessus, je serai riche ! En effet, j’ai déjà trouvé des clients fortunés prêt à tout pour l’acheter. <br>Mais surtout je serai enfin reconnu dans le milieu des chasseurs de trésor.",
+        "J’ai de nombreuses pistes et vous comprendrez aisément que je ne peux rien vous dire. <br>Mais trêve de bavardage, bonne journée et bonne chance, malgré tout, dans votre vaine tentative.",
+        "<i>Il se retourne et s’éloigne. Vous apercevez un morceau de papier tomber de sa poche. <br>Vous le récupérez et découvrez un étrange message : <br>45.846141,4.575928</i>"
       ]
   },
   "8": {
@@ -72,40 +73,38 @@ const event_json = `{
     "name": "Madame Petitejeanne, Vieille voisine",
     "url": "events/event_vieille_podksl.html",
     "dialogue": [
-        "<i>Vous trouvez la vieille voisine marchant dans son jardin, le dos voûté. <br>Elle regarde tout autour d’elle et d’un coup remarque votre présence. <br>Elle se dirige vers vous en saluant de la main.</i>",
-        "Bonjour, vous êtes nouveaux dans le coin. Je ne vous ai jamais vu ici et pourtant, je connais tout le monde.",
+        "<i>Vous trouvez la vieille voisine marchant dans son jardin, le dos voûté. <br>Elle regarde tout autour d’elle et d’un coup remarque votre présence. <br>Elle se dirige vers vous en vous saluant de la main.</i>",
+        "Bonjour, vous êtes nouveaux dans le coin, je ne vous ai jamais vu ici et pourtant, je connais tout le monde.",
         "Vous faites parti de ces nouveaux chasseurs de trésor ? <br>Ils ont débarqué depuis quelques jours et c’est à plus s’entendre.",
-        "Et vas-y que je creuse, vas-y que je déclame des textes en latin et encore, je vous la fais courte...",
-        "Mais vous me semblez différents et bien sympathiques les gones. Si ils étaient venus depuis le début, je leur aurai donné des informations, moi ! <br>Mais qui fait attention à la vieille du quartier ?",
-        "Sauf que moi, le quartier, je le connais comme ma poche. Oui et la maison que vous voyez derrière moi, c’est là que j’y suis née.",
-        "Tout change si vite maintenant, les seules choses qui n’ont pas changées depuis toujours sont <b>la mare</b>, <b>le noyer</b> et les antiquités tels que <b>le menhir</b> et <b>le colonne</b>.",
-        "Je ne sais pas si ça peut vous aider, mais au moins, c’est dit. <br>Allez sur ce, bonne journée. Je dois aller nourrir la télé et regarder minouche, ou l’inverse.",
-        "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps de réagir, elle a déjà passé le pas de la porte et la fait claquer à en faire trembler les murs.</i>"
+        "Et vas-y que je creuse, vas-y que je déclame des textes en latin et encore, je vous la fais courte... <br>Mais vous me semblez différents et bien sympathiques les gones.",
+        "Si ils étaient venus me voir dès le début de leurs recherches, je leur aurai donné des informations, moi. <br>Mais qui fait attention à la vieille du quartier ?",
+        "Sauf que le quartier, je le connais comme ma poche, moi. Vous voyez la maison derrière ? C’est là que j’y suis née. <br>Tout change si vite maintenant. ",
+        "Les seules choses qui ont traversé le temps sont <b>la mare, le noyer, le menhir et la colonne</b>. <br>Je ne sais pas si ça peut vous aider, mais au moins, c’est dit.",
+        "Allez sur ce, bonne journée. <br>Je dois aller nourrir la télé et regarder minouche, ou l’inverse.",
+        "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps vous réagissiez, elle a déjà claqué la porte à en faire trembler les murs.</i>"
       ]
   },
   "9": {
-    "important_dialogue": 8,
+    "important_dialogue": 7,
     "nickname": "Vigneron",
     "name": "Jean Duvalon, Vigneron",
     "url": "events/event_viticulteur_ghsksl.html",
     "well_done": "Bien joué ! <br>Ça fait plaisir de voir des personnes qui s'y connaissent en vin ! <br>Voici ma trouvaille, et pour vous récompenser, je vous ai aussi fourni la traduction.",
-    "too_bad": "Au moins, il vous reste plein de choses à apprendre sur le vin ! <br>Voici ma trouvaille, mais comme vous n'avez pas trouvé beaucoup de bonnes réponses, je ne vous ai fourni qu'une partie de la traduction.",
+    "too_bad": "Au moins, il vous reste beaucoup de choses à apprendre sur le vin ! <br>Voici ma trouvaille, mais comme vous n'avez pas trouvé beaucoup de bonnes réponses, je ne vous ai fourni qu'une partie de la traduction.",
     "dialogue": [
         "<i>Un viticulteur regarde attentivement ses vignes et en particulier les feuilles. <br>Il semble perdu dans ses pensées jusqu’à ce qu’il s’exclame en se tournant vers vous. </i>",
         "Ça sera une bonne année ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
-        "Mais désolé, je manque à tous mes devoirs, j’ai oublié de me présenter. <br>Je m'appelle Jean Duvalon, viticulteur et vous qui êtes-vous ?",
+        "Mais excusez-moi, je manque à tous mes devoirs, j’ai oublié de me présenter. <br>Je m'appelle Jean Duvalon, viticulteur, et vous qui êtes-vous ?",
         "Non, ne me dites pas, vous cherchez le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
-        "Si vous saviez toutes les breloques que j’ai pu trouver dans mes vignes, des pièces, des bouts de tuiles et même des bijoux, c’est vous dire !",
-        "Si vous avez le temps une fois que vous avez fini votre enquête, passez au domaine, je pourrai vous les montrer.",
-        "Mais en attendant, je vais vous montrer la pièce maîtresse de mes trouvailles.",
-        "Si vous voulez la traduction, il va falloir répondre à quelques questions à propos de la viticulture...",
+        "Si vous saviez toutes les trouvailles que j’ai faites dans mes vignes : <br>des pièces, des morceaux de tuiles et même des bijoux, c’est vous dire !",
+        "<b>Une fois que vous aurez fini votre enquête, passez au domaine, je vous les montrerai.</b> <br>Mais en attendant, je vais vous montrer la pièce maîtresse de mes trouvailles.",
+        "Si vous voulez la traduction, vous devrez répondre à quelques questions, afin que je vérifie vos connaissances en viticulture",
         "",
-        "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir avec sa main.</i>"
+        "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir.</i>"
       ] 
   },
   "10": {
     "important_dialogue": 6,
-    "nickname": "Champignoneur",
     "name": "Marius Bedron, Champignonneur",
     "url": "events/event_champignonneur_lskfos.html",
     "dialogue": [
@@ -126,10 +125,10 @@ const event_json = `{
     "name": "Marius Bedron, Cantonnier",
     "url": "events/event_cantonnier_lxoshn.html",
     "dialogue": [
-        "<i>Un homme imposant avec une salopette jaune fluo et une casquette verte vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
-        "Oh vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
+        "<i>Un homme imposant avec un haut jaune fluo et une salopette bleue vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
+        "Oh ! Vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
         "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je vous donnerai un de mes outils, vous en aurez certainement besoin.",
-        "Mais en échange, je vous demande de m’aider un peu à ranger les fleurs du village. <br>Sinon je vais me faire encore enguirlander, et ça le chef il sait bien le faire.",
+        "Mais en échange, je vous demande de m’aider un peu à ranger les fleurs du village. <br>Sinon je vais encore me faire enguirlander, et ça le chef il sait bien le faire.",
         "Avec tout ça, je suis complètement perdu, vous pouvez m’aider à <b>compter</b> toutes ces <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span> <span style='color: red;'>S</span></b> ? <br>D’ailleurs cela devrait vous donner le <b>numéro du lieu où me rejoindre</b>."
       ]
   },
@@ -192,7 +191,7 @@ const event_json = `{
     "url": "events/event_tresor_qsdkca.html",
     "dialogue": [
         "<i>Bravo, vous avez trouvé le trésor ! <br>Il est composé de pièces d’or mais aussi de la <b>dernière amphore</b> contenant encore du vin de l’époque romaine. <br>Une première historique !</i>",
-        "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à rendre visite à ...</i>"
+        "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à nous rendre visite au domaine</i>"
       ]
   },
   

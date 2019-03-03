@@ -45,7 +45,7 @@ function next_dialogue() {
 
   // Spécial mechant
   if (personage_name === "Tennesse Johnson, Chasseur de trésor") {
-    if (dialogue_idx === 4) {
+    if (dialogue_idx === 5) {
       let personageImage = document.getElementById("personageImage");
       personageImage.src = "../../img/message.png";
       personageImage.addEventListener('click',function(){
@@ -64,7 +64,7 @@ function next_dialogue() {
 
   // Spécial vigneron
   if (personage_name === "Jean Duvalon, Vigneron") {
-    if (dialogue_idx === 8) {
+    if (dialogue_idx === 7) {
       let vigneron_done_stored = sessionStorage.getItem('vigneron_done');
       document.getElementById("eventAudioDialogue").pause();
       if (vigneron_done_stored === null) {
@@ -72,7 +72,7 @@ function next_dialogue() {
       } else {
         resultLauncher(dialogueButton);
       }
-    } else if (dialogue_idx === 7) {
+    } else if (dialogue_idx === 6) {
       let personageImage = document.getElementById("personageImage");
       personageImage.src = "../../img/marbre_latin.jpg";
     }
