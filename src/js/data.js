@@ -132,6 +132,15 @@ const event_json = `{
         "Avec tout ça, je suis complètement perdu, vous pouvez m’aider à <b>compter</b> toutes ces <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span> <span style='color: red;'>S</span></b> ? <br>D’ailleurs cela devrait vous donner le <b>numéro du lieu où me rejoindre</b>."
       ]
   },
+  "485": {
+    "important_dialogue": 0,
+    "nickname": "Tablette",
+    "name": "Une tablette romaine gravée",
+    "url": "events/event_tablette_suiwaz.html",
+    "dialogue": [
+        "<i>Vous trouvez un cadre en bois dépassant du sol avec de curieux symboles. <br>Vous le déterrer et vous retrouvez face à une tablette en cire de la période romaine.</i>"
+      ]
+  },
   "221312": {
     "important_dialogue": 0,
     "nickname": "Pelle",
