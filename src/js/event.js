@@ -90,6 +90,14 @@ function next_dialogue() {
       }
     }
   }
+
+  // Spécial cadenas
+  if (personage_name === "Un étrange mecanisme vérouillé") {
+    if (dialogue_idx === 1) {
+      createCadenas();
+    }
+  }
+
   if ( !from_indices ) {
     dialogue_idx++;
   }

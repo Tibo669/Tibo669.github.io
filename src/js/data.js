@@ -196,6 +196,16 @@ const event_json = `{
       ]
   },
   "20": {
+    "important_dialogue": 1,
+    "name": "Un étrange mecanisme vérouillé",
+    "nickname": "Borne",
+    "url": "events/event_cadenas_poqjsl.html",
+    "dialogue": [
+        "<i>Un étrange mecanisme se trouve devant vous. Après une analyse approfondie, vous déduisez qu'il faut trouver un <b>code numérique</b>. <br>Malgré ce léger contretemps, vous sentez que votre objectif est proche !</i>",
+        ""
+      ]
+  },
+  "256": {
     "name": "Le Trésor !",
     "url": "events/event_tresor_qsdkca.html",
     "dialogue": [
