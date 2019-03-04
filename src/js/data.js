@@ -127,9 +127,8 @@ const event_json = `{
     "dialogue": [
         "<i>Un homme imposant avec un haut jaune fluo et une salopette bleue vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
         "Oh ! Vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
-        "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je vous donnerai un de mes outils, vous en aurez certainement besoin.",
-        "Mais en échange, je vous demande de m’aider un peu à ranger les fleurs du village. <br>Sinon je vais encore me faire enguirlander, et ça le chef il sait bien le faire.",
-        "Avec tout ça, je suis complètement perdu, vous pouvez m’aider à <b>compter</b> toutes ces <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span> <span style='color: red;'>S</span></b> ? <br>D’ailleurs cela devrait vous donner le <b>numéro du lieu où me rejoindre</b>."
+        "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je veux bien vous donner un outil, mais j’ai peur de me faire enguirlander par mon chef.",
+        "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans un lieu dont le code est donné par le mot <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span></b>."
       ]
   },
   "485": {
