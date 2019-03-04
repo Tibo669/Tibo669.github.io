@@ -93,7 +93,7 @@ const event_json = `{
     "too_bad": "Au moins, il vous reste beaucoup de choses à apprendre sur le vin ! <br>Voici ma trouvaille, mais comme vous n'avez pas trouvé beaucoup de bonnes réponses, je ne vous ai fourni qu'une partie de la traduction.",
     "dialogue": [
         "<i>Un viticulteur regarde attentivement ses vignes et en particulier les feuilles. <br>Il semble perdu dans ses pensées jusqu’à ce qu’il s’exclame en se tournant vers vous. </i>",
-        "Ça sera une bonne année ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
+        "Ça sera une bonne cuvée ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
         "Mais excusez-moi, je manque à tous mes devoirs, j’ai oublié de me présenter. <br>Je m'appelle Jean Duvalon, viticulteur, et vous qui êtes-vous ?",
         "Non, ne me dites pas, vous cherchez le fameux trésor, c’est ça ? <br>Oh moi, ça ne m’étonne pas cette histoire de maison romaine !",
         "Si vous saviez toutes les trouvailles que j’ai faites dans mes vignes : <br>des pièces, des morceaux de tuiles et même des bijoux, c’est vous dire !",
