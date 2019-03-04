@@ -71,16 +71,16 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   float: left;
   position: relative;
-  cursor: move;
 }
 
 #lock-wrapper .lock-dial ul{
   margin: 0;
   padding: 0;
+  margin-top: -20px;
   text-align: center;
   list-style: none;
   font-size: 53px;
-  line-height: 70px;
+  line-height: 55px;
   color: #414f6b;
   text-shadow: 0 -2px 0 #212c42;
   -webkit-user-select: none;  /* Chrome all / Safari all */
