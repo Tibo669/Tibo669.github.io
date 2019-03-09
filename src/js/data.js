@@ -9,7 +9,7 @@ const event_json = `{
         "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra de <b>rechercher les numéros des événements</b> que vous découvrirez tout au long de l'aventure.",
         "Une fois un événement terminé, vous pouvez le répéter à tout moment en cliquant sur <b>Revoir les indices</b>. <br>N'hésitez pas à vous en servir !",
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
-        "Nous sommes sur la piste d’une <b><i>“Villae Rusticae”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
+        "Nous sommes sur la piste d’une <b><i>“Villa Rustica”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
         "En effet, un texte ancien vient d’être découvert et nous indique la présence d’un <b>trésor enterré tout proche.</b> <br>Suite à cette nouvelle, de nombreux curieux se pressent sur les lieux et ils ne sont pas tous biens intentionnés.",
         "Étant en conférence à Lyon en ce moment, je ne puis être sur place et m’en occuper moi-même. <br>C’est pour cela que j’ai fait appel à vous, les meilleurs des chasseurs de trésors !",
         "Si vous le voulez bien, je vous laisse vous présenter rapidement. <br>Il vous suffira d'appuyer sur la <b>flèche ci-dessus</b>, quand vous aurez terminé.",
@@ -18,7 +18,7 @@ const event_json = `{
         "Ah ! Une dernière chose, vous allez entrer sur un site de fouille archéologique alors <b>prenez soin de la nature</b>, <b>veillez à ne rien dégrader</b> et à <b>tout laisser à sa place</b>. <br>Je vous souhaite bon courage."
       ]
   },
-  "5": {
+  "8228": {
     "important_dialogue": 5,
     "nickname": "Historienne",
     "name": "Hélène Vincier, Historienne",
@@ -32,7 +32,7 @@ const event_json = `{
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ]
   },
-  "6": {
+  "3165": {
     "important_dialogue": 11,
     "nickname": "Assistant",
     "name": "Thomas Goutte, Assistant du Pr. Martin",
@@ -53,7 +53,7 @@ const event_json = `{
         "<i>Le jeune homme vous adresse un regard plein de confiance et se replonge dans l’étude de ses documents.</i>"
       ]
   },
-  "7": {
+  "2753": {
     "important_dialogue": 5,
     "nickname": "Pilleur",
     "name": "Tennesse Johnson, Chasseur de trésor",
@@ -67,7 +67,7 @@ const event_json = `{
         "<i>Il se retourne et s’éloigne. Vous apercevez un morceau de papier tomber de sa poche. <br>Vous le récupérez et découvrez un étrange message : <br>45.846141,4.575928</i>"
       ]
   },
-  "8": {
+  "8489": {
     "important_dialogue": 6,
     "nickname": "Voisine",
     "name": "Madame Petitejeanne, Vieille voisine",
@@ -84,7 +84,7 @@ const event_json = `{
         "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps vous réagissiez, elle a déjà claqué la porte à en faire trembler les murs.</i>"
       ]
   },
-  "9": {
+  "9487": {
     "important_dialogue": 7,
     "nickname": "Vigneron",
     "name": "Jean Duvalon, Vigneron",
@@ -103,23 +103,7 @@ const event_json = `{
         "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir.</i>"
       ] 
   },
-  "10": {
-    "important_dialogue": 6,
-    "name": "Marius Bedron, Champignonneur",
-    "url": "events/event_champignonneur_lskfos.html",
-    "dialogue": [
-        "<i>Un promeneur regarde par terre à la recherche semble-t-il de champignons. Il porte une vieille casquette et son panier est vide.</i>",
-        "Bonjour, comment allez-vous ? <br>Moi ça va, sauf que la cueillette n’est pas bonne.",
-        "Vous me direz que j’ai l’habitude, ce n’est pas un coin à champignon ! <br>Mais moi, ça m’importe peu, c’est surtout pour me balader.",
-        "Alors je prends ma casquette, mon panier et je baguenaude. <br>J’aime bien cet endroit, allez savoir pourquoi...",
-        "J’avoue que je trouve plus de bouts de tuiles ou de poteries romaines que de champignons. <br>C’est moins digeste dans la salade mais c’est très agréable !",
-        "Vous êtes vous aussi à la recherche du trésor ? <br>Moi j’ai bien essayé, au début, mais si il ne ressemble pas à un cèpe, je ne vais pas réussir à le trouver.",
-        "Le seul endroit où je ne le chercherai pas, c’est <b>la mare</b>. <br>Ce n'est pas un bon endroit pour conserver quelque chose !",
-        "Il y a un an, j’ai perdu un bracelet la-bas et je l’ai retrouvé le mois dernier, bouffé par l’humidité, je ne vous dis pas ! <br>Bon, je continue ma recherche et bonne chance pour la vôtre !",
-        "<i>Le vieil homme se retourne, ajuste sa casquette et époussette son panier. Et vous le voyez lentement s’éloigner.</i>"
-      ]
-  },
-  "11": {
+  "9570": {
     "important_dialogue": 4,
     "nickname": "Cantonnier",
     "name": "Marius Bedron, Cantonnier",
@@ -131,7 +115,7 @@ const event_json = `{
         "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans un lieu dont le code est donné par le mot <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span></b>."
       ]
   },
-  "485": {
+  "6726": {
     "important_dialogue": 0,
     "nickname": "Tablette",
     "name": "Une tablette romaine gravée",
@@ -140,7 +124,7 @@ const event_json = `{
         "<i>Vous trouvez un cadre en bois dépassant du sol avec de curieux symboles. <br>Vous le déterrer et vous retrouvez face à une tablette en cire de la période romaine.</i>"
       ]
   },
-  "221312": {
+  "22131": {
     "important_dialogue": 0,
     "nickname": "Pelle",
     "name": "Une pelle en très bon état",
@@ -149,7 +133,7 @@ const event_json = `{
         "<i>L’homme vous remercie chaleureusement en vous faisant une accolade et vous donne une pelle ! Grâce à elle, vous pouvez déterrer le trésor.</i>"
       ]
   },
-  "14": {
+  "3198": {
     "important_dialogue": 0,
     "nickname": "Menhir",
     "name": "Lieu : Menhir",
@@ -158,7 +142,7 @@ const event_json = `{
         "<i>Vous vous retrouvez devant un imposant monument fait d'un bloc de pierre dressé verticalement.</i>"
       ]
   },
-  "15": {
+  "5773": {
     "important_dialogue": 0,
     "nickname": "Mare",
     "name": "Lieu : Mare",
@@ -167,7 +151,7 @@ const event_json = `{
         "<i>Une petite étendue d'eau stagnante et peu profonde. <br>Vous pouvez entendre les coassements des crapauds aux alentours.</i>"
       ]
   },
-  "16": {
+  "6626": {
     "important_dialogue": 0,
     "nickname": "Colonne",
     "name": "Lieu : Colonne",
@@ -176,7 +160,7 @@ const event_json = `{
         "<i>Devant vous se dresse une impressionante colonne couronnée par <b>un chapiteau sculpté de manière étrange</b>.</i>"
       ]
   },
-  "17": {
+  "7632": {
     "important_dialogue": 0,
     "nickname": "Noyer",
     "name": "Lieu : Noyer",
@@ -185,7 +169,7 @@ const event_json = `{
         "<i>Sans être un expert en arboriculture, vous devinez facilement que l'arbre qui se trouve devant vous est <b>un noyer millénaire</b>.</i>"
       ]
   },
-  "18": {
+  "4021": {
     "important_dialogue": 0,
     "nickname": "Borne",
     "name": "Lieu : Borne",
