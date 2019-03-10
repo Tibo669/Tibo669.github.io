@@ -249,6 +249,14 @@ const event_json = `{
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
       ]
   },
+  
+  "1151": {
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_search_azesds.html",
+    "dialogue": [
+        "<i>Ce code vous sera utile plus tard <br>Gardez le en mémoire</i>"
+      ]
+  },
   "57": {
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
