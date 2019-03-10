@@ -112,7 +112,7 @@ const event_json = `{
         "<i>Un homme imposant avec un haut jaune fluo et une salopette bleue vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
         "Oh ! Vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
         "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je veux bien vous donner un outil, mais j’ai peur de me faire enguirlander par mon chef.",
-        "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans un lieu dont le code est donné par le mot <b><span style='color: red;'>F</span> <span style='color: orange;'>L</span> <span style='color: darkviolet;'>E</span> <span style='color: blue;'>U</span> <span style='color: darkviolet;'>R</span></b>."
+        "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans un lieu dont le code est donné par le mot <b><span style='color: red;'>R</span> <span style='color: orange;'>O</span> <span style='color: darkviolet;'>S/span> <span style='color: blue;'>E</span></b>."
       ]
   },
   "6726": {
@@ -124,7 +124,7 @@ const event_json = `{
         "<i>Vous trouvez un cadre en bois dépassant du sol avec de curieux symboles. <br>Vous le déterrer et vous retrouvez face à une tablette en cire de la période romaine.</i>"
       ]
   },
-  "22131": {
+  "2213": {
     "important_dialogue": 0,
     "nickname": "Pelle",
     "name": "Une pelle en très bon état",
