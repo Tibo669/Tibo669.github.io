@@ -30,6 +30,9 @@
       <div id='tiles'></div>
     </div>
   </div>
+  <div id="containerHelpButton">
+    <a class="btn" id="helpButton"></a>
+  </div>
 </div>
 
 <div id="containerEvent">
@@ -52,6 +55,20 @@
   </div>
 </div>
 
+<div id="helpContainer" class="helpContainer">
+  <div id="help">
+    <div id="helpHeader">
+    </div>
+    <div id="helpContent">
+    </div>
+    <div id="helpAlert">
+      <div id="helpAlertDialogue">Voulez-vous demander de l'aide au professeur ? <br>Vous allez perdre <b>3 minutes</b> pour établir la liaison.</div>
+      <div id="helpAlertNo" class="helpAlertAction">Annuler</div>
+      <div id="helpAlertYes" class="helpAlertAction">Confirmer</div>
+    </div>
+  </div>
+</div>
+
 <audio id="eventAudioIntro" class="eventAudio" controls preload="none">
   <source src="" type="audio/wav">
 </audio>
@@ -70,6 +87,7 @@
 <script src="../../js/events/event_historienne_dragndrop.js"></script>
 <script src="../../js/event.js"></script>
 <script src="../../js/main.js"></script>
+<script src="../../js/help.js"></script>
 <script src="../../js/elastic.js"></script>
 
 <script>

@@ -123,3 +123,116 @@
 #preload_no_arrow {
   background-image : url("../img/dialogue_button_no_arrow.png");
 }
+
+#helpButton {
+  background-image : url("../img/help_button.png");
+  background-size: cover;
+
+  content: "";
+  width: 75px;
+  height: 75px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#containerHelpButton {
+  position: absolute;
+  text-align: center;
+  right: 5%;
+  top: 5%;
+}
+
+#helpContainer {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 40%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* wrongEvent Content */
+#help {
+  background-image : url("../img/indices.png");
+  background-size: cover;
+
+  width: 300px;
+  height: 450px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  margin: auto;
+  padding-top: 20px;
+}
+
+.helpTab {
+  background-size: cover;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 50px;
+  width: 95px;
+  display: block;
+}
+
+.helpActive {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#helpContent {
+  margin-top: 50px;
+  padding: 20px;
+  padding-top: 120px;
+  width: 300px;
+  height: 350px;
+}
+
+#helpAlert {
+  position: fixed; /* Stay in place */
+  z-index: 4; /* Sit on top */
+  top: 40%;
+  display: none;
+  background-image : url("../img/help_alerte.png");
+  background-size: cover;
+
+  width: 250px;
+  height: 250px;
+
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  margin: auto;
+  margin-left: 25px;
+}
+
+#helpAlertDialogue {
+  text-align: justify;
+  width: 250px;
+  height: 170px;
+  padding: 25px;
+  margin: 0;
+}
+
+.helpAlertAction {
+  position: absolute;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 80px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+}

@@ -23,11 +23,9 @@ document.getElementById("eventField").addEventListener("submit",function(event) 
 let wrongEvent = document.getElementById('wrongEventContainer');
 
 // When the user clicks anywhere outside of the wrongEvent, close it
-window.onclick = function(event) {
-  if (event.target === wrongEvent) {
-    wrongEvent.style.display = "none";
-  }
-};
+wrongEvent.addEventListener('click',function(){
+  wrongEvent.style.display = "none";
+});
 
 document.getElementById('eventButton').addEventListener('click',function(){
   const event_current_id = document.getElementById('eventField').value;

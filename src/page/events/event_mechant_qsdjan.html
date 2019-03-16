@@ -29,6 +29,9 @@
       <div id='tiles'></div>
     </div>
   </div>
+  <div id="containerHelpButton">
+    <a class="btn" id="helpButton"></a>
+  </div>
 </div>
 
 <div id="containerEvent">
@@ -38,6 +41,20 @@
   <div id="dialogue">
     <a class="btn dialogueNameButton" id="dialogueNameButton"></a>
     <a class="btn dialogueButton" id="dialogueButton"></a>
+  </div>
+</div>
+
+<div id="helpContainer" class="helpContainer">
+  <div id="help">
+    <div id="helpHeader">
+    </div>
+    <div id="helpContent">
+    </div>
+    <div id="helpAlert">
+      <div id="helpAlertDialogue">Voulez-vous demander de l'aide au professeur ? <br>Vous allez perdre <b>3 minutes</b> pour établir la liaison.</div>
+      <div id="helpAlertNo" class="helpAlertAction">Annuler</div>
+      <div id="helpAlertYes" class="helpAlertAction">Confirmer</div>
+    </div>
   </div>
 </div>
 
@@ -62,6 +79,7 @@
 <script src="../../js/data.js"></script>
 <script src="../../js/event.js"></script>
 <script src="../../js/main.js"></script>
+<script src="../../js/help.js"></script>
 <script src="../../js/elastic.js"></script>
 
 <script>
@@ -72,11 +90,9 @@
 <script>
   let copyClipboardContainer = document.getElementById('copyClipboardContainer');
   // When the user clicks anywhere outside of the wrongEvent, close it
-  window.onclick = function(event) {
-    if (event.target === copyClipboardContainer) {
-      copyClipboardContainer.style.display = "none";
-    }
-  };
+  copyClipboardContainer.addEventListener('click',function(){
+    copyClipboardContainer.style.display = "none";
+  });
 </script>
 
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>

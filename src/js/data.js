@@ -8,6 +8,7 @@ const event_json = `{
         "Bien, vous avez pris le coup de main ! En plus de notre échange, vous trouverez d'autres informations très utiles sur cette page. <br>Comme par exemple le nom et la photo de votre interlocuteur.",
         "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra de <b>rechercher les numéros des événements</b> que vous découvrirez tout au long de l'aventure.",
         "Une fois un événement terminé, vous pouvez le répéter à tout moment en cliquant sur <b>Revoir les indices</b>. <br>N'hésitez pas à vous en servir !",
+        "Certaines épreuves peuvent se révéler difficiles à surmonter, dans ces moments je serai joignable grâce au bouton ci-dessus, mais attention la communication capricieuse pourrait vous faire perdre de précieuses minutes.",
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
         "Nous sommes sur la piste d’une <b><i>“Villa Rustica”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
         "En effet, un texte ancien vient d’être découvert et nous indique la présence d’un <b>trésor enterré tout proche.</b> <br>Suite à cette nouvelle, de nombreux curieux se pressent sur les lieux et ils ne sont pas tous biens intentionnés.",
@@ -30,6 +31,9 @@ const event_json = `{
         "Je vous conseille cependant de vous méfier des apparences, <b>les colonnes ont été utilisées durant plusieurs périodes historiques</b>. <br>Seul un oeil expert arrive à les <b>classer dans l’ordre chronologique</b>.",
         "D’ailleurs seriez-vous capable de relier ces colonnes avec leur période historique correspondante ? <br>Je suis sur que vous y trouverez <b>une information qui vous aidera</b> pour la suite de votre aventure !",
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
+      ],
+    "help": [
+        "La colonne présente sur le domaine ne semble pas être de la période romaine."
       ]
   },
   "3165": {
@@ -65,6 +69,10 @@ const event_json = `{
         "Et lorsque j’aurai mis la main dessus, je serai riche ! En effet, j’ai déjà trouvé des clients fortunés prêt à tout pour l’acheter. <br>Mais surtout je serai enfin reconnu dans le milieu des chasseurs de trésor.",
         "J’ai de nombreuses pistes et vous comprendrez aisément que je ne peux rien vous dire. <br>Mais trêve de bavardage, bonne journée et bonne chance, malgré tout, dans votre vaine tentative.",
         "<i>Il se retourne et s’éloigne. Vous apercevez un morceau de papier tomber de sa poche. <br>Vous le récupérez et découvrez un étrange message : <br>45.846141,4.575928</i>"
+      ],
+    "help": [
+        "Ces numéros semblent former des coordonnées GPS. <br>Il semblerait même qu’on puisse les copier en cliquant dessus.",
+        "Votre carte pourrait être un bon endroit où rechercher ces coordonnées."
       ]
   },
   "8489": {
@@ -101,7 +109,10 @@ const event_json = `{
         "Si vous voulez la traduction, vous devrez répondre à quelques questions, afin que je vérifie vos connaissances en viticulture",
         "",
         "<i>Pendant ce temps, le viticulteur a avancé dans ses vignes et continue de regarder attentivement ses ceps.<br> Il se retourne vers vous et vous fait un signe d’au revoir.</i>"
-      ] 
+      ],
+    "help": [
+        "<b>La traduction complète :</b> <br>Le trésor de la famille se trouve sous un monument réalisé par la main de l'homme."
+      ]
   },
   "9570": {
     "important_dialogue": 3,
@@ -113,6 +124,9 @@ const event_json = `{
         "Oh ! Vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
         "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je veux bien vous donner un outil, mais j’ai peur de me faire enguirlander par mon chef.",
         "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans <b>un lieu</b> dont le code est donné par le mot <br><b><span style='color: red;'>R</span> <span style='color: orange;'>O</span> <span style='color: limegreen;'>S</span> <span style='color: dodgerblue;'>E</span></b>."
+      ],
+    "help": [
+        "Il semblerait qu’il existe un lien entre le nombre de fleurs de chaque couleur et l'ordre des couleurs dans le mot ROSE."
       ]
   },
   "6726": {
@@ -122,6 +136,11 @@ const event_json = `{
     "url": "events/event_tablette_suiwaz.html",
     "dialogue": [
         "<i>Vous trouvez un cadre en bois dépassant du sol avec de curieux symboles. <br>Vous le déterrer et vous retrouvez face à une tablette en cire de la période romaine.</i>"
+      ],
+    "help": [
+        "Ces lettres ressemblent à des chiffres romains.",
+        "I = 1 <br>V = 5 <br>X = 10 <br>C = 100 <br>M = 1000",
+        "<b>Solution :</b> <br>100 + 1000 +  (5*10) + 1 = 1151"
       ]
   },
   "2213": {
@@ -131,6 +150,9 @@ const event_json = `{
     "url": "events/event_pelle_msoqls.html",
     "dialogue": [
         "<i>L’homme vous remercie chaleureusement en vous faisant une accolade et vous donne une pelle ! Grâce à elle, vous pouvez déterrer le trésor.</i>"
+      ],
+    "help": [
+        "Il faudrait l’associer avec la bonne pièce de puzzle afin de trouver l'emplacement du trésor."
       ]
   },
   "3198": {
@@ -186,6 +208,9 @@ const event_json = `{
     "dialogue": [
         "<i>Un étrange mecanisme se trouve devant vous. Après une analyse approfondie, vous déduisez qu'il faut trouver un <b>code numérique</b>. <br>Malgré ce léger contretemps, vous sentez que votre objectif est proche !</i>",
         ""
+      ],
+    "help": [
+        "N’auriez vous pas trouvé une tablette précédemment ? <br>Si ce n'est pas le cas, n'hésitez pas à retourner parler au <i>Chasseur de Trésor</i>."
       ]
   },
   "256": {
