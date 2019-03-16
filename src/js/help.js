@@ -15,9 +15,6 @@ let helpContainer = document.getElementById('helpContainer');
 
 // When the user clicks anywhere outside of the wrongEvent, close it
 helpContainer.addEventListener('click',function(event){
-  console.log(event.target);
-  console.log(event.currentTarget);
-  console.log(helpContent);
   if (event.target === helpContainer || event.target === helpContent) {
     helpContainer.style.display = "none";
     helpAlert.style.display = "none";
@@ -51,21 +48,29 @@ function createTab(helpText, helpIdx) {
 }
 
 function setActive(idx) {
+  if (idx === 2) {
+    if (sessionStorage.getItem(personage + '_help_1') !== 'true') {
+      return
+    }
+  }
+  if (idx === 1) {
+    if (sessionStorage.getItem(personage + '_help_0') !== 'true') {
+      return
+    }
+  }
   activeIdx = idx;
   for (let i = 0; i < tabList.length; i++) {
     if (i === activeIdx) {
-      if(!tabList[i].classList.contains('helpActive')){
+      if (!tabList[i].classList.contains('helpActive')) {
         tabList[i].classList.add('helpActive');
       }
-    }
-    else {
+    } else {
       tabList[i].classList.remove('helpActive');
     }
   }
-  if ( sessionStorage.getItem(personage + '_help_' + activeIdx.toString()) === 'true') {
+  if (sessionStorage.getItem(personage + '_help_' + activeIdx.toString()) === 'true') {
     helpContent.innerHTML = helpDialogue[activeIdx];
-  }
-  else {
+  } else {
     confirmHelp();
   }
 }
