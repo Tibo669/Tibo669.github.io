@@ -104,7 +104,7 @@ const event_json = `{
       ] 
   },
   "9570": {
-    "important_dialogue": 4,
+    "important_dialogue": 3,
     "nickname": "Cantonnier",
     "name": "Marius Bedron, Cantonnier",
     "url": "events/event_cantonnier_lxoshn.html",
@@ -112,7 +112,7 @@ const event_json = `{
         "<i>Un homme imposant avec un haut jaune fluo et une salopette bleue vous tourne le dos. <br>En vous approchant, vous marchez sur une branche qui craque et l’homme se retourne brusquement.</i>",
         "Oh ! Vous m’avez fait drôlement peur vous autres ! <br>J’ai cru que c’était le chef. Faut dire qu’il est pas commode le chef. <br>Mais dites moi, vous ne seriez pas en train de rechercher le trésor ?",
         "Moi je chercherai bien, mais j’ai trop de boulot à m’occuper de l'entretien de la commune.<br>Pour vous aider, je veux bien vous donner un outil, mais j’ai peur de me faire enguirlander par mon chef.",
-        "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans un lieu dont le code est donné par le mot <br><b><span style='color: red;'>R</span> <span style='color: orange;'>O</span> <span style='color: darkviolet;'>S</span> <span style='color: blue;'>E</span></b>."
+        "Ce qu’on va faire c’est que je vais partir devant. On se retrouve dans ma cabane, dans <b>un lieu</b> dont le code est donné par le mot <br><b><span style='color: red;'>R</span> <span style='color: orange;'>O</span> <span style='color: darkviolet;'>S</span> <span style='color: blue;'>E</span></b>."
       ]
   },
   "6726": {
@@ -181,7 +181,7 @@ const event_json = `{
   "20": {
     "important_dialogue": 1,
     "name": "Un étrange mecanisme vérouillé",
-    "nickname": "Borne",
+    "nickname": "Cadenas",
     "url": "events/event_cadenas_poqjsl.html",
     "dialogue": [
         "<i>Un étrange mecanisme se trouve devant vous. Après une analyse approfondie, vous déduisez qu'il faut trouver un <b>code numérique</b>. <br>Malgré ce léger contretemps, vous sentez que votre objectif est proche !</i>",
@@ -254,7 +254,7 @@ const event_json = `{
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_search_azesds.html",
     "dialogue": [
-        "<i>Ce code vous sera utile plus tard <br>Gardez le en mémoire</i>"
+        "<i>Ce code ne correspond pas à un lieu, mais vous sera utile plus tard !<br>Gardez le en mémoire.</i>"
       ]
   },
   "57": {

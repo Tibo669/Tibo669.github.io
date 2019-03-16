@@ -56,7 +56,7 @@ function next_dialogue() {
 
   // Spécial cantonnier
   if (personage_name === "Marius Bedron, Cantonnier") {
-    if (dialogue_idx === 4) {
+    if (dialogue_idx === 3) {
       let personageImage = document.getElementById("personageImage");
       personageImage.src = "../../img/bac_a_fleur.png";
     }
