@@ -96,7 +96,6 @@ function confirmHelp() {
       sessionStorage.setItem(personage + '_help_' + activeIdx.toString(), 'true');
       loseOneMinute();
       loseOneMinute();
-      loseOneMinute();
     });
   }
 }

@@ -33,7 +33,7 @@ const event_json = `{
         "<i>Pendant ce temps, elle a repris ses élucubrations et semble vous avoir déjà oublié.</i>"
       ],
     "help": [
-        "La colonne présente sur le domaine ne semble pas être de la période romaine."
+        "Le lieu <i>Colonne</i> présent sur le domaine ne semble pas être de la période romaine."
       ]
   },
   "3165": {
@@ -138,8 +138,7 @@ const event_json = `{
         "<i>Vous trouvez un cadre en bois dépassant du sol avec de curieux symboles. <br>Vous le déterrer et vous retrouvez face à une tablette en cire de la période romaine.</i>"
       ],
     "help": [
-        "Ces lettres ressemblent à des chiffres romains.",
-        "I = 1 <br>V = 5 <br>X = 10 <br>C = 100 <br>M = 1000",
+        "Ces lettres ressemblent à des chiffres romains : <br>I = 1 <br>V = 5 <br>X = 10 <br>C = 100 <br>M = 1000",
         "<b>Solution :</b> <br>100 + 1000 +  (5*10) + 1 = 1151"
       ]
   },
@@ -152,7 +151,7 @@ const event_json = `{
         "<i>L’homme vous remercie chaleureusement en vous faisant une accolade et vous donne une pelle ! Grâce à elle, vous pouvez déterrer le trésor.</i>"
       ],
     "help": [
-        "Il faudrait l’associer avec la bonne pièce de puzzle afin de trouver l'emplacement du trésor."
+        "Il faudrait l’additionner avec la bonne pièce de puzzle afin de trouver l'emplacement du trésor."
       ]
   },
   "3198": {
@@ -264,14 +263,14 @@ const event_json = `{
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   },
   "42": {
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   },
   
@@ -286,14 +285,14 @@ const event_json = `{
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   },
   "35": {
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
-        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 2 minutes.</b></i>"
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   }
   
