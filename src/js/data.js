@@ -98,7 +98,7 @@ const event_json = `{
     "name": "Jean Duvalon, Vigneron",
     "url": "events/event_viticulteur_ghsksl.html",
     "well_done": "Bien joué ! <br>Ça fait plaisir de voir des personnes qui s'y connaissent en vin ! <br>Pour vous récompenser, je vous ai aussi fourni la traduction.",
-    "too_bad": "Au moins, il vous reste beaucoup de choses à apprendre sur le vin ! <br>Mais vous comprendrez que je ne vous fournisse qu'une partie de la traduction.<br> N'hésitez pas à appeler le professeur, je suis sur qu'il peut vous traduire le reste",
+    "too_bad": "Au moins, il vous reste beaucoup de choses à apprendre sur le vin ! <br>Mais vous comprendrez que je ne vous fournisse qu'une partie de la traduction.<br> N'hésitez pas à appeler le professeur, il doit pouvoir vous traduire le reste",
     "dialogue": [
         "<i>Un viticulteur regarde attentivement ses vignes et en particulier les feuilles. <br>Il semble perdu dans ses pensées jusqu’à ce qu’il s’exclame en se tournant vers vous. </i>",
         "Ça sera une bonne cuvée ! <br>Vous me direz, on n’a pas le choix, la nature fait son travail et nous on fait de notre mieux.",
