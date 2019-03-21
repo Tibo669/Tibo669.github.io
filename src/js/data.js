@@ -53,7 +53,7 @@ const event_json = `{
         "La <i>Villa Rustica</i> de Bully était, semble-t-il, une exploitation viticole importante. <br>Lors des premières fouilles, nous avons découvert un texte décrivant un <b>trésor enterré aux alentours</b>.",
         " Et c’est là que vous intervenez : <b>vous devez le trouver au plus vite !</b> <br>Il doit être placé dans un musée afin d’être étudié au nom de l’histoire et de l’archéologie. ",
         "Très important, les Romains avaient pour habitude de cacher leurs objets de valeurs sous un lieu symbolique. <b>Je les ai tous recensés sur la carte, il ne vous reste plus qu’à identifier le bon lieu</b>.",
-        "Pour cela, n’hésitez pas à demander de l’aide aux personnes présentes, <b>leurs informations peuvent être précieuses.</b>",
+        "Je sais de source sûre que l’on peut déjà <b>éliminer la borne </b> car elle est trop récente. N’hésitez pas à demander de l’aide aux personnes présentes, <b>leurs informations peuvent être précieuses.</b>",
         "<i>Le jeune homme vous adresse un regard plein de confiance et se replonge dans l’étude de ses documents.</i>"
       ]
   },
