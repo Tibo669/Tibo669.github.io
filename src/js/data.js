@@ -6,7 +6,7 @@ const event_json = `{
         "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br> Avant de vous expliquer votre mission, voyons les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
         "Tant que vous verrez cette petite flèche en dessous du dialogue, <br>cela signifie qu'il reste du texte à afficher.",
         "Bien, vous avez pris le coup de main ! En plus de notre échange, vous trouverez d'autres informations très utiles sur cette page. <br>Comme par exemple le nom et la photo de votre interlocuteur.",
-        "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra de <b>rechercher les numéros des événements</b> que vous découvrirez tout au long de l'aventure.",
+        "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra , en entrant leurs numéros respectifs, <b>d'accéder aux informations sur les lieux et personnages</b> que vous découvrirez tout au long de l'aventure.",
         "Une fois un événement terminé, vous pouvez le répéter à tout moment en cliquant sur <b>Revoir les indices</b>. <br>N'hésitez pas à vous en servir !",
         "Certaines épreuves peuvent se révéler difficiles à surmonter, dans ces moments je serai joignable grâce au bouton ci-dessus, mais attention la communication capricieuse pourrait vous faire perdre de précieuses minutes.",
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
