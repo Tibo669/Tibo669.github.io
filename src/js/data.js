@@ -216,8 +216,8 @@ const event_json = `{
     "name": "Le Trésor !",
     "url": "events/event_tresor_qsdkca.html",
     "dialogue": [
-        "<i>Bravo, vous avez trouvé le trésor ! <br>Il est composé de pièces d’or mais aussi de la <b>dernière amphore</b> contenant encore du vin de l’époque romaine. <br>Une première historique !</i>",
-        "<i>Nous vous remercions pour votre participation. <br>N'hésitez pas à nous faire part de vos retours. <br><br>Pensez à nous rendre visite au domaine</i>"
+        "<i>Bravo, vous avez réussi à ouvrir le coffre ! <br>Cependant à l'intérieur vous ne trouvez qu'un mot sur lequel il est écrit : ",
+        "Le trésor est au 10 chemin du guéret"
       ]
   },
   
