@@ -52,8 +52,8 @@ const event_json = `{
         "Comme par exemple la présence de pavées appartenant à la route reliant Lugdunum-Lyon à Rodumna-Roanne. <br>Mais aussi des tombes, des pièces de monnaie, des tuiles et encore plus incroyable des thermes situés tout près d’ici.",
         "La <i>Villa Rustica</i> de Bully était, semble-t-il, une exploitation viticole importante. <br>Lors des premières fouilles, nous avons découvert un texte décrivant un <b>trésor enterré aux alentours</b>.",
         " Et c’est là que vous intervenez : <b>vous devez le trouver au plus vite !</b> <br>Il doit être placé dans un musée afin d’être étudié au nom de l’histoire et de l’archéologie. ",
-        "Lors de vos recherches, n’hésitez pas à demander de l’aide aux personnes présentes. <br>Mais attention, certaines peuvent essayer de saboter votre mission !",
-        "Au fait, les Romains avaient pour habitude de cacher leurs objets de valeurs près d’un lieu symbolique, comme un carrefour, un point d’eau ou une forêt. <br><b>J’ai recensé les lieux importants sur la carte.</b>",
+        "Très important, les Romains avaient pour habitude de cacher leurs objets de valeurs sous un lieu symbolique. <b>Je les ai tous recensés sur la carte, il ne vous reste plus qu’à identifier le bon lieu</b>.",
+        "Pour cela, n’hésitez pas à demander de l’aide aux personnes présentes, <b>leurs informations peuvent être précieuses.</b>",
         "<i>Le jeune homme vous adresse un regard plein de confiance et se replonge dans l’étude de ses documents.</i>"
       ]
   },
