@@ -152,7 +152,7 @@ require([
         minScale: 300000,
         distance: 50000
       },
-      placeholder: "Search Geocoder",
+      placeholder: "Recherche GPS",
       maxResults: 1,
       maxSuggestions: 0,
       suggestionsEnabled: false,
@@ -161,6 +161,16 @@ require([
     includeDefaultSources: false,
     popupEnabled: false
   });
+  searchWidget.goToOverride = function(view, goToParams) {
+    //x : 509554.61639355734, y : 5756029.5958736045
+    if (Math.round(view.center.x / 10000) === 51 && Math.round(view.center.y / 100000) === 58) {
+      console.log("Recherche center x : " + view.center.x.toString() + ", y : " + view.center.y.toString());
+      return view.goTo(goToParams.target, goToParams.options);
+    }
+    else {
+      console.log("Mauvaise recherche, " + (Math.round(view.center.x / 100000)).toString() + ", y : " + (Math.round(view.center.y / 100000)).toString());
+    }
+  };
   // Add the search widget to the top right corner of the view
   view.ui.add(searchWidget, {
     position: "top-right"
