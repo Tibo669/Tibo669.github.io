@@ -11,7 +11,13 @@ require([
 
   let assistant_visited_stored = sessionStorage.getItem('assistant_visited');
   if ( assistant_visited_stored === 'true') {
-    tagsToDisplay.push("others")
+    tagsToDisplay.push("others");
+  }
+  if ( sessionStorage.getItem('enigme_found') === 'true') {
+    tagsToDisplay.push("pilleur");
+  }
+  if ( sessionStorage.getItem('tresor_found') === "true" ) {
+    tagsToDisplay = ["arrivee"];
   }
 
   const map = new Map({
@@ -80,82 +86,56 @@ require([
   };
 
   let listLocation = [];
-  if ( sessionStorage.getItem('tresor_found') === "true" ) {
-    for (let location_key in map_map) {
-      let location = map_map[location_key];
+
+  for (let location_key in map_map) {
+    let location = map_map[location_key];
+    // On vérifie si on doit bien afficher ce point ou pas
+    if (tagsToDisplay.indexOf(location["tag"]) > -1) {
       let point = {
         type: "point", // autocasts as new Point()
         longitude: location['longitude'],
         latitude: location['latitude']
       };
       let graphic;
-      if (location["tag"] === "depart") {
+      if (location["type"] === "depart") {
         graphic = new Graphic({
           geometry: point,
           symbol: lieudepart
         });
         textSymbol.color = colordepart;
-        textSymbol.text = "Arrivée";
-        let graphicText = new Graphic({
-          geometry: point,
-          symbol: textSymbol
-        });
-        listLocation.push(graphic);
-        listLocation.push(graphicText);
-      }
-    }
-
-  }
-  else {
-    for (let location_key in map_map) {
-      let location = map_map[location_key];
-      // On vérifie si on doit bien afficher ce point ou pas
-      if (tagsToDisplay.indexOf(location["tag"]) > -1) {
-        let point = {
-          type: "point", // autocasts as new Point()
-          longitude: location['longitude'],
-          latitude: location['latitude']
-        };
-        let graphic;
-        if (location["tag"] === "depart") {
+      } else {
+        if (sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true") {
           graphic = new Graphic({
             geometry: point,
-            symbol: lieudepart
+            symbol: visitedMarker
           });
-          textSymbol.color = colordepart;
+          textSymbol.color = colorVisited;
         } else {
-          if (sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true") {
+          if (location['type'] === "lieu") {
             graphic = new Graphic({
               geometry: point,
-              symbol: visitedMarker
+              symbol: lieuMarker
             });
-            textSymbol.color = colorVisited;
+            textSymbol.color = colorLieu;
           } else {
-            if (location['type'] === "lieu") {
-              graphic = new Graphic({
-                geometry: point,
-                symbol: lieuMarker
-              });
-              textSymbol.color = colorLieu;
-            } else {
-              graphic = new Graphic({
-                geometry: point,
-                symbol: personnageMarker
-              });
-              textSymbol.color = colorPersonnage;
-            }
+            graphic = new Graphic({
+              geometry: point,
+              symbol: personnageMarker
+            });
+            textSymbol.color = colorPersonnage;
           }
         }
-        textSymbol.text = location['name'];
-        let graphicText = new Graphic({
-          geometry: point,
-          symbol: textSymbol
-        });
-        listLocation.push(graphic);
-        listLocation.push(graphicText);
       }
+      textSymbol.text = location['name'];
+      let graphicText = new Graphic({
+        geometry: point,
+        symbol: textSymbol
+      });
+      listLocation.push(graphic);
+      listLocation.push(graphicText);
     }
   }
+
   // Add the graphics to the view's graphics layer
   view.graphics.addMany(listLocation);
 
@@ -190,11 +170,8 @@ require([
   searchWidget.goToOverride = function(view, goToParams) {
     //x : 509554.61639355734, y : 5756029.5958736045
     if (Math.round(view.center.x / 10000) === 51 && Math.round(view.center.y / 100000) === 58) {
-      console.log("Recherche center x : " + view.center.x.toString() + ", y : " + view.center.y.toString());
+      sessionStorage.setItem('enigme_found', 'true');
       return view.goTo(goToParams.target, goToParams.options);
-    }
-    else {
-      console.log("Mauvaise recherche, " + (Math.round(view.center.x / 100000)).toString() + ", y : " + (Math.round(view.center.y / 100000)).toString());
     }
   };
   // Add the search widget to the top right corner of the view

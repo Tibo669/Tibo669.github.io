@@ -199,7 +199,7 @@ const event_json = `{
         "<i>Une ancienne borne routière, qui jalonnait certainement à une époque, les voies vers les autres villages.</i>"
       ]
   },
-  "20": {
+  "1208": {
     "important_dialogue": 1,
     "name": "Un étrange mecanisme vérouillé",
     "nickname": "Cadenas",
@@ -259,40 +259,39 @@ const event_json = `{
   },
   
   
-  "29": {
+  "2108": {
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   },
-  "42": {
+  "3408": {
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   },
-  
+  "4908": {
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_mauvais_lieu_sdftui.html",
+    "dialogue": [
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
+      ]
+  },
+  "2708": {
+    "name": "Raté, il n'y a rien ici",
+    "url": "events/event_mauvais_lieu_sdftui.html",
+    "dialogue": [
+        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
+      ]
+  },
   "1151": {
     "name": "Raté, il n'y a rien ici",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Ce code ne correspond pas à un lieu, mais vous sera utile plus tard !<br>Gardez le en mémoire.</i>"
-      ]
-  },
-  "57": {
-    "name": "Raté, il n'y a rien ici",
-    "url": "events/event_mauvais_lieu_sdftui.html",
-    "dialogue": [
-        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
-      ]
-  },
-  "35": {
-    "name": "Raté, il n'y a rien ici",
-    "url": "events/event_mauvais_lieu_sdftui.html",
-    "dialogue": [
-        "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
       ]
   }
   
