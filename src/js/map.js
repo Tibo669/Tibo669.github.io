@@ -80,54 +80,80 @@ require([
   };
 
   let listLocation = [];
-
-  for (let location_key in map_map) {
-    let location = map_map[location_key];
-    // On vérifie si on doit bien afficher ce point ou pas
-    if ( tagsToDisplay.indexOf(location["tag"]) > -1 ) {
+  if ( sessionStorage.getItem('tresor_found') === "true" ) {
+    for (let location_key in map_map) {
+      let location = map_map[location_key];
       let point = {
         type: "point", // autocasts as new Point()
         longitude: location['longitude'],
         latitude: location['latitude']
       };
       let graphic;
-      if ( location["tag"] === "depart") {
+      if (location["tag"] === "depart") {
         graphic = new Graphic({
           geometry: point,
           symbol: lieudepart
         });
         textSymbol.color = colordepart;
+        textSymbol.text = "Arrivée";
+        let graphicText = new Graphic({
+          geometry: point,
+          symbol: textSymbol
+        });
+        listLocation.push(graphic);
+        listLocation.push(graphicText);
       }
-      else {
-        if (sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true") {
+    }
+
+  }
+  else {
+    for (let location_key in map_map) {
+      let location = map_map[location_key];
+      // On vérifie si on doit bien afficher ce point ou pas
+      if (tagsToDisplay.indexOf(location["tag"]) > -1) {
+        let point = {
+          type: "point", // autocasts as new Point()
+          longitude: location['longitude'],
+          latitude: location['latitude']
+        };
+        let graphic;
+        if (location["tag"] === "depart") {
           graphic = new Graphic({
             geometry: point,
-            symbol: visitedMarker
+            symbol: lieudepart
           });
-          textSymbol.color = colorVisited;
+          textSymbol.color = colordepart;
         } else {
-          if (location['type'] === "lieu") {
+          if (sessionStorage.getItem(location['name'].toLowerCase() + '_visited') === "true") {
             graphic = new Graphic({
               geometry: point,
-              symbol: lieuMarker
+              symbol: visitedMarker
             });
-            textSymbol.color = colorLieu;
+            textSymbol.color = colorVisited;
           } else {
-            graphic = new Graphic({
-              geometry: point,
-              symbol: personnageMarker
-            });
-            textSymbol.color = colorPersonnage;
+            if (location['type'] === "lieu") {
+              graphic = new Graphic({
+                geometry: point,
+                symbol: lieuMarker
+              });
+              textSymbol.color = colorLieu;
+            } else {
+              graphic = new Graphic({
+                geometry: point,
+                symbol: personnageMarker
+              });
+              textSymbol.color = colorPersonnage;
+            }
           }
         }
+        textSymbol.text = location['name'];
+        let graphicText = new Graphic({
+          geometry: point,
+          symbol: textSymbol
+        });
+        listLocation.push(graphic);
+        listLocation.push(graphicText);
       }
-      textSymbol.text = location['name'];
-      let graphicText = new Graphic({
-        geometry: point,
-        symbol: textSymbol
-      });
-      listLocation.push(graphic);
-      listLocation.push(graphicText);
     }
   }
   // Add the graphics to the view's graphics layer

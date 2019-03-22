@@ -98,6 +98,14 @@ function next_dialogue() {
     }
   }
 
+  // Spécial cadenas
+  if (personage_name === "Le Trésor !") {
+    if (dialogue_idx === 1) {
+      sessionStorage.setItem('tresor_found', 'true');
+      document.location.href = "../map.html";
+    }
+  }
+
   if ( !from_indices ) {
     dialogue_idx++;
   }
