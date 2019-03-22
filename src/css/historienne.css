@@ -71,19 +71,19 @@
   text-align: center;
 }
 
-#dropzone-romaine {
+#dropzone-grecque {
   position: absolute;
   top: 180px;
   left: 217px;
 }
 
-#dropzone-medievale {
+#dropzone-romaine {
   position: absolute;
   top: 120px;
   left: 0px;
 }
 
-#dropzone-renaissance {
+#dropzone-medievale {
   position: absolute;
   top: 0px;
   left: 216px;

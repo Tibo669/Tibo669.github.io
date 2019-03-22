@@ -4,8 +4,8 @@ const game_data_json = `{
     "id": "romaine"
   },
   "2": {
-    "image": "../../img/colonne_renaissance.jpg",
-    "id": "renaissance"
+    "image": "../../img/colonne_grecque.jpg",
+    "id": "grecque"
   },
   "3": {
     "image": "../../img/colonne_medievale.jpg",

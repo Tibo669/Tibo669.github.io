@@ -17,8 +17,8 @@ function dragMoveListener (event) {
 interact('#dropzone-romaine').dropzone({
   // only accept elements matching this CSS selector
   accept: '.drag-drop',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  // Require a 50% element overlap for a drop to be possible
+  overlap: 0.5,
   ondrop: function (event) {
     if (event.relatedTarget.id === "colonne-romaine") {
       event.relatedTarget.classList.remove('drag-drop');
@@ -38,8 +38,8 @@ interact('#dropzone-romaine').dropzone({
 interact('#dropzone-grecque').dropzone({
   // only accept elements matching this CSS selector
   accept: '#colonne-grecque',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  // Require a 50% element overlap for a drop to be possible
+  overlap: 0.5,
   ondrop: function (event) {
     event.relatedTarget.classList.remove('drag-drop');
     event.relatedTarget.style.zIndex="-1";
@@ -51,8 +51,8 @@ interact('#dropzone-grecque').dropzone({
 interact('#dropzone-medievale').dropzone({
   // only accept elements matching this CSS selector
   accept: '.drag-drop',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  // Require a 50% element overlap for a drop to be possible
+  overlap: 0.5,
   ondrop: function (event) {
     if (event.relatedTarget.id === "colonne-medievale") {
       event.relatedTarget.classList.remove('drag-drop');
@@ -72,8 +72,8 @@ interact('#dropzone-medievale').dropzone({
 interact('#dropzone-renaissance').dropzone({
   // only accept elements matching this CSS selector
   accept: '.drag-drop',
-  // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  // Require a 50% element overlap for a drop to be possible
+  overlap: 0.5,
   ondrop: function (event) {
     if (event.relatedTarget.id === "colonne-renaissance") {
       event.relatedTarget.classList.remove('drag-drop');
