@@ -216,8 +216,8 @@ const event_json = `{
     "name": "Le Trésor !",
     "url": "events/event_tresor_qsdkca.html",
     "dialogue": [
-        "<i>Bravo, vous avez réussi à ouvrir le coffre ! <br>Cependant à l'intérieur vous ne trouvez qu'un mot sur lequel il est écrit : ",
-        "Le trésor est au 10 chemin du guéret à Bully"
+        "<i>Bravo, vous avez réussi à ouvrir le coffre ! <br>Cependant à l'intérieur vous ne trouvez qu'un mot sur lequel est écrit : <br>Désolés, nous sommes déjà passés par là, le trésor est au 10 chemin du guéret à Bully.",
+        ""
       ]
   },
   
