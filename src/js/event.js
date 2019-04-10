@@ -1,20 +1,16 @@
 const personage = sessionStorage.getItem('current_personage');
 let personage_name = event_map[personage]['name'];
+const nickname = event_map[personage]['nickname'].toLowerCase();
 let from_indices = false;
 
 dialogue_list = event_map[personage]['dialogue'];
 
 document.getElementById("dialogueNameButton").innerHTML = personage_name;
-dialogue_idx = 1;
+dialogue_idx = 0;
 dialogueButton = document.getElementById("dialogueButton");
-dialogueButton.innerHTML = dialogue_list[0];
 
 if ( dialogue_list.length === 1 ){
   dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
-}
-else {
-// Intro du personnage
-  document.getElementById("eventAudioIntro").play();
 }
 
 if ( sessionStorage.getItem('from_indices') === 'true') {
@@ -22,8 +18,9 @@ if ( sessionStorage.getItem('from_indices') === 'true') {
   from_indices = true;
   dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
   dialogue_idx = event_map[personage]['important_dialogue'];
-  next_dialogue();
 }
+
+next_dialogue();
 
 document.getElementById('dialogueButton').addEventListener('click', next_dialogue, false);
 
@@ -31,16 +28,12 @@ function next_dialogue() {
   // Avancée dans le dialogue
   if (dialogue_idx < dialogue_list.length) {
     dialogueButton.innerHTML = dialogue_list[dialogue_idx];
+    playAudio();
   }
 
   // Sortie du personnage
   if (dialogue_idx === dialogue_list.length - 1) {
     dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
-    document.getElementById("eventAudioDialogue").pause();
-    document.getElementById("eventAudioFin").play();
-  } else if (dialogue_idx === 1 && dialogue_list.length !== 1) {
-    document.getElementById("eventAudioIntro").pause();
-    document.getElementById("eventAudioDialogue").play();
   }
 
   // Spécial mechant
@@ -66,7 +59,6 @@ function next_dialogue() {
   if (personage_name === "Jean Duvalon, Vigneron") {
     if (dialogue_idx === 7) {
       let vigneron_done_stored = sessionStorage.getItem('vigneron_done');
-      document.getElementById("eventAudioDialogue").pause();
       if (vigneron_done_stored === null) {
         questionLauncher();
       } else {
@@ -82,7 +74,6 @@ function next_dialogue() {
   if (personage_name === "Hélène Vincier, Historienne") {
     if (dialogue_idx === 5) {
       let historienne_done_stored = sessionStorage.getItem('historienne_done');
-      document.getElementById("eventAudioDialogue").pause();
       if (historienne_done_stored === null) {
         gameLauncher();
       } else {
@@ -109,6 +100,20 @@ function next_dialogue() {
   if ( !from_indices ) {
     dialogue_idx++;
   }
+}
+
+function playAudio() {
+  if (!document.contains(document.getElementById("audio"))) {
+    let audio      = document.createElement('audio');
+    audio.id       = 'audio';
+    audio.controls = 'controls';
+    audio.type     = 'audio/wav';
+    document.body.appendChild(audio);
+  }
+  let audio = document.getElementById("audio");
+  audio.pause();
+  audio.src = '../../audio/' + nickname + '/' + nickname + dialogue_idx.toString() + '.wav';
+  audio.play();
 }
 
 function copyToClipboard(text) {

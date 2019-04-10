@@ -1,6 +1,7 @@
 const event_json = `{
   "intro_qsdokx": {
     "name": "Professeur Martin, Archéologue",
+    "nickname": "Archéologue",
     "url": "events/event_historienne_roeksn.html",
     "dialogue": [
         "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br> Avant de vous expliquer votre mission, voyons les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
@@ -22,6 +23,7 @@ const event_json = `{
   "8228": {
     "important_dialogue": 5,
     "nickname": "Historienne",
+    "indice": "True",
     "name": "Hélène Vincier, Historienne",
     "url": "events/event_historienne_roeksn.html",
     "dialogue": [
@@ -39,6 +41,7 @@ const event_json = `{
   "3165": {
     "important_dialogue": 11,
     "nickname": "Assistant",
+    "indice": "True",
     "name": "Thomas Goutte, Assistant du Pr. Martin",
     "url": "events/event_assistant_qsdkaz.html",
     "dialogue": [
@@ -60,6 +63,7 @@ const event_json = `{
   "2753": {
     "important_dialogue": 5,
     "nickname": "Pilleur",
+    "indice": "True",
     "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
@@ -78,6 +82,7 @@ const event_json = `{
   "8489": {
     "important_dialogue": 6,
     "nickname": "Voisine",
+    "indice": "True",
     "name": "Madame Petitejeanne, Vieille voisine",
     "url": "events/event_vieille_podksl.html",
     "dialogue": [
@@ -95,6 +100,7 @@ const event_json = `{
   "9487": {
     "important_dialogue": 7,
     "nickname": "Vigneron",
+    "indice": "True",
     "name": "Jean Duvalon, Vigneron",
     "url": "events/event_viticulteur_ghsksl.html",
     "well_done": "Bien joué ! <br>Ça fait plaisir de voir des personnes qui s'y connaissent en vin ! <br>Pour vous récompenser, je vous ai aussi fourni la traduction.",
@@ -117,6 +123,7 @@ const event_json = `{
   "9570": {
     "important_dialogue": 3,
     "nickname": "Cantonnier",
+    "indice": "True",
     "name": "Marius Bedron, Cantonnier",
     "url": "events/event_cantonnier_lxoshn.html",
     "dialogue": [
@@ -132,6 +139,7 @@ const event_json = `{
   "6726": {
     "important_dialogue": 0,
     "nickname": "Tablette",
+    "indice": "True",
     "name": "Une tablette romaine gravée",
     "url": "events/event_tablette_suiwaz.html",
     "dialogue": [
@@ -145,6 +153,7 @@ const event_json = `{
   "2213": {
     "important_dialogue": 0,
     "nickname": "Pelle",
+    "indice": "True",
     "name": "Une pelle en très bon état",
     "url": "events/event_pelle_msoqls.html",
     "dialogue": [
@@ -157,6 +166,7 @@ const event_json = `{
   "3198": {
     "important_dialogue": 0,
     "nickname": "Menhir",
+    "indice": "True",
     "name": "Lieu : Menhir",
     "url": "events/event_menhir_mlsnch.html",
     "dialogue": [
@@ -166,6 +176,7 @@ const event_json = `{
   "5773": {
     "important_dialogue": 0,
     "nickname": "Mare",
+    "indice": "True",
     "name": "Lieu : Mare",
     "url": "events/event_mare_ysundh.html",
     "dialogue": [
@@ -175,6 +186,7 @@ const event_json = `{
   "6626": {
     "important_dialogue": 0,
     "nickname": "Colonne",
+    "indice": "True",
     "name": "Lieu : Colonne",
     "url": "events/event_colonne_osdpsd.html",
     "dialogue": [
@@ -184,6 +196,7 @@ const event_json = `{
   "7632": {
     "important_dialogue": 0,
     "nickname": "Noyer",
+    "indice": "True",
     "name": "Lieu : Noyer",
     "url": "events/event_noyer_qsdjxj.html",
     "dialogue": [
@@ -193,6 +206,7 @@ const event_json = `{
   "4021": {
     "important_dialogue": 0,
     "nickname": "Borne",
+    "indice": "True",
     "name": "Lieu : Borne",
     "url": "events/event_borne_piwxdn.html",
     "dialogue": [
@@ -203,6 +217,7 @@ const event_json = `{
     "important_dialogue": 1,
     "name": "Un étrange mecanisme vérouillé",
     "nickname": "Cadenas",
+    "indice": "True",
     "url": "events/event_cadenas_poqjsl.html",
     "dialogue": [
         "<i>Un étrange mecanisme se trouve devant vous. Après une analyse approfondie, vous déduisez qu'il faut trouver un <b>code numérique</b>. <br>Malgré ce léger contretemps, vous sentez que votre objectif est proche !</i>",
@@ -214,6 +229,7 @@ const event_json = `{
   },
   "256": {
     "name": "Le Trésor !",
+    "nickname": "Tresor",
     "url": "events/event_tresor_qsdkca.html",
     "dialogue": [
         "<i>Bravo, vous avez réussi à ouvrir le coffre ! <br>Cependant à l'intérieur vous ne trouvez qu'un mot sur lequel est écrit : <br>Désolés, nous sommes déjà passés par là, le trésor est au 10 chemin du guéret à Bully.",
@@ -224,6 +240,7 @@ const event_json = `{
   
   "27": {
     "name": "Rien à voir ici",
+    "nickname": "Rien_a_voir",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
@@ -231,6 +248,7 @@ const event_json = `{
   },
   "34": {
     "name": "Rien à voir ici",
+    "nickname": "Rien_a_voir",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
@@ -238,6 +256,7 @@ const event_json = `{
   },
   "21": {
     "name": "Rien à voir ici",
+    "nickname": "Rien_a_voir",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
@@ -245,6 +264,7 @@ const event_json = `{
   },
   "49": {
     "name": "Rien à voir ici",
+    "nickname": "Rien_a_voir",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
@@ -252,6 +272,7 @@ const event_json = `{
   },
   "12": {
     "name": "Rien à voir ici",
+    "nickname": "Rien_a_voir",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Après avoir examiné attentivement le lieu, vous ne trouvez rien d'intéressant. <br>Il vous manque certainement un outil pour avancer dans votre recherche.</i>"
@@ -261,6 +282,7 @@ const event_json = `{
   
   "2108": {
     "name": "Raté, il n'y a rien ici",
+    "nickname": "Raté",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -268,6 +290,7 @@ const event_json = `{
   },
   "3408": {
     "name": "Raté, il n'y a rien ici",
+    "nickname": "Raté",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -275,6 +298,7 @@ const event_json = `{
   },
   "4908": {
     "name": "Raté, il n'y a rien ici",
+    "nickname": "Raté",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -282,6 +306,7 @@ const event_json = `{
   },
   "2708": {
     "name": "Raté, il n'y a rien ici",
+    "nickname": "Raté",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -289,6 +314,7 @@ const event_json = `{
   },
   "1151": {
     "name": "Raté, il n'y a rien ici",
+    "nickname": "Raté",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Ce code ne correspond pas à un lieu, mais vous sera utile plus tard !<br>Gardez le en mémoire.</i>"

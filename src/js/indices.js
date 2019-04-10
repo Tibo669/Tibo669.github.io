@@ -5,7 +5,7 @@ let positionTop = 0;
 for (let event_key in event_map) {
   let event = event_map[event_key];
   // On vérifie si on doit proposer un indice pour cet évenement
-  if ( 'nickname' in event ) {
+  if ( 'indice' in event ) {
     // Puis on vérifie si l'élément a déjà été découvert
     if ( sessionStorage.getItem(event['nickname'].toLowerCase() + '_visited') === "true" ) {
       createIndice(event, event_key, positionLeft, positionTop);
