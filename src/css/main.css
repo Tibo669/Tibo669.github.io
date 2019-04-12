@@ -476,7 +476,7 @@ textarea {
   color: black;
   text-align: center;
   background-color: whitesmoke;
-  padding: .9em 1.8em;
+  padding: .9em 0.9em;
   border: none;
   outline: none;
   -webkit-border-radius: 4px;

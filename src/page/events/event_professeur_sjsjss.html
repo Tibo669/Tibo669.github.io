@@ -20,6 +20,9 @@
 </head>
 <body>
 <div id="header">
+  <div id="containerReturnButton">
+    <a class="btn returnButton" href="../game.html"></a>
+  </div>
   <div id="containerCountdown">
     <div id="countdown">
       <div id='tiles'></div>
@@ -29,10 +32,10 @@
 
 <div id="containerEvent">
   <div id="personage">
-    <img src="../../img/tresor.jpg" alt="tresor" id="personageImage">
+    <img src="../../img/archeologue.png" alt="professeur" id="personageImage">
   </div>
   <div id="dialogue">
-    <a class="btn dialogueNameButton oneTextLine" id="dialogueNameButton"></a>
+    <a class="btn dialogueNameButton" id="dialogueNameButton"></a>
     <a class="btn dialogueButton" id="dialogueButton"></a>
   </div>
 </div>
@@ -43,8 +46,8 @@
 <script src="../../js/elastic.js"></script>
 
 <script>
-  sessionStorage.setItem('tresor_visited', 'true');
-  postElastic('tresor');
+  sessionStorage.setItem('professeur_visited', 'true');
+  postElastic('professeur');
 </script>
 
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>

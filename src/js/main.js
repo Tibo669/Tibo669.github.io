@@ -17,9 +17,15 @@ else {
 
 let countdown = document.getElementById("tiles"); // get tag element
 
-getCountdown();
-
 let intervalCountdown = setInterval(function () { getCountdown(); }, 1000);
+
+if ( sessionStorage.getItem('tresor_visited') === 'true') {
+  window.clearInterval(intervalCountdown);
+  getFinalCountdown();
+}
+else {
+  getCountdown();
+}
 
 function getCountdown(){
   target_date_stored = sessionStorage.getItem('target_date');
@@ -38,14 +44,14 @@ function getCountdown(){
     minutes = pad(parseInt(seconds_left / 60));
     seconds = pad(parseInt(seconds_left % 60));
     if (parseInt(minutes) < 5) {
-      countdownColor = " style='color: darkorange'";
+      countdownColor = " style='color: orange'";
     }
   }
   else {
     let seconds_left = (currentDate - targetDate) / 1000;
     minutes = pad(parseInt(seconds_left / 60));
     seconds = pad(parseInt(seconds_left % 60));
-    countdownColor = " style='color: darkred'";
+    countdownColor = " style='color: red'";
   }
 
   // format countdown string + set tag value

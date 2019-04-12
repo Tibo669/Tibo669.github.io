@@ -1,8 +1,10 @@
 const event_json = `{
   "intro_qsdokx": {
     "name": "Professeur Martin, Archéologue",
-    "nickname": "Archéologue",
-    "url": "events/event_historienne_roeksn.html",
+    "nickname": "Professeur",
+    "indice": "True",
+    "important_dialogue": 12,
+    "url": "events/event_professeur_sjsjss.html",
     "dialogue": [
         "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br> Avant de vous expliquer votre mission, voyons les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
         "Tant que vous verrez cette petite flèche en dessous du dialogue, <br>cela signifie qu'il reste du texte à afficher.",

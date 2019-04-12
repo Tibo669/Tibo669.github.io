@@ -90,11 +90,11 @@
 }
 
 .dropzone-active {
-  border-color: darkgreen;
+  border-color: green;
 }
 
 .dropzone-wrong {
-  border-color: darkred;
+  border-color: red;
 }
 
 .drag-drop {

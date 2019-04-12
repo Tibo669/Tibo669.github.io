@@ -49,10 +49,6 @@
   </div>
 </div>
 
-<audio id="eventAudioIntro" class="eventAudio" controls preload="none">
-  <source src="" type="audio/wav">
-</audio>
-
 <script>
   sessionStorage.setItem('current_personage', "intro_qsdokx");
 </script>
@@ -62,6 +58,7 @@
 <script src="../js/elastic.js"></script>
 
 <script>
+  sessionStorage.setItem('professeur_visited', 'true');
   postElastic('introduction');
 </script>
 

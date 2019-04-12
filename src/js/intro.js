@@ -1,16 +1,16 @@
 const personage = sessionStorage.getItem('current_personage');
 let personage_name = event_map[personage]['name'];
+const nickname = event_map[personage]['nickname'].toLowerCase();
 
 dialogue_list = event_map[personage]['dialogue'];
 
-const dialogueNameButton = document.getElementById("dialogueNameButton")
+const dialogueNameButton = document.getElementById("dialogueNameButton");
 dialogueNameButton.innerHTML = personage_name;
-dialogue_idx = 1;
-dialogueButton = document.getElementById("dialogueButton");
-dialogueButton.innerHTML = dialogue_list[0];
-personageImage = document.getElementById("personageImage");
-// Lancement du son d'intro
-document.getElementById("eventAudioIntro").play();
+let dialogue_idx = 0;
+let dialogueButton = document.getElementById("dialogueButton");
+let personageImage = document.getElementById("personageImage");
+// Lancement de l'intro
+introduction();
 
 
 document.getElementById('dialogueButton').addEventListener('click',function(){
@@ -21,6 +21,7 @@ function introduction() {
   // Avancée dans le dialogue
   if ( dialogue_idx < dialogue_list.length ) {
     dialogueButton.innerHTML = dialogue_list[dialogue_idx];
+    playAudio()
   }
 
   if ( dialogue_idx  === 3 ) {
@@ -90,6 +91,20 @@ function introduction() {
     startGame();
   }
   dialogue_idx ++;
+}
+
+function playAudio() {
+  if (!document.contains(document.getElementById("audio"))) {
+    let audio      = document.createElement('audio');
+    audio.id       = 'audio';
+    audio.controls = 'controls';
+    audio.type     = 'audio/wav';
+    document.body.appendChild(audio);
+  }
+  let audio = document.getElementById("audio");
+  audio.pause();
+  audio.src = '../audio/' + nickname + '/' + nickname + dialogue_idx.toString() + '.wav';
+  audio.play();
 }
 
 function startGame() {
