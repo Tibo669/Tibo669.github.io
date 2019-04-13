@@ -70,7 +70,7 @@ const event_json = `{
     "name": "Tennesse Johnson, Chasseur de trésor",
     "url": "events/event_mechant_qsdjan.html",
     "dialogue": [
-        "<i>Un homme avec un chapeau délavé est en train de griffonner des notes sur son carnet. <br>Il s'interrompt et ferme prestement son carnet lorsque vous arrivez à sa hauteur. <br>Il s'adresse à vous d’une voix forte.</i>",
+        "<i>Un homme avec un chapeau délavé est en train de griffonner des notes sur son carnet. <br>Il s'interrompt et ferme prestement son carnet lorsque vous arrivez à sa hauteur.</i>",
         "Ah ! Donc voilà mes fameux concurrents. <br>Je vous imaginais plus grands, plus expérimentés bref passons...",
         "C’est gentil de votre part d’être venus essayer, mais seulement moi, Tennessee Johnson, possède les capacités pour trouver ce maudit trésor.",
         "Et lorsque j’aurai mis la main dessus, je serai riche ! En effet, j’ai déjà trouvé des clients fortunés prêt à tout pour l’acheter. <br>Mais surtout je serai enfin reconnu dans le milieu des chasseurs de trésor.",
