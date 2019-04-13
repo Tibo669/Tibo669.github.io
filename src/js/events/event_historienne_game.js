@@ -51,6 +51,7 @@ function returnDialogue() {
   document.getElementById('containerGame').style.display = 'none';
   document.getElementById("containerEvent").style.display = "";
   removeColonnes();
+  next_dialogue();
 }
 
 function removeColonnes() {

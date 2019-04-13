@@ -40,16 +40,35 @@
 
 .dialogueButton {
 
-  background-image : url("../img/dialogue_button.png");
+  background-image : url("../img/dialogue_button_forward.png");
   background-size: cover;
 
   content: "";
   width: 300px;
   height: 200px;
   outline-width: 250px;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 0.95em;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: justify;
+
+}
+
+#dialogueButtonReturn {
+  position: absolute;
+  display: none;
+  content: "";
+  width: 150px;
+  height: 50px;
+  outline-width: 250px;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 2;
 
   background-color: transparent;
   background-position: center center;

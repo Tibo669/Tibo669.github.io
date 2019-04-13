@@ -6,8 +6,10 @@ let from_indices = false;
 dialogue_list = event_map[personage]['dialogue'];
 
 document.getElementById("dialogueNameButton").innerHTML = personage_name;
-dialogue_idx = 0;
-dialogueButton = document.getElementById("dialogueButton");
+dialogue_idx = -1;
+let dialogueButton = document.getElementById("dialogueButton");
+createReturnButton();
+let dialogueButtonReturn = document.getElementById("dialogueButtonReturn");
 
 if ( dialogue_list.length === 1 ){
   dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
@@ -22,18 +24,52 @@ if ( sessionStorage.getItem('from_indices') === 'true') {
 
 next_dialogue();
 
-document.getElementById('dialogueButton').addEventListener('click', next_dialogue, false);
+dialogueButton.addEventListener('click', next_dialogue, false);
+dialogueButtonReturn.addEventListener('click', function(){next_dialogue(true)}, false);
 
-function next_dialogue() {
+function next_dialogue(reverse=false) {
+  if ( !from_indices ) {
+    if (reverse === true) {
+      if (dialogue_idx > 0) {
+        dialogue_idx--;
+      }
+    }
+    else {
+      if (dialogue_idx < dialogue_list.length - 1) {
+        dialogue_idx++;
+      }
+    }
+  }
+
+  // Gestion des flèches en fonction de la position dans les slides
+  if (dialogue_idx === 0) {
+    // Il n'y a qu'un seul slide de dialogue
+    if (dialogue_idx === dialogue_list.length - 1) {
+      dialogueButtonReturn.style.display = "none";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
+    }
+    // On est sur la première slide du dialogue
+    else {
+      dialogueButtonReturn.style.display = "none";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_forward.png)";
+    }
+  }
+  else {
+    // On est sur la denière slide du dialogue
+    if (dialogue_idx === dialogue_list.length - 1) {
+      dialogueButtonReturn.style.display = "block";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_backward.png)";
+    }
+    // On est au milieu du dialogue
+    else {
+      dialogueButtonReturn.style.display = "block";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_two_ways.png)";
+    }
+  }
   // Avancée dans le dialogue
   if (dialogue_idx < dialogue_list.length) {
     dialogueButton.innerHTML = dialogue_list[dialogue_idx];
     playAudio();
-  }
-
-  // Sortie du personnage
-  if (dialogue_idx === dialogue_list.length - 1) {
-    dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
   }
 
   // Spécial mechant
@@ -96,10 +132,6 @@ function next_dialogue() {
       document.location.href = "../map.html";
     }
   }
-
-  if ( !from_indices ) {
-    dialogue_idx++;
-  }
 }
 
 function playAudio() {
@@ -114,6 +146,15 @@ function playAudio() {
   audio.pause();
   audio.src = '../../audio/' + nickname + '/' + nickname + dialogue_idx.toString() + '.wav';
   audio.play();
+}
+
+function createReturnButton() {
+  let boundingRect = dialogueButton.getBoundingClientRect();
+  let dialogueButtonReturn = document.createElement("a");
+  dialogueButtonReturn.setAttribute("id", "dialogueButtonReturn");
+  document.body.appendChild(dialogueButtonReturn);
+  dialogueButtonReturn.style.top = boundingRect.top.toString() + "px";
+  dialogueButtonReturn.style.left = boundingRect.left.toString() + "px";
 }
 
 function copyToClipboard(text) {
