@@ -40,30 +40,34 @@ function next_dialogue(reverse=false) {
       }
     }
   }
-
-  // Gestion des flèches en fonction de la position dans les slides
-  if (dialogue_idx === 0) {
-    // Il n'y a qu'un seul slide de dialogue
-    if (dialogue_idx === dialogue_list.length - 1) {
-      dialogueButtonReturn.style.display = "none";
-      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
-    }
-    // On est sur la première slide du dialogue
-    else {
-      dialogueButtonReturn.style.display = "none";
-      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_forward.png)";
-    }
+  if (from_indices) {
+    dialogueButtonReturn.style.display = "none";
+    dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
   }
   else {
-    // On est sur la denière slide du dialogue
-    if (dialogue_idx === dialogue_list.length - 1) {
-      dialogueButtonReturn.style.display = "block";
-      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_backward.png)";
-    }
-    // On est au milieu du dialogue
-    else {
-      dialogueButtonReturn.style.display = "block";
-      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_two_ways.png)";
+    // Gestion des flèches en fonction de la position dans les slides
+    if (dialogue_idx === 0) {
+      // Il n'y a qu'un seul slide de dialogue
+      if (dialogue_idx === dialogue_list.length - 1) {
+        dialogueButtonReturn.style.display = "none";
+        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
+      }
+      // On est sur la première slide du dialogue
+      else {
+        dialogueButtonReturn.style.display = "none";
+        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_forward.png)";
+      }
+    } else {
+      // On est sur la denière slide du dialogue
+      if (dialogue_idx === dialogue_list.length - 1) {
+        dialogueButtonReturn.style.display = "block";
+        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_backward.png)";
+      }
+      // On est au milieu du dialogue
+      else {
+        dialogueButtonReturn.style.display = "block";
+        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_two_ways.png)";
+      }
     }
   }
   // Avancée dans le dialogue
