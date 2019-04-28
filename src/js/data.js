@@ -12,7 +12,7 @@ const event_json = `{
         "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra , en entrant leurs numéros respectifs, <b>d'accéder aux informations sur les lieux et personnages</b> que vous découvrirez tout au long de l'aventure.",
         "Une fois un événement terminé, vous pouvez le répéter à tout moment en cliquant sur <b>Revoir les indices</b>. <br>N'hésitez pas à vous en servir !",
         "Certaines épreuves peuvent se révéler difficiles à surmonter, dans ces moments je serai joignable grâce au bouton ci-dessus, mais attention la communication capricieuse pourrait vous faire perdre de précieuses minutes.",
-        "Je vous laisse une <b>carte des environs.</b>, vous pourrez vous localiser et faire des recherche de coordonnées dessus",
+        "Je vous laisse une <b>carte des environs.</b> Vous pourrez vous localiser et faire des recherche de coordonnées dessus",
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
         "Nous sommes sur la piste d’une <b><i>“Villa Rustica”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
         "En effet, un texte ancien vient d’être découvert et nous indique la présence d’un <b>trésor enterré tout proche.</b> <br>Suite à cette nouvelle, de nombreux curieux se pressent sur les lieux et ils ne sont pas tous biens intentionnés.",
