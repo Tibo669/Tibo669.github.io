@@ -12,12 +12,13 @@ const event_json = `{
         "Nous allons faire un tour rapide. <br>Voici l'élément le plus important, il vous permettra , en entrant leurs numéros respectifs, <b>d'accéder aux informations sur les lieux et personnages</b> que vous découvrirez tout au long de l'aventure.",
         "Une fois un événement terminé, vous pouvez le répéter à tout moment en cliquant sur <b>Revoir les indices</b>. <br>N'hésitez pas à vous en servir !",
         "Certaines épreuves peuvent se révéler difficiles à surmonter, dans ces moments je serai joignable grâce au bouton ci-dessus, mais attention la communication capricieuse pourrait vous faire perdre de précieuses minutes.",
+        "Je vous laisse une <b>carte des environs.</b>, vous pourrez vous localiser et faire des recherche de coordonnées dessus"
         "Parfait, poursuivons ! <br>Comme je vous le disais, je suis le Professeur Martin et je m’occupe du site de fouille de Roche-Cattin sur la commune de Bully.",
         "Nous sommes sur la piste d’une <b><i>“Villa Rustica”</i></b>, <br>une maison de campagne romaine, mais le temps presse !",
         "En effet, un texte ancien vient d’être découvert et nous indique la présence d’un <b>trésor enterré tout proche.</b> <br>Suite à cette nouvelle, de nombreux curieux se pressent sur les lieux et ils ne sont pas tous biens intentionnés.",
         "Étant en conférence à Lyon en ce moment, je ne puis être sur place et m’en occuper moi-même. <br>C’est pour cela que j’ai fait appel à vous, les meilleurs des chasseurs de trésors !",
         "Si vous le voulez bien, je vous laisse vous présenter rapidement. <br>Il vous suffira d'appuyer sur la <b>flèche ci-dessus</b>, quand vous aurez terminé.",
-        "Je compte sur vos talents d'enquêteurs et d'aventuriers pour le trouver avant qu’il ne se fasse voler. <br>Pour vous aider dans votre recherche, je vous laisse une <b>carte des environs.</b>",
+        "Je compte sur vos talents d'enquêteurs et d'aventuriers pour le trouver avant qu’il ne se fasse voler.",
         "Vous devriez commencer par <b>rendre visite à mon génial assistant</b>, <br>qui à créé ce merveilleux outil afin de vous aider à avancer dans votre enquête.",
         "Ah ! Une dernière chose, vous allez entrer sur un site de fouille archéologique alors <b>prenez soin de la nature</b>, <b>veillez à ne rien dégrader</b> et à <b>tout laisser à sa place</b>. <br>Je vous souhaite bon courage."
       ]
@@ -95,7 +96,7 @@ const event_json = `{
         "Et vas-y que je creuse, vas-y que je déclame des textes en latin et encore, je vous la fais courte... <br>Mais vous me semblez différents et bien sympathiques les gones.",
         "Si ils étaient venus me voir dès le début de leurs recherches, je leur aurai donné des informations, moi. <br>Mais qui fait attention à la vieille du quartier ?",
         "Sauf que le quartier, je le connais comme ma poche, moi. Vous voyez la maison derrière ? C’est là que j’y suis née. <br>Tout change si vite maintenant. ",
-        "Les seules choses qui ont traversé le temps sont <b>la mare, le noyer, le menhir et la colonne</b>. <br>Je ne sais pas si ça peut vous aider, mais au moins, c’est dit.",
+        "Les seules choses qui ont traversé le temps sont <b>le noyer, le menhir et la colonne</b>. <br>Je ne sais pas si ça peut vous aider, mais au moins, c’est dit.",
         "Allez sur ce, bonne journée. <br>Je dois aller nourrir la télé et regarder minouche, ou l’inverse.",
         "<i>La voisine se retourne et se dirige vers sa maison. Arrivée sur le pas de la porte, elle se retourne une dernière fois et vous fait un clin d’oeil. <br>Le temps vous réagissiez, elle a déjà claqué la porte à en faire trembler les murs.</i>"
       ]
