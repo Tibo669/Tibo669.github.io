@@ -1,7 +1,7 @@
 let minutes, seconds; // variables for time units
 let targetDate;
 
-const gameDuration = 1000*3600;
+const gameDuration = 1000*60*90;
 
 let target_date_stored = sessionStorage.getItem('target_date');
 
