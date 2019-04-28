@@ -44,7 +44,7 @@
 
 .dialogueButton {
 
-  background-image : url("../img/dialogue_button.png");
+  background-image : url("../img/dialogue_button_forward.png");
   background-size: cover;
 
   content: "";

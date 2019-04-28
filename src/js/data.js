@@ -285,7 +285,7 @@ const event_json = `{
   
   "2108": {
     "name": "Raté, il n'y a rien ici",
-    "nickname": "Raté",
+    "nickname": "Rate",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -293,7 +293,7 @@ const event_json = `{
   },
   "3408": {
     "name": "Raté, il n'y a rien ici",
-    "nickname": "Raté",
+    "nickname": "Rate",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -301,7 +301,7 @@ const event_json = `{
   },
   "4908": {
     "name": "Raté, il n'y a rien ici",
-    "nickname": "Raté",
+    "nickname": "Rate",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -309,7 +309,7 @@ const event_json = `{
   },
   "2708": {
     "name": "Raté, il n'y a rien ici",
-    "nickname": "Raté",
+    "nickname": "Rate",
     "url": "events/event_mauvais_lieu_sdftui.html",
     "dialogue": [
         "<i>Après avoir creusé tout autour du lieu, vous ne trouvez rien d'intéressant. <br>Cette fouille appronfondie vous fais <b>perdre 1 minute.</b></i>"
@@ -317,7 +317,7 @@ const event_json = `{
   },
   "1151": {
     "name": "Raté, il n'y a rien ici",
-    "nickname": "Raté",
+    "nickname": "Rate_later",
     "url": "events/event_search_azesds.html",
     "dialogue": [
         "<i>Ce code ne correspond pas à un lieu, mais vous sera utile plus tard !<br>Gardez le en mémoire.</i>"

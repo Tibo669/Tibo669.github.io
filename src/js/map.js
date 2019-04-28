@@ -3,10 +3,11 @@ require([
   "esri/views/MapView",
   "esri/Graphic",
   "esri/widgets/Locate",
+  "esri/widgets/Track",
   "esri/widgets/Search",
   "esri/tasks/Locator",
   "esri/widgets/Search/LocatorSearchSource",
-], function(Map, MapView, Graphic, Locate, Search, LocatorSearchSource) {
+], function(Map, MapView, Graphic, Locate, Search, LocatorSearchSource, Track) {
   let tagsToDisplay = ["assistant", "depart"];
 
   let assistant_visited_stored = sessionStorage.getItem('assistant_visited');
@@ -138,7 +139,7 @@ require([
 
   // Add the graphics to the view's graphics layer
   view.graphics.addMany(listLocation);
-
+  /*
   let locateBtn = new Locate({
     view: view
   });
@@ -147,6 +148,14 @@ require([
   view.ui.add(locateBtn, {
     position: "top-left"
   });
+  */
+  let trackWidget = new Track({
+    view: view,
+    tracking: true
+  });
+
+  view.ui.add(trackWidget.container, "top-left");
+  //trackWidget.start();
 
   let searchWidget = new Search({
     view: view,
