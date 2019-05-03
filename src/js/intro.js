@@ -43,12 +43,18 @@ function introduction() {
     personageImage.style.marginTop = "60px";
   }
   if ( dialogue_idx  === 6 ) {
+    personageImage.src = '../img/map_button.png';
+    personageImage.style.width =  "100px";
+    personageImage.style.height =  "100px";
+    personageImage.style.marginTop = "60px";
+  }
+  if ( dialogue_idx  === 7 ) {
     personageImage.src = '../img/archeologue.png';
     personageImage.style.width =  "240px";
     personageImage.style.height =  "160px";
     personageImage.style.marginTop = "0";
   }
-  if ( dialogue_idx  === 10 ) {
+  if ( dialogue_idx  === 11 ) {
     const containerForm = document.getElementById("containerForm");
     const containerEvent = document.getElementById("containerEvent");
     const dialogueNameButtonForm = document.getElementById("dialogueNameButtonForm");
@@ -67,12 +73,6 @@ function introduction() {
       containerEvent.style.display = '';
       introduction();
     });
-  }
-  if ( dialogue_idx  === 11 ) {
-    personageImage.src = '../img/map_button.png';
-    personageImage.style.width =  "100px";
-    personageImage.style.height =  "100px";
-    personageImage.style.marginTop = "60px";
   }
   if ( dialogue_idx  === 12 ) {
     personageImage.src = '../img/archeologue.png';
