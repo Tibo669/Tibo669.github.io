@@ -13,13 +13,12 @@
   background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
 }
 
-/* wrongEvent Content */
 .copyClipboard {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 60%;
-  height: 20%;
+  width: 80%;
+  height: 50%;
   background-color: white; /* Fallback color */
   text-align: center;
 }

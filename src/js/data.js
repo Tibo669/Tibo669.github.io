@@ -3,7 +3,7 @@ const event_json = `{
     "name": "Professeur Martin, Archéologue",
     "nickname": "Professeur",
     "indice": "True",
-    "important_dialogue": 12,
+    "important_dialogue": 13,
     "url": "events/event_professeur_sjsjss.html",
     "dialogue": [
         "Bonjour fameux aventuriers, <br>Je suis le Professeur Martin, archéologue en chef.<br> Avant de vous expliquer votre mission, voyons les bases de cet outil, <br><b>veuillez cliquer sur la flèche pour afficher la suite...</b>",
@@ -76,7 +76,8 @@ const event_json = `{
         "C’est gentil de votre part d’être venus essayer, mais seulement moi, Tennessee Johnson, possède les capacités pour trouver ce maudit trésor.",
         "Et lorsque j’aurai mis la main dessus, je serai riche ! En effet, j’ai déjà trouvé des clients fortunés prêt à tout pour l’acheter. <br>Mais surtout je serai enfin reconnu dans le milieu des chasseurs de trésor.",
         "J’ai de nombreuses pistes et vous comprendrez aisément que je ne peux rien vous dire. <br>Mais trêve de bavardage, bonne journée et bonne chance, malgré tout, dans votre vaine tentative.",
-        "<i>Il se retourne et s’éloigne. Vous apercevez un morceau de papier tomber de sa poche. <br>Vous le récupérez et découvrez un étrange message : <br>45.846141,4.575928</i>"
+        "<i>Il se retourne et s’éloigne. Vous apercevez un morceau de papier tomber de sa poche. <br>Vous le récupérez et découvrez un étrange message : <br>45.846141,4.575928</i>",
+        ""
       ],
     "help": [
         "Ces numéros semblent former des coordonnées GPS. <br>Il semblerait même qu’on puisse les copier en cliquant dessus.",
