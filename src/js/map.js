@@ -3,11 +3,11 @@ require([
   "esri/views/MapView",
   "esri/Graphic",
   "esri/widgets/Locate",
-  "esri/widgets/Track",
   "esri/widgets/Search",
   "esri/tasks/Locator",
   "esri/widgets/Search/LocatorSearchSource",
-], function(Map, MapView, Graphic, Locate, Search, LocatorSearchSource, Track) {
+  "esri/widgets/Track",
+], function(Map, MapView, Graphic, Locate, Search, Locator, LocatorSearchSource, Track) {
   let tagsToDisplay = ["assistant", "depart"];
 
   let assistant_visited_stored = sessionStorage.getItem('assistant_visited');
@@ -150,17 +150,16 @@ require([
   });
   */
   let trackWidget = new Track({
-    view: view,
-    tracking: true
+    view: view
   });
 
-  view.ui.add(trackWidget.container, "top-left");
-  //trackWidget.start();
+  view.ui.add(trackWidget, "top-left");
+  // trackWidget.start();
 
   let searchWidget = new Search({
     view: view,
     sources: [{
-      locator: new LocatorSearchSource({ url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer" }),
+      locator: new Locator({ url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer" }),
       singleLineFieldName: "SingleLine",
       name: "Custom Geocoding Service",
       localSearchOptions: {
@@ -184,7 +183,5 @@ require([
     }
   };
   // Add the search widget to the top right corner of the view
-  view.ui.add(searchWidget, {
-    position: "top-right"
-  });
+  view.ui.add(searchWidget, {position: "top-right"});
 });
