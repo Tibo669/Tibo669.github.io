@@ -18,8 +18,7 @@ if ( dialogue_list.length === 1 ){
 if ( sessionStorage.getItem('from_indices') === 'true') {
   sessionStorage.setItem('from_indices', 'false');
   from_indices = true;
-  dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
-  dialogue_idx = event_map[personage]['important_dialogue'];
+  dialogue_idx = event_map[personage]['important_dialogue'] - 1;
 }
 
 next_dialogue();
@@ -28,48 +27,41 @@ dialogueButton.addEventListener('click', next_dialogue, false);
 dialogueButtonReturn.addEventListener('click', function(){next_dialogue(true)}, false);
 
 function next_dialogue(reverse=false) {
-  if ( !from_indices ) {
-    if (reverse === true) {
-      if (dialogue_idx > 0) {
-        dialogue_idx--;
-      }
+  if (reverse === true) {
+    if (dialogue_idx > 0) {
+      dialogue_idx--;
     }
-    else {
-      if (dialogue_idx < dialogue_list.length - 1) {
-        dialogue_idx++;
-      }
-    }
-  }
-  if (from_indices) {
-    dialogueButtonReturn.style.display = "none";
-    dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
   }
   else {
-    // Gestion des flèches en fonction de la position dans les slides
-    if (dialogue_idx === 0) {
-      // Il n'y a qu'un seul slide de dialogue
-      if (dialogue_idx === dialogue_list.length - 1) {
-        dialogueButtonReturn.style.display = "none";
-        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
-      }
-      // On est sur la première slide du dialogue
-      else {
-        dialogueButtonReturn.style.display = "none";
-        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_forward.png)";
-      }
-    } else {
-      // On est sur la denière slide du dialogue
-      if (dialogue_idx === dialogue_list.length - 1) {
-        dialogueButtonReturn.style.display = "block";
-        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_backward.png)";
-      }
-      // On est au milieu du dialogue
-      else {
-        dialogueButtonReturn.style.display = "block";
-        dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_two_ways.png)";
-      }
+    if (dialogue_idx < dialogue_list.length - 1) {
+      dialogue_idx++;
     }
   }
+  // Gestion des flèches en fonction de la position dans les slides
+  if (dialogue_idx === 0) {
+    // Il n'y a qu'un seul slide de dialogue
+    if (dialogue_idx === dialogue_list.length - 1) {
+      dialogueButtonReturn.style.display = "none";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_no_arrow.png)";
+    }
+    // On est sur la première slide du dialogue
+    else {
+      dialogueButtonReturn.style.display = "none";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_forward.png)";
+    }
+  } else {
+    // On est sur la denière slide du dialogue
+    if (dialogue_idx === dialogue_list.length - 1) {
+      dialogueButtonReturn.style.display = "block";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_backward.png)";
+    }
+    // On est au milieu du dialogue
+    else {
+      dialogueButtonReturn.style.display = "block";
+      dialogueButton.style.backgroundImage = "url(../../img/dialogue_button_two_ways.png)";
+    }
+  }
+
   // Avancée dans le dialogue
   if (dialogue_idx < dialogue_list.length) {
     dialogueButton.innerHTML = dialogue_list[dialogue_idx];
@@ -92,9 +84,17 @@ function next_dialogue(reverse=false) {
 
   // Spécial cantonnier
   if (personage_name === "Marius Bedron, Cantonnier") {
+    dialogueButton.style.textAlign = "justify";
+    document.getElementById("lock-plate").style.display = "none";
     if (dialogue_idx === 3) {
       let personageImage = document.getElementById("personageImage");
       personageImage.src = "../../img/bac_a_fleur.png";
+    }
+    if (dialogue_idx === 4) {
+      let personageImage = document.getElementById("personageImage");
+      personageImage.src = "../../img/bac_a_fleur.png";
+      dialogueButton.style.textAlign = "center";
+      createCadenas();
     }
   }
 

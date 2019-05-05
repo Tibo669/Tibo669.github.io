@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/event.css">
+  <link rel="stylesheet" href="../../css/cantonnier.css">
 </head>
 <body>
 <div id="header">
@@ -42,6 +43,15 @@
     <a class="btn dialogueButton" id="dialogueButton"></a>
   </div>
 </div>
+<div id="lock-plate">
+  <span></span><span></span><span></span><span></span>
+  <div id="lock-wrapper">
+    <div class="lock-dial" id="dial-one"><ul data-combo-num="0"><li class="up">9</li><li class="middle">0</li><li class="bottom">1</li></ul></div>
+    <div class="lock-dial" id="dial-two"><ul data-combo-num="1"><li class="up">9</li><li class="middle">0</li><li class="bottom">1</li></ul></div>
+    <div class="lock-dial" id="dial-three"><ul data-combo-num="2"><li class="up">9</li><li class="middle">0</li><li class="bottom">1</li></ul></div>
+    <div class="lock-dial" id="dial-four"><ul data-combo-num="3"><li class="up">9</li><li class="middle">0</li><li class="bottom">1</li></ul></div>
+  </div>
+</div>
 
 <div id="helpContainer" class="helpContainer">
   <div id="help">
@@ -57,12 +67,12 @@
   </div>
 </div>
 
+<script src="../../js/events/event_cantonnier.js"></script>
 <script src="../../js/data.js"></script>
 <script src="../../js/event.js"></script>
 <script src="../../js/main.js"></script>
 <script src="../../js/help.js"></script>
 <script src="../../js/elastic.js"></script>
-
 <script>
   sessionStorage.setItem('cantonnier_visited', 'true');
   postElastic('cantonnier');
