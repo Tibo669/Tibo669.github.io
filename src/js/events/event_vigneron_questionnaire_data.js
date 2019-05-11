@@ -38,18 +38,8 @@ const event_question_data_json = `{
         "4": "Un serpent"
       },
     "good_response": "2"
-  },
+  }
   "5": {
-    "question": "Quelle est le type de taille sur les vignes du domaine ?",
-    "responses": {
-        "1": "La taille gobelet",
-        "2": "La taille guyot",
-        "3": "La taille guyet",
-        "4": "La taille gobelin"
-      },
-    "good_response": "1"
-  },
-  "6": {
     "question": "A quoi correspond une grume de raisin ?",
     "responses": {
         "1": "A un pépin",
@@ -59,17 +49,7 @@ const event_question_data_json = `{
       },
     "good_response": "3"
   },
-  "7": {
-    "question": "Quelle est la contenance d’un pot beaujolais ?",
-    "responses": {
-        "1": "75 cl",
-        "2": "37,5 cl",
-        "3": "46 cl",
-        "4": "82 cl"
-      },
-    "good_response": "3"
-  },
-  "8": {
+  "6": {
     "question": "Quelle est la capitale du Beaujolais ?",
     "responses": {
         "1": "Bully",

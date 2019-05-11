@@ -1,7 +1,7 @@
 let currentQuestion;
 let currentQuestionNumber = 1;
 const maximumQuestionNumber = 3;
-const availableQuestionNumber = 8;
+const availableQuestionNumber = 6;
 let good_responses = 0;
 let availableQuestions = [];
 let questionText = "Question suivante";

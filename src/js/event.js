@@ -77,9 +77,6 @@ function next_dialogue(reverse=false) {
         copyToClipboard("45.846141,4.575928");
       });
     }
-    if (dialogue_idx === 6) {
-      document.location.href = "../map.html";
-    }
   }
 
   // Spécial cantonnier
