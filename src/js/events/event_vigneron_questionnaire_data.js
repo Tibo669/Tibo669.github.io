@@ -38,7 +38,7 @@ const event_question_data_json = `{
         "4": "Un serpent"
       },
     "good_response": "2"
-  }
+  },
   "5": {
     "question": "A quoi correspond une grume de raisin ?",
     "responses": {
